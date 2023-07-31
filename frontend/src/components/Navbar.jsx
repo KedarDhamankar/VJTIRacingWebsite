@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import "../stylesheets/Navbar.css";
 import vrlogo from "../assets/VR_logo.png";
@@ -12,6 +14,7 @@ const Navbar = () => {
 					<img src={vrlogo} alt="" className="logo" />
 				</Link>
 
+				{/* Hiding this navlinks for mobiles */}
 				<ul className="navlinks">
 					<li>
 						<Link to="/Teams" className="linktext">
@@ -49,6 +52,59 @@ const Navbar = () => {
 						</Link>
 					</li>
 				</ul>
+
+				{/* Display this on mobiles */}
+
+				<div className="nav-mobile">
+					<input type="checkbox" name="" id="" />
+					<div className="toggleslide">
+						<span className="top_line common"></span>
+						<span className="middle_line common"></span>
+						<span className="bottom_line common"></span>
+					</div>
+
+					<div className="slide">
+						<h1></h1>
+						<h1></h1>
+						<ul className="moblinks">
+							<li>
+								<Link to="/Teams" className="mob-linktext">
+									TEAMS
+								</Link>
+							</li>
+							<li>
+								<Link to="/Competitions" className="mob-linktext">
+									COMPETITIONS
+								</Link>
+							</li>
+							<li>
+								<Link to="/Activities" className="mob-linktext">
+									ACTIVITIES
+								</Link>
+							</li>
+							<li>
+								<Link to="/Internships" className="mob-linktext">
+									INTERNSHIPS
+								</Link>
+							</li>
+							<li>
+								<Link to="/Media" className="mob-linktext">
+									MEDIA
+								</Link>
+							</li>
+							<li>
+								<Link to="/Crowdfunding" className="mob-linktext">
+									CROWDFUNDING
+								</Link>
+							</li>
+							<li>
+								<Link to="/Sponsor" className="mob-linktext">
+									SPONSOR US
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</>
 	);
