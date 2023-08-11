@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import "../stylesheets/Navbar.css";
-import vrlogo from "../assets/VR_logo.png";
+import vrlogo from "../assets/VR_logo_1.png";
 
 const Navbar = () => {
+	const [color, setColor] = useState(false);
+
+	const changeColor = () => {
+		if (window.scrollY >= 200) {
+			setColor(true);
+		} else {
+			setColor(false);
+		}
+	};
+
+	window.addEventListener("scroll", changeColor);
 	return (
 		<>
-			<div className="nav">
+			<div className={color ? "nav nav-bg" : "nav"}>
 				<Link to="/" className="linklogo">
 					<img src={vrlogo} alt="" className="logo" />
 				</Link>

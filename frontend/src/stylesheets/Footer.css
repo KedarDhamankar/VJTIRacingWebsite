@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.footer {
+	width: 100%;
+	/* height: 100vh; */
+	background-color: #005f60;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer .text1 {
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	color: white;
+	display: block;
+	font-size: 300%;
+	font-weight: 900;
+	margin-top: 5rem;
+	margin-bottom: 4vh;
+}
+
+.footer .footercontent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	/* column-gap: 5vw; */
+	margin-bottom: 8vh;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	font-family: "Lato", sans-serif;
+	color: white;
+	text-align: center;
+	margin-bottom: 2vh;
+	margin-top: 6vh;
+}
+
+.footer .container h2 {
+	font-weight: 800;
+	font-size: 200%;
+}
+.footer .container h3 {
+	font-weight: 600;
+	font-size: 175%;
+}
+.footer .container h5 {
+	font-weight: 300;
+}
+.footer .container span {
+	font-weight: 300;
+	font-size: 125%;
+}
+
+.footer .contacts {
+	width: 25rem;
+}
+
+.footer .contacts tr {
+	height: 3rem;
+}
+
+.footer .socialicons {
+	display: flex;
+	flex-direction: row;
+	column-gap: 1.5rem;
+	justify-content: center;
+}

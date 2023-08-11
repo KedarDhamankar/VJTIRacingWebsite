@@ -257,6 +257,10 @@
 	background-position: 0% 70%;
 }
 
+.responsive {
+	display: none;
+}
+
 /* Footer */
 .footer {
 	width: 100%;
@@ -302,14 +306,14 @@
 	font-size: 200%;
 }
 .footer .container h3 {
-	font-weight: 00;
+	font-weight: 600;
 	font-size: 175%;
 }
 .footer .container h5 {
-	font-weight: 400;
+	font-weight: 300;
 }
 .footer .container span {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 125%;
 }
 
@@ -326,10 +330,6 @@
 	flex-direction: row;
 	column-gap: 1.5rem;
 	justify-content: center;
-}
-
-.responsive {
-	display: none;
 }
 
 /* Responsive CSS */
@@ -413,5 +413,11 @@
 
 	.responsive .container .button2 {
 		background-image: linear-gradient(to right, #fd5901, #faab36);
+	}
+
+	.whiteline {
+		width: 100vw;
+		height: 0.5vh;
+		background-color: #c2bebe;
 	}
 }

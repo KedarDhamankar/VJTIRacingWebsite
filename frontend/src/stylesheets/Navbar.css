@@ -2,11 +2,15 @@
 
 .nav {
 	position: fixed;
-	margin-top: -1.5%;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 5% 1fr 4fr 5%;
 	z-index: 999;
+}
+
+.nav-bg {
+	background-color: rgba(0, 0, 0, 0.714);
+	/* background-color: rgb(0, 95, 96, 0.714); */
 }
 
 .linklogo {
@@ -14,14 +18,12 @@
 }
 .logo {
 	width: 11vw;
-	/* display: block; */
 }
 
 .navlinks {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	/* column-gap: 2vw; */
 	justify-content: space-around;
 }
 
@@ -33,7 +35,6 @@
 	text-decoration: none;
 	color: white;
 	font-family: "Roboto", sans-serif;
-	/* font-size: 1.25rem; */
 	font-size: 1.35vw;
 	font-weight: 600;
 	letter-spacing: 0.05rem;
@@ -61,14 +62,11 @@
 		width: 35vw;
 		display: block;
 		margin: 0 auto;
-		margin-top: -2vh;
 	}
 
 	.slide {
 		height: 105vh;
-		width: 50vw;
 		background-color: rgb(22 21 21 / 89%);
-		/* margin-left: -50vw; */
 		transition: 0.5s ease;
 		transform: translateX(-50vw);
 	}
@@ -96,9 +94,7 @@
 		letter-spacing: 0.05rem;
 		display: block;
 		padding: 10% 10%;
-		/* padding-bottom: 10%; */
 		border-bottom: 0.1rem #807373ad solid;
-		/* border-top: 0.1rem #807373ad solid; */
 		transition: 0.2s ease-out;
 	}
 
@@ -119,8 +115,6 @@
 		top: 6vw;
 		left: 6vw;
 		z-index: 1;
-		/* background-color: blueviolet; */
-		/* cursor: pointer; */
 		border-radius: 2px;
 	}
 
@@ -164,5 +158,6 @@
 
 	input:checked ~ .slide {
 		transform: translateX(0);
+		width: 50vw;
 	}
 }

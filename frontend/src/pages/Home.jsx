@@ -1,5 +1,6 @@
 import { useRef, React } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/footer";
 
 import "../stylesheets/Home.css";
 import bckgd from "../assets/Home/bckgd.jpg";
@@ -106,6 +107,7 @@ const Home = () => {
 
 				{/* Responsive sections 3-6 */}
 				<div className="responsive">
+					<div className="whiteline"></div>
 					<div className="bgimg" style={{ backgroundImage: `url(${hp1})` }}>
 						<div className="container one">
 							<h2>ABOUT US</h2>
@@ -113,6 +115,7 @@ const Home = () => {
 							<button className="button1">Know More</button>
 						</div>
 					</div>
+					<div className="whiteline"></div>
 					<div className="bgimg" style={{ backgroundImage: `url(${hp2})` }}>
 						<div className="container two">
 							<h2>ABOUT VJTI</h2>
@@ -121,6 +124,7 @@ const Home = () => {
 							<button className="button1">Know More</button>
 						</div>
 					</div>
+					<div className="whiteline"></div>
 					<div className="bgimg" style={{ backgroundImage: `url(${hp4})` }}>
 						<div className="container three">
 							<h2>OUR ACHIEVEMENTS</h2>
@@ -128,6 +132,7 @@ const Home = () => {
 							<button className=" button1 button2">Know More</button>
 						</div>
 					</div>
+					<div className="whiteline"></div>
 					<div className="bgimg" style={{ backgroundImage: `url(${hp3})` }}>
 						<div className="container four">
 							<h2>OUR ACTIVITIES</h2>
@@ -136,68 +141,10 @@ const Home = () => {
 							<button className="button1 button2">Know More</button>
 						</div>
 					</div>
+					<div className="whiteline"></div>
 				</div>
 
-				{/* Footer section */}
-				<div className="footer">
-					<span className=" text1">CONTACT US</span>
-					<div className="footercontent">
-						<div className="container" style={{ textAlign: "left" }}>
-							<h2>VJTI RACING</h2>
-							<span>The club for VJTI's automobile enthusiasts.</span>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.9716141382025!2d72.85483373470099!3d19.02222315365996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf26f4972d21%3A0x2c50185364aca4c1!2sVeermata%20Jijabai%20Technological%20Institute%20VJTI!5e0!3m2!1sen!2sin!4v1690807913559!5m2!1sen!2sin" width="370" height="250" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-						</div>
-						<div className="container contacts">
-							<h3>CONTACT DETAILS</h3>
-							<table>
-								<tbody>
-									<tr>
-										<td width={"50rem"}>
-											<div className="socialicons">
-												<FaMapMarked size={35} />
-											</div>
-										</td>
-										<td>
-											<span>VJTI Racing-167, Nathalal Parekh Marg, Wadla Village, Wadala, Mumbai, Maharashtra 400031</span>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div className="socialicons">
-												<FaPhoneAlt size={35} />
-											</div>
-										</td>
-										<td>
-											<span>Captain: +91 90048 12503</span>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div className="socialicons">
-												<GrMail size={35} />
-											</div>
-										</td>
-										<td>
-											<span>vjtiracingindia@me.vjti.ac.in</span>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-
-						<div className="container">
-							<h3>WE'RE SOCIAL</h3>
-							<div className="socialicons">
-								<FaFacebookSquare size={35} />
-								<FaInstagramSquare size={35} />
-								<FaLinkedin size={35} />
-							</div>
-							<h5>
-								© VJTI Racing 2023 <br /> All Rights Reserved.
-							</h5>
-						</div>
-					</div>
-				</div>
+				<Footer />
 			</div>
 		</>
 	);
