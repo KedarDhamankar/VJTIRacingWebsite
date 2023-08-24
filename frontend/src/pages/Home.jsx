@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { useRef, React } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
@@ -12,8 +13,8 @@ import hp2 from "../assets/Home/hp2.jpg";
 import hp3 from "../assets/Home/hp3.jpg";
 import hp4 from "../assets/Home/hp4.jpg";
 
-import { FaMapMarked, FaPhoneAlt, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-import { GrMail } from "react-icons/gr";
+// import { FaMapMarked, FaPhoneAlt, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+// import { GrMail } from "react-icons/gr";
 
 const Home = () => {
 	const ref = useRef(null);
@@ -30,7 +31,7 @@ const Home = () => {
 				<div className="backdiv">
 					<img src={bckgd} alt="" />
 					<div className="darkenimage"></div>
-					<span className="title">VJTI RACING</span>
+					<span className="head">VJTI RACING</span>
 					<div onClick={handleClick} className="scrolldown">
 						<span className="line1 common"></span>
 						<span className="line2 common"></span>
