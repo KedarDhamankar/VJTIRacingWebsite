@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+/* eslint-disable no-unused-vars */
 // import React from "react";
-=======
 import { useRef, React } from "react";
->>>>>>> fb99194a7239ef66220f0aeb5a9230089dff5cfa
 
 import Navbar from "../components/Navbar";
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 
 import "../stylesheets/Teams.css";
 
