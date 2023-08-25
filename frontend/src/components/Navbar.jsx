@@ -58,7 +58,7 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<Link to="/Sponsor" className="linktext">
+						<Link to="/SponsorUs" className="linktext">
 							SPONSOR US
 						</Link>
 					</li>
@@ -109,7 +109,7 @@ const Navbar = () => {
 								</Link>
 							</li>
 							<li>
-								<Link to="/Sponsor" className="mob-linktext">
+								<Link to="/SponsorUs" className="mob-linktext">
 									SPONSOR US
 								</Link>
 							</li>
