@@ -5,7 +5,7 @@ import c1 from "../assets/Competitions/DSC_15.png";
 const block = () => {
   return (
     <>
-        <div className="piece">
+        <div className="blocks">
             <img src={c1} alt="" />
             <div className="content">
                 <h2>Competition name</h2>
@@ -20,6 +20,7 @@ const block = () => {
                 and going through the cites of the word in 
                 classical literature, discovered the undoubtable 
                 source.</p>
+                <button className="info">Know More</button>
             </div>
             
         </div>

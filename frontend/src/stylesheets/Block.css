@@ -1,4 +1,4 @@
-.piece {
+.blocks {
     width:25%;
     /* max-height: 60vh; */
     /* height: 30%; */
@@ -11,13 +11,29 @@
     flex-direction: column;
 }
 
-.piece img{
-    object-fit: cover;
+.blocks img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    /* position: center; */
 }
 
-.piece .content{
+.blocks .content{
     background-color: cadetblue;
+    /* min-height: 10vh; */
 }
-.content .h2{
-    margin-top: 2em;
+.content h2{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 4vh;
+}
+.content p{
+    margin-bottom: 2vh;
+    word-wrap: break-all;
+}
+.content .info{
+    border-radius: 1vh;
+    width: 20vh;
+    height: 5vh;
+    margin-bottom: 2vh;
 }
