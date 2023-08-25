@@ -5,9 +5,7 @@ const block = () => {
   return (
     <>
         <div className="piece">
-            <div className="disp">
-                <img src={c1} alt="" />
-            </div>
+            <img src={c1} alt="" />
             <div className="content">
                 <h2>Competition name</h2>
                 <p>Contrary to popular belief, 

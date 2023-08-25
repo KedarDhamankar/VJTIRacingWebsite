@@ -34,7 +34,7 @@ const Competitions = () => {
      {/* Section 2 cards */}
      <section>
         <div ref={ref} className="sec2">
-            <Block/>
+            <Block />
             <Block/>
             <Block/>
             <Block/>
