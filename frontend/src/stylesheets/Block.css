@@ -15,7 +15,7 @@
     object-fit: cover;
 }
 
-.content{
+.piece .content{
     background-color: cadetblue;
 }
 .content .h2{

@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import {useRef} from "react";
 import Navbar from "../components/Navbar";
 import Block from "../components/block";
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 import bckgd from "../assets/Home/bckgd.jpg";
 import "../stylesheets/Competitions.css";
 
@@ -45,7 +46,7 @@ const Competitions = () => {
         
     </div>
 
-
+    <Footer />
     </>
     
 
