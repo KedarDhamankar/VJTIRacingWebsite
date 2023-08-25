@@ -9,19 +9,12 @@ import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
 
 const SponsorUs = () => {
-	const [Email, setEmail] = useState("");
-	const [CompanyName, setCmpname] = useState("");
-	const [Name, setName] = useState("");
-	const [Address, setAddress] = useState("");
-	const [Number, setNumber] = useState("");
-	const [Message, setMessage] = useState("");
-
 	function handleSubmit(e) {
 		const formEle = document.querySelector("form");
 		e.preventDefault();
 		console.log("Submitted");
 		const formData = new FormData(formEle);
-		fetch("https://script.google.com/macros/s/AKfycbyxUEpwvMP7TbRDJicX8-5RCAHx7fIE_HX4KxkkLdwQxWvbZGyEFfXyXu-mb7w2KMRMwg/exec", { method: "POST", body: formData });
+		fetch("https://script.google.com/macros/s/AKfycby0aS8rF-UrWMDQZDYMF6_zBSLJNBKxgrHIZlTGW1uyDrT4b3mrtIw-eGMzpLscztbHXg/exec", { method: "POST", body: formData });
 	}
 
 	return (
