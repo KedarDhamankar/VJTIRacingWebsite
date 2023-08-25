@@ -44,31 +44,37 @@ const SponsorUs = () => {
 				<div className="form">
 					<span>FILL THE FORM AND WE WILL GET BACK TO YOU</span>
 					<form onSubmit={handleSubmit}>
-						<label>Email</label>
-						<br />
-						<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<label>Company Name</label>
-						<br />
-						<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<label>Name</label>
-						<br />
-						<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<label>Address</label>
-						<br />
-						<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<label>Contact Number</label>
-						<br />
-						<input type="number" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<label>Your Message</label>
-						<br />
-						<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-						<br />
-						<input type="submit" />
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						<div>
+							<label>Email</label>
+							<br />
+							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+						</div>
+						{/* <input type="submit" /> */}
 					</form>
 				</div>
 			</section>

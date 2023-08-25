@@ -86,18 +86,19 @@
 }
 
 .formsection .form form {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 5vw;
+	align-content: center;
 }
 
 .formsection .form label {
-	display: block;
-	position: relative;
-	left: 0;
 	font-family: "Lato", sans-serif;
 	font-size: 110%;
 }
 .formsection .form input {
-	text-align: center;
 	margin-bottom: 5vh;
 	width: 70%;
 	border: none;
