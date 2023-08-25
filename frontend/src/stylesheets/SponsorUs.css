@@ -23,7 +23,6 @@
 }
 
 .formsection {
-	/* width: 100vw; */
 	background-color: black;
 	background-size: cover;
 	padding: 10vh 0;
@@ -59,7 +58,6 @@
 	/* min-width: 10vh; */
 	border: none;
 	border-radius: 0.7vw;
-	background-color: #008083;
 	color: #fff;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
@@ -67,25 +65,33 @@
 	cursor: pointer;
 }
 
-.formsection .form {
-	width: 70vw;
+.formsection .booklet .download button:nth-child(1) {
+	background-image: linear-gradient(to right, rgb(255, 222, 89), rgb(255, 145, 77));
+}
+
+.formsection .booklet .download button:nth-child(2) {
+	background-image: linear-gradient(to right, #ff3131, #ff914d);
+}
+
+.formsection .formdiv {
+	width: 60vw;
 	background-color: rgba(0, 94, 96, 0.6);
-	padding: 3vh 0;
+	padding: 5vh 0;
 	border-radius: 3%/4%;
 	margin: 7vh auto;
 	color: #fff;
 }
 
-.formsection .form span {
+.formsection .formdiv span {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 1.3vw;
 	display: block;
-	margin-bottom: 5vh;
+	margin-bottom: 8vh;
 }
 
-.formsection .form form {
+.formsection .formdiv form {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -94,13 +100,15 @@
 	align-content: center;
 }
 
-.formsection .form label {
+.formsection .formdiv label {
 	font-family: "Lato", sans-serif;
 	font-size: 110%;
+	margin-left: 1vw;
 }
-.formsection .form input {
+
+.formsection .formdiv input {
 	margin-bottom: 5vh;
-	width: 70%;
+	width: 40vw;
 	border: none;
 	border-radius: 4%/60%;
 	background-color: rgba(73, 136, 141, 0.3);
@@ -110,4 +118,14 @@
 	font-size: 1.1vw;
 	padding: 2vh 1vw;
 	outline: none;
+}
+
+.formsection .formdiv .submit {
+	cursor: pointer;
+	width: 20vw;
+	height: 7vh;
+	border: none;
+	border-radius: 6%/50%;
+	background-color: rgba(73, 136, 141);
+	color: #fff;
 }

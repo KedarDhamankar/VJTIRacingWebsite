@@ -9,17 +9,20 @@ import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
 
 const SponsorUs = () => {
-	const [email, setEmail] = useState("");
-	const [cmpname, setCmpname] = useState("");
-	const [name, setName] = useState("");
-	const [address, setAddress] = useState("");
-	const [number, setNumber] = useState("");
-	const [message, setMessage] = useState("");
+	const [Email, setEmail] = useState("");
+	const [CompanyName, setCmpname] = useState("");
+	const [Name, setName] = useState("");
+	const [Address, setAddress] = useState("");
+	const [Number, setNumber] = useState("");
+	const [Message, setMessage] = useState("");
 
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		alert(`The name you entered was: ${name}`);
-	};
+	function handleSubmit(e) {
+		const formEle = document.querySelector("form");
+		e.preventDefault();
+		console.log("Submitted");
+		const formData = new FormData(formEle);
+		fetch("https://script.google.com/macros/s/AKfycbyxUEpwvMP7TbRDJicX8-5RCAHx7fIE_HX4KxkkLdwQxWvbZGyEFfXyXu-mb7w2KMRMwg/exec", { method: "POST", body: formData });
+	}
 
 	return (
 		<>
@@ -41,40 +44,44 @@ const SponsorUs = () => {
 					</div>
 				</div>
 
-				<div className="form">
+				<div className="formdiv">
 					<span>FILL THE FORM AND WE WILL GET BACK TO YOU</span>
-					<form onSubmit={handleSubmit}>
+					<form className="form" onSubmit={(e) => handleSubmit(e)}>
 						<div>
 							<label>Email</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="Email" type="email" />
 						</div>
 						<div>
-							<label>Email</label>
+							<label>Company Name</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="CompanyName" type="text" />
 						</div>
 						<div>
-							<label>Email</label>
+							<label>Name</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="Name" type="text" />
 						</div>
 						<div>
-							<label>Email</label>
+							<label>Address</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="Address" type="text" />
 						</div>
 						<div>
-							<label>Email</label>
+							<label>Contact Number</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="Number" type="number" />
 						</div>
 						<div>
-							<label>Email</label>
+							<label>Your Message</label>
 							<br />
-							<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+							<input name="Message" type="text" />
 						</div>
-						{/* <input type="submit" /> */}
+						{/* <button> */}
+						<center>
+							<input type="submit" className="submit" />
+						</center>
+						{/* </button> */}
 					</form>
 				</div>
 			</section>
