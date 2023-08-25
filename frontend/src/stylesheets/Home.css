@@ -3,8 +3,8 @@
 
 /* Second Section (welcome to VR) font */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-.home {
-}
+/* .home {
+} */
 
 /* Background images are added through inline css */
 
@@ -19,7 +19,7 @@
 	object-fit: cover;
 }
 
-.backdiv .title {
+.backdiv .head {
 	position: absolute;
 	top: 40%;
 	left: 30%;
