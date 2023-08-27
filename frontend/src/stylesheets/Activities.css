@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Racing+Sans+One&display=swap");
+
+.activities .activitiesbg {
+	height: 100vh;
+}
+
+.activities .activitiesbg img {
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.activities .activitiesbg span {
+	position: absolute;
+	top: 35%;
+	left: 30%;
+	color: white;
+	font-family: "Oswald", sans-serif;
+	font-size: 9vw;
+	text-shadow: 0.4375rem 0.375rem 0.625rem rgba(0, 0, 0, 1);
+}
+
+.activities .blackdiv {
+	background-color: black;
+	padding: 7vh 15vw;
+}
+
+.activities .blackdiv .box {
+	width: 51.77vw;
+	height: 17.5vw;
+	background-color: #005f60;
+	border-radius: 15%/50%;
+	display: flex;
+	flex-direction: row;
+	column-gap: 1vw;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+
+.activities .blackdiv .box .box1 {
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	margin-left: 3vw;
+	padding-left: 1vw;
+}
+
+.activities .blackdiv .box .title {
+	font-family: "Racing Sans One", cursive;
+	color: #ff914d;
+	font-weight: 400;
+	font-size: 2.5vw;
+}
+
+.activities .blackdiv .box .content {
+	font-family: "Lato", sans-serif;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: 300;
+}
+
+.activities .blackdiv .box img {
+	height: 16vw;
+	width: 16vw;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.activities .blackdiv .box:nth-child(2) {
+	float: right;
+	flex-direction: row-reverse;
+	background-color: #d85c18;
+	color: #0c335d;
+}
+
+.activities .blackdiv .box:nth-child(2) .box1 {
+	margin-left: 0;
+	margin-right: 3vw;
+}
+
+.activities .blackdiv .box:nth-child(3) {
+	background-color: #f6a631;
+}
+.activities .blackdiv .box:nth-child(4) {
+	float: right;
+	flex-direction: row-reverse;
+	background-color: #f49100;
+}
+
+.activities .blackdiv .box:nth-child(4) .box1 {
+	margin-left: 0;
+	margin-right: 3vw;
+}
+
+.activities .blackdiv .box:nth-child(5) {
+	background-color: #249ea0;
+}
+
+.activities .blackdiv .box:nth-child(2) .title {
+	color: #0c335d;
+}
+.activities .blackdiv .box:nth-child(3) .title {
+	color: #d85c18;
+}
+.activities .blackdiv .box:nth-child(4) .title {
+	color: #d85c18;
+}
+.activities .blackdiv .box:nth-child(5) .title {
+	color: #0c335d;
+}
+
+.whiteline {
+	width: 100%;
+	height: 0.5vh;
+	background-color: #c2bebe;
+}
+
+/* Responsive CSS */
+
+@media (orientation: portrait) {
+	.activities .activitiesbg span {
+		top: 40%;
+		left: 10%;
+		font-size: 20vw;
+	}
+
+	.activities .blackdiv {
+		padding: 5vh 0 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.activities .blackdiv .box {
+		width: 90vw;
+		height: 35vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 1vw;
+		border-radius: 20%/50%;
+	}
+
+	.activities .blackdiv .box .content {
+		font-size: 2.7vw;
+	}
+	.activities .blackdiv .box .box1 {
+		width: 49vw;
+		padding-left: 2vw;
+		row-gap: 0.5vh;
+	}
+	.activities .blackdiv .box img {
+		height: 31vw;
+		width: 31vw;
+	}
+	.activities .blackdiv .box .title {
+		font-size: 4.1vw;
+	}
+}

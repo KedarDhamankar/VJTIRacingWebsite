@@ -3,8 +3,6 @@
 
 /* Second Section (welcome to VR) font */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-/* .home {
-} */
 
 /* Background images are added through inline css */
 
@@ -26,6 +24,7 @@
 	color: white;
 	font-family: "Oswald", sans-serif;
 	font-size: 9vw;
+	text-shadow: 0.5rem 0.45rem 0.625rem rgba(0, 0, 0, 1);
 }
 
 .darkenimage {
@@ -93,14 +92,14 @@
 	padding: 0 18% 0 18%;
 	font-weight: 400;
 	line-height: 1.8rem;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	letter-spacing: 1%;
 }
 
 .section2 .text2 .boldtext {
 	display: block;
 	font-weight: 800;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-bottom: 1%;
 }
 
@@ -334,10 +333,10 @@
 
 /* Responsive CSS */
 @media (orientation: portrait) {
-	.backdiv .title {
-		font-size: 15vw;
+	.backdiv .head {
+		font-size: 18vw;
 		top: 43%;
-		left: 18%;
+		left: 10%;
 	}
 
 	.backdiv .scrolldown {
