@@ -16,10 +16,11 @@
 .sponsorbg span {
 	position: absolute;
 	top: 43%;
-	left: 25%;
+	left: 27%;
 	color: white;
 	font-family: "Montserrat", sans-serif;
 	font-size: 7vw;
+	letter-spacing: -0.2vw;
 }
 
 .formsection {

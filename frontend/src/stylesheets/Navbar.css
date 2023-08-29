@@ -38,6 +38,7 @@
 	font-size: 1.35vw;
 	font-weight: 600;
 	letter-spacing: 0.05rem;
+	text-shadow: 3px 2px 0.25rem rgba(0, 0, 0, 2);
 }
 
 .nav-mobile {

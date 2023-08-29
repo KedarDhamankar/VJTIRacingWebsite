@@ -30,7 +30,7 @@ const Home = () => {
 			<div className="home">
 				<div className="backdiv">
 					<img src={bckgd} alt="" />
-					<div className="darkenimage"></div>
+					{/* <div className="darkenimage"></div> */}
 					<span className="head">VJTI RACING</span>
 					<div onClick={handleClick} className="scrolldown">
 						<span className="line1 common"></span>
