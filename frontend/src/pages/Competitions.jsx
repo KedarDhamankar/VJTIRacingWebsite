@@ -14,8 +14,8 @@ import c1 from "../assets/Competitions/DSC_15.png";
 //variables
 const comp1 = {
 year:"2024",
-title:"Team MotorBreath",
-subheading:"e-BAJA 2023",
+title:"TEAM MOTORBREATH",
+subheading:"e-BAJA2024",
 img: c1,
 description:"competition description 1",
 }
@@ -26,7 +26,13 @@ subheading:"e-BAJA 2023",
 img: c1,
 description:"competition description 2",
 }
-
+const comp3 = {
+year:"2022",
+title:"Competition 2",
+subheading:"e-BAJA 2023",
+img: c1,
+description:"competition description 2",
+}
 
 const Competitions = () => {
     const ref = useRef(null);
