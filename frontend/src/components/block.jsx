@@ -2,7 +2,7 @@
 import React from 'react'
 import "../stylesheets/Block.css"
 
-const block = ({year,img,title,subheading,description}) => {
+const block = ({year,img,title,subheading,children}) => {
   return (
     <>
         <div className="blocks">
@@ -11,8 +11,8 @@ const block = ({year,img,title,subheading,description}) => {
           <div className="content">
             <h2>{title}</h2>
             <h4>{subheading}</h4>
-            <p>{description}</p>
-            <button className="info">Know More</button>
+            <p>{children}</p>
+            {/* <button className="info">Know More</button> */}
           </div>   
       </div>
         
