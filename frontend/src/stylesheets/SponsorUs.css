@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /* Montserrat Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap");
+/* Oswald Font */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.whiteline {
+	width: 100%;
+	height: 0.5vh;
+	background-color: #c2bebe;
+}
 
 .sponsorbg {
 	height: 100vh;
@@ -15,10 +23,11 @@
 
 .sponsorbg span {
 	position: absolute;
-	top: 43%;
-	left: 27%;
+	top: 40%;
+	left: 34%;
 	color: white;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Oswald", sans-serif;
+	text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1);
 	font-size: 7vw;
 	letter-spacing: -0.2vw;
 }
@@ -68,10 +77,13 @@
 
 .formsection .booklet .download button:nth-child(1) {
 	background-image: linear-gradient(to right, rgb(255, 222, 89), rgb(255, 145, 77));
+	text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
 }
 
 .formsection .booklet .download button:nth-child(2) {
 	background-image: linear-gradient(to right, #ff3131, #ff914d);
+
+	text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
 }
 
 .formsection .formdiv {
@@ -97,7 +109,6 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	column-gap: 5vw;
 	align-content: center;
 }
 
@@ -129,4 +140,73 @@
 	border-radius: 6%/50%;
 	background-color: rgba(73, 136, 141);
 	color: #fff;
+}
+
+/* Current Sponsors */
+.sponsorsection{
+	background-color: black;
+	background-size: cover;
+	padding: 10vh 0;
+}
+
+@media (orientation: portrait) {
+	.sponsorbg span {
+		font-size: 15vw;
+		font-weight: 800;
+		top: 45%;
+		left: 15%;
+	}
+
+	.formsection .booklet {
+		width: 85vw;
+		padding: 3vh 3vw;
+	}
+
+	.formsection .booklet span {
+		font-size: 4vw;
+	}
+
+	.formsection .booklet .download {
+		column-gap: 7vw;
+	}
+
+	.formsection .booklet .download button {
+		font-size: 3.5vw;
+		font-weight: 800;
+		padding: 2vh 1vw;
+		width: 60%;
+	}
+	.formsection .formdiv {
+		width: 70vw;
+		padding: 5vh 5vw;
+		border-radius: 6%/2%;
+	}
+
+	.formsection .formdiv span {
+		font-size: 4vw;
+		margin-bottom: 4vh;
+	}
+
+	.formsection .formdiv label {
+		font-size: 100%;
+		display: block;
+		margin-bottom: -1.5vh;
+	}
+
+	.formsection .formdiv input {
+		width: 58vw;
+		border-radius: 6%/50%;
+		margin-bottom: 3vh;
+		font-size: 3.1vw;
+		padding: 3.1vw 2vw;
+	}
+
+	.formsection .formdiv .submit {
+		width: 40vw;
+		height: initial;
+		font-size: 4vw;
+		padding: 1.5vh 0;
+		border-radius: 13%/50%;
+		margin-top: 3vh;
+	}
 }

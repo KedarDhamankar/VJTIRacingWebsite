@@ -10,10 +10,14 @@ import Media from "./pages/Media";
 import Crowdfunding from "./pages/Crowdfunding";
 import SponsorUs from "./pages/SponsorUs";
 
+// Component to scroll to top whenever route changes
+import ScrollToTop from "./components/ScrolltoTop";
+
 const App = () => {
 	return (
 		<div>
 			<Router>
+				<ScrollToTop />
 				<Routes>
 					<Route element={<Home />} path="/" />
 					<Route element={<Teams />} path="/Teams" />
