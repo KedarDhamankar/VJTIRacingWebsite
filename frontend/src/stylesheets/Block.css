@@ -1,41 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@500&display=swap');
+
+
 .blocks {
     width:27vw;
     color: black;
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 4vh;
+    margin: 2vw;
     display: flex;
     flex-direction: column;
+    max-height: 80vh;
 }
 .blocks .year p{
-    font-size: 7vh;
+    font-size: 7.5vh;
     text-align: left;
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 0.2vh;
     -webkit-text-stroke-color: aqua;
 }
 .blocks img{
- object-fit: contain;
+    object-fit: contain;
+    max-width: 50vw;
+    max-height: 50vh;
 }
 
 .blocks .content{
     background-color: cadetblue;
-    /* min-height: 18vh; */
 }
 .blocks .content h2{
     margin-top: 1vh;
-    margin-bottom: 1vh;
-    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    font-size: 2.5vh;
+    /* font-family: 'Noto Sans Shavian', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+}
+.blocks .content h4 {
+    font-size: 2.5vh;
+    font-family: 'Work Sans', sans-serif;
 }
 .blocks .content p{
-    margin-bottom: 2vh;
     word-wrap: break-all;
     min-height: 2vh;
+    margin: 1vh 1.5vh 3vh 1.5vh;
+    font-family: 'Montserrat', sans-serif;
 }
-.blocks .content .info{
+/* .blocks .content .info{
     border-radius: 1vh;
     width: 20vh;
     height: 5vh;
     margin-bottom: 2vh;
+} */
+
+@media (orientation:portrait){
+    .blocks {
+            width: 80vw;
+            color: black;
+            text-align: center;
+            overflow: hidden;
+            box-sizing: border-box;
+            margin: 2vw;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 100vh;
+        }
+        .blocks .year p {
+            font-size: 6.5vh;
+            text-align: left;
+            -webkit-text-fill-color: black;
+            -webkit-text-stroke-width: 0.2vh;
+            -webkit-text-stroke-color: aqua;
+        }
+
+        .blocks img {
+            object-fit: contain;
+            max-width: 80vw;
+            max-height: 80vh;
+        }
+
+        .blocks .content {
+            background-color: cadetblue;
+        }
+
+        .blocks .content h2 {
+            margin-top: 2vh;
+            /* margin-bottom: 1vh;  */
+            font-size: 2.8vh;
+            /* font-family: 'Ubuntu', sans-serif; */
+            /* font-family: 'Noto Sans Shavian', sans-serif; */
+            /* font-family: 'Mukta', sans-serif; */
+            font-family: 'Work Sans', sans-serif;
+        }
+        .blocks .content h4 {
+            /* margin-top: 1vh;
+            margin-bottom: 1vh; */
+            font-size: 2.5vh;
+            /* font-family: 'Ubuntu', sans-serif; */
+            /* font-family: 'Noto Sans Shavian', sans-serif; */
+            /* font-family: 'Mukta', sans-serif; */
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .blocks .content p {
+            word-wrap: break-all;
+            min-height: 2vh;
+            margin: 1vh 1.2vh 3vh 1.2vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* .blocks .content .info {
+            border-radius: 1vh;
+            width: 20vh;
+            height: 5vh;
+            margin-bottom: 2vh;
+        } */
 }
