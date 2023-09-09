@@ -19,7 +19,7 @@ const SponsorUs = () => {
 
 	return (
 		<>
-			<title>SponsorUs</title>
+			<title>Sponsor Us</title>
 			<Navbar />
 
 			{/* First Background image section */}
@@ -27,6 +27,8 @@ const SponsorUs = () => {
 				<img src={bckgd} alt="" />
 				<span>SPONSOR US</span>
 			</section>
+
+			<div className="whiteline"></div>
 
 			<section className="formsection" style={{ backgroundImage: `url(${bg})` }}>
 				<div className="booklet">
@@ -78,6 +80,14 @@ const SponsorUs = () => {
 					</form>
 				</div>
 			</section>
+
+			{/* <div className="whiteline"></div> */}
+
+			{/* Current Sponsors section */}
+			
+			<section className="sponsorsection" style={{ backgroundImage: `url(${bg})` }}>
+				<span>Our Sponsors</span>
+				</section>
 		</>
 	);
 };

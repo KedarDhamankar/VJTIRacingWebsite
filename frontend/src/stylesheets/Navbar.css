@@ -16,6 +16,7 @@
 .linklogo {
 	grid-column: 2/3;
 }
+
 .logo {
 	width: 11vw;
 }
@@ -38,7 +39,7 @@
 	font-size: 1.35vw;
 	font-weight: 600;
 	letter-spacing: 0.05rem;
-	text-shadow: 3px 2px 0.25rem rgba(0, 0, 0, 2);
+	text-shadow: 3px 2px 0.5rem rgba(0, 0, 0, 2);
 }
 
 .nav-mobile {
@@ -67,9 +68,11 @@
 
 	.slide {
 		height: 105vh;
-		background-color: rgb(22 21 21 / 89%);
+		width: 50vw;
+		background-color: rgba(22, 21, 21, 0.89);
 		transition: 0.5s ease;
-		transform: translateX(-50vw);
+		margin-left: -50vw;
+		/* transform: translateX(-50vw); */
 	}
 
 	.slide h1 {
@@ -99,7 +102,7 @@
 		transition: 0.2s ease-out;
 	}
 
-	input {
+	.nav-mobile input {
 		opacity: 0;
 		z-index: 2;
 		position: fixed;
@@ -158,7 +161,8 @@
 	}
 
 	input:checked ~ .slide {
-		transform: translateX(0);
+		/* transform: translateX(0); */
+		margin-left: 0;
 		width: 50vw;
 	}
 }
