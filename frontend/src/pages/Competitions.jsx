@@ -70,6 +70,7 @@ const Competitions = () => {
             <Block/>
             <Block/>
             <Block/>
+            {/* <Block/>
             <Block/>
             <Block/>
             <Block/>
@@ -78,8 +79,7 @@ const Competitions = () => {
             <Block/>
             <Block/>
             <Block/>
-            <Block/>
-            <Block/>
+            <Block/> */}
         </div>
      </section>
         
