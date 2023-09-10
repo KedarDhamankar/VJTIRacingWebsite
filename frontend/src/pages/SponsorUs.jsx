@@ -4,7 +4,9 @@ import Footer from "../components/footer";
 
 import "../stylesheets/SponsorUs.css";
 import bckgd from "../assets/SponsorUs/bckgd.jpg";
+// eslint-disable-next-line no-unused-vars
 import shape1 from "../assets/SponsorUs/1.png";
+// eslint-disable-next-line no-unused-vars
 import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
 
