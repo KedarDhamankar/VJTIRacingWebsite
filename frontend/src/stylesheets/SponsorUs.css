@@ -185,15 +185,15 @@
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
 	font-size: 6vh;
-	position: center;
-	margin-bottom: 7vh;
-	margin-top: 6vh;
+	/* position: center; */
+	margin-bottom: 3vh;
+	margin-top: 4vh;
 }
 
 .sponsorsection .pastspons .pastsponslandscape {
 	display: block;
-	width: 70vw;
-	height: 70vh;
+	width: 80vw;
+	height: 80vh;
 }
 
 .sponsorsection .pastspons .pastsponsportrait {
@@ -282,9 +282,9 @@
 		font-family: "Montserrat", sans-serif;
 		font-weight: 700;
 		font-size: 4vh;
-		position: center;
-		margin-bottom:0.5vh;
-		margin-top: 4vh;
+		/* position: center; */
+		margin-bottom:3vh;
+		margin-top: 6vh;
 	}
 	.sponsorsection .pastspons .pastsponslandscape {
 		display: none;
@@ -292,7 +292,8 @@
 
 	.sponsorsection .pastspons .pastsponsportrait {
 		display: block;
-		width: 80vw;
+		width: 82vw;
 		height: 80vh;
+		/* left:10vw; */
 	}
 }

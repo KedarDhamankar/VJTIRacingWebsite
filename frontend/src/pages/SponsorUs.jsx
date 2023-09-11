@@ -11,6 +11,9 @@ import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
 import cs1 from "../assets/SponsorUs/new sponsors/sponsors_landscape.png";
 import cs2 from "../assets/SponsorUs/new sponsors/sponsors_portrait.png";
+import ps1 from "../assets/SponsorUs/past/pastspons_landscape.png";
+import ps2 from "../assets/SponsorUs/past/pastspons_portrait.png";
+
 
 
 const SponsorUs = () => {
@@ -98,8 +101,8 @@ const SponsorUs = () => {
 				</div>
 				<div className="pastspons">
 					<h1>OUR PAST SPONSORS</h1>
-					<img className='pastsponslandscape' src={cs1} alt="" />
-					<img className='pastsponsportrait' src={cs2} alt="" />
+					<img className='pastsponslandscape' src={ps1} alt="" />
+					<img className='pastsponsportrait' src={ps2} alt="" />
 				</div>
 				
 				</section>
