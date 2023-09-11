@@ -9,6 +9,9 @@ import shape1 from "../assets/SponsorUs/1.png";
 // eslint-disable-next-line no-unused-vars
 import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
+import cs1 from "../assets/SponsorUs/new sponsors/sponsors_landscape.png";
+import cs2 from "../assets/SponsorUs/new sponsors/sponsors_portrait.png";
+
 
 const SponsorUs = () => {
 	function handleSubmit(e) {
@@ -88,7 +91,17 @@ const SponsorUs = () => {
 			{/* Current Sponsors section */}
 			
 			<section className="sponsorsection" style={{ backgroundImage: `url(${bg})` }}>
-				<span>Our Sponsors</span>
+				<div className="currentspons">
+					<h1>OUR SPONSORS</h1>
+					<img className='currsponslandscape' src={cs1} alt="" />
+					<img className='currsponsportrait' src={cs2} alt="" />
+				</div>
+				<div className="pastspons">
+					<h1>OUR PAST SPONSORS</h1>
+					<img className='pastsponslandscape' src={cs1} alt="" />
+					<img className='pastsponsportrait' src={cs2} alt="" />
+				</div>
+				
 				</section>
 		</>
 	);
