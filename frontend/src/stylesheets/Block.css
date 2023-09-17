@@ -27,6 +27,7 @@
 
 .blocks .content{
     background-color: cadetblue;
+    padding: 1vh 1.5vh 3vh 1.5vh;
 }
 .blocks .content h2{
     margin-top: 1vh;
@@ -38,11 +39,12 @@
 .blocks .content h4 {
     font-size: 2.5vh;
     font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1vh;
 }
 .blocks .content p{
     word-wrap: break-all;
     min-height: 2vh;
-    margin: 1vh 1.5vh 3vh 1.5vh;
+    margin: 0.3vh 0 0 0;
     font-family: 'Montserrat', sans-serif;
 }
 /* .blocks .content .info{
