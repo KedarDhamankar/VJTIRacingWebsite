@@ -12,7 +12,7 @@ import c1 from "../assets/Competitions/DSC_15.png";
 import c2 from "../assets/Competitions/DSC_15.png";
 import c3 from "../assets/Competitions/forza23.png";
 import c4 from "../assets/Competitions/DSC_15.png";
-import c5 from "../assets/Competitions/mb21.png";
+import c5 from "../assets/Competitions/comp.jpeg";
 import c6 from "../assets/Competitions/mb20.png";
 import c7 from "../assets/Competitions/mb19.png";
 import c8 from "../assets/Competitions/mb20.png";
