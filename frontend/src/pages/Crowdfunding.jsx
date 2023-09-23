@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "../stylesheets/Crowdfunding.css";
 import Navbar from "../components/Navbar";
@@ -76,9 +77,79 @@ const Crowdfunding = () => {
 				
 				</div>
 				
-				<div className="formsec">
-					
+				<div className="crowdform">
+
+					<div className="formy">
+						<div className="title">
+							<span>THANK YOU FOR BEING A PART OF VJTI RACING'S CROWDFUNDING CAMPAIGN! </span>
+						</div>
+						<form action="" className="fform">
+							<div>
+								<label>Email</label>
+								<br />
+								<input name="Email" type="email" />
+                            </div>
+							<div>
+								<label>Full Name</label>
+								<br />
+								<input name="Full name" type="text" />
+                            </div>
+							<div>
+								<label>Address</label>
+								<br />
+								<input name="Address" type="text" />
+                            </div>
+							<div>
+								<label>Contact Number</label>
+								<br />
+								<input name="Contact Number" type="text" />
+                            </div>
+							<div>
+								<label>Team you would like to support</label>
+								<br />
+								<select >
+									<option value="Motorbreath">Team Motorbreath 2024</option>
+									<option value="ForzaVJTI">Team ForzaVJTI 2024</option>
+								</select>
+                            </div>
+							<div>
+								<label>Amount</label>
+								<br />
+								<input name="Amount" type="text" />
+                            </div>
+							<div>
+								<label>Mode of Payment</label>
+								<br />
+								<select >
+									<option value="paytm">Paytm</option>
+									<option value="googlepay">Google Pay</option>
+									<option value="banktransfer">Bank Transfer</option>
+									<option value="cash">Cash</option>
+								</select>
+                            </div>
+							<div>
+								<label>Name of Point of Contact In VJTI Racing</label>
+								<br />
+								<input name="POC name" type="text" />
+                            </div>
+							<div>
+								<label>T-Shirt size</label>
+								<br />
+								<select >
+									<option value="XS">XS</option>
+									<option value="S">S</option>
+									<option value="M">M</option>
+									<option value="L">L</option>
+									<option value="XL">XL</option>
+									<option value="XXL">XXL</option>
+								</select>
+                            </div>
+						</form>
+
+					</div>
+
 				</div>
+				
 
 			</div>
 		</section>

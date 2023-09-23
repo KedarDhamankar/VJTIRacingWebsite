@@ -34,7 +34,7 @@
 .bg{
    background-color: black;
    height: 110vh;
-   width: 99vw;
+   width: 99.1vw;
 }
 
 .bg .floater{
@@ -104,5 +104,31 @@
 
 .bg .floater .cont:nth-child(2){
     margin-top: 3vh;
+}
+
+.crowdform{
+    height: 100vh;
+    width: 99.1vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.crowdform .formy{
+    color: whitesmoke;
+    width: 60vw;
+    background-color: rgba(0, 94, 96, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    margin: 7vh;
+    border-radius: 3vh;
+}
+.crowdform .formy .title{
+    word-break: break-word;
+    word-wrap: break-word;
+    width: 25vw;
 }
 
