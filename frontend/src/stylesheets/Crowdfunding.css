@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.back{
+    text-align: center;
+    overflow: hidden;
+}
+
+.back img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.back .head {
+    position: absolute;
+    top: 38%;
+    left: 23%;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 9vw;
+    text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1);
+}
+
+.darkenimage {
+    height: 115%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 40%;
+    margin-top: -115vh;
+}
+.bg{
+   background-color: black;
+   height: 110vh;
+   width: 99vw;
+}
+
+.bg .floater{
+    width: 42vw;
+    height: 35vh;
+    background-color: #008083;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20vh 0 0 20vh;
+    padding: 2vh 1vw 2vh 1vw;
+    margin: 5vh 0 5vh 5vw;
+    float: right;
+}
+
+.bg .floater .cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh 1vw 1vh 1vw;
+    width: 35vw;
+}
+.bg .floater img{
+    width: 16vw;
+    height: 33vh;
+    border-radius: 22vh;
+    object-fit: contain;
+}
+.bg .floater .cont .header{
+    margin: 1vh 1vh 1vh 1vh;
+    font-size: 4vh;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    text-shadow: 2px 1px #25252597;
+    /* width: 20vw;  */
+}
+.bg .floater .cont .des{
+    word-break:break-word;
+    word-wrap: break-word;
+    color: aliceblue;
+    width: 17vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
+}
+.bg .floater .cont button{
+    margin: 2vh;
+    outline: none;
+    border: none;
+    height: 5vh;
+    width: 12vw;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 1vh;
+}
+.bg .floater:nth-child(2){
+    float: left;
+    width: 38vw;
+    border-radius: 0 20vh 20vh 0;
+    margin: 60vh 5vh 5vh 0;
+    flex-direction: row-reverse;
+    background-color: #f71919;
+    padding: 2vh 1vw 2vh 1vw;
+}
+
+.bg .floater .cont:nth-child(2){
+    margin-top: 3vh;
+}
+
