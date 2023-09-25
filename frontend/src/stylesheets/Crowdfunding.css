@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-
-.back{
+.back {
     text-align: center;
     overflow: hidden;
 }
@@ -31,13 +30,13 @@
     opacity: 40%;
     margin-top: -115vh;
 }
-.bg{
-   background-color: black;
-   height: 110vh;
-   width: 99.1vw;
+.bg {
+    background-color: black;
+    /* height: 110vh; */
+    width: 99.1vw;
 }
 
-.bg .floater{
+.bg .floater {
     width: 42vw;
     height: 35vh;
     background-color: #008083;
@@ -51,38 +50,38 @@
     float: right;
 }
 
-.bg .floater .cont{
+.bg .floater .cont {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1vh 1vw 1vh 1vw;
     width: 35vw;
 }
-.bg .floater img{
+.bg .floater img {
     width: 16vw;
     height: 33vh;
     border-radius: 22vh;
     object-fit: contain;
 }
-.bg .floater .cont .header{
+.bg .floater .cont .header {
     margin: 1vh 1vh 1vh 1vh;
     font-size: 4vh;
     font-weight: 700;
-    font-family: 'Montserrat',sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-shadow: 2px 1px #25252597;
     /* width: 20vw;  */
 }
-.bg .floater .cont .des{
-    word-break:break-word;
+.bg .floater .cont .des {
+    word-break: break-word;
     word-wrap: break-word;
     color: aliceblue;
     width: 17vw;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2vh;
     font-weight: 500;
 }
-.bg .floater .cont button{
+.bg .floater .cont button {
     margin: 2vh;
     outline: none;
     border: none;
@@ -92,7 +91,7 @@
     color: aliceblue;
     border-radius: 1vh;
 }
-.bg .floater:nth-child(2){
+.bg .floater:nth-child(2) {
     float: left;
     width: 38vw;
     border-radius: 0 20vh 20vh 0;
@@ -102,18 +101,18 @@
     padding: 2vh 1vw 2vh 1vw;
 }
 
-.bg .floater .cont:nth-child(2){
+.bg .floater .cont:nth-child(2) {
     margin-top: 3vh;
 }
 
-.crowdform{
-    height: 100vh;
+.crowdform {
+    /* height: 100vh; */
     width: 99.1vw;
     background-color: black;
     display: flex;
     justify-content: center;
 }
-.crowdform .formy{
+.crowdform .formy {
     color: whitesmoke;
     width: 60vw;
     background-color: rgba(0, 94, 96, 0.6);
@@ -122,13 +121,141 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Montserrat',sans-serif;
-    margin: 7vh;
+    font-family: "Montserrat", sans-serif;
+    margin: 3vh;
     border-radius: 3vh;
 }
-.crowdform .formy .title{
+.crowdform .formy .title {
     word-break: break-word;
     word-wrap: break-word;
     width: 25vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.3vw;
+    display: block;
+    margin-bottom: 8vh;
 }
 
+.crowdform .formy {
+    width: 60vw;
+    /* height: 200vh; */
+    background-color: rgba(0, 94, 96, 0.6);
+    padding: 5vh 0;
+    border-radius: 2vh;
+    margin: 7vh auto;
+    color: #fff;
+}
+
+.crowdform .formy form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+}
+
+.crowdform .formy label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5vh;
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    /* text-align: left; */
+}
+
+.crowdform .formy input {
+    margin-bottom: 4vh;
+    width: 40vw;
+    border: none;
+    border-radius: 4%/60%;
+    background-color: rgba(73, 136, 141, 0.3);
+    color: #fff;
+    font-family: "", sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding: 2vh 1vw;
+    outline: none;
+}
+
+.crowdform .formy select {
+    margin-bottom: 5vh;
+    width: 42vw;
+    border: none;
+    border-radius: 4%/60%;
+    background-color: rgba(73, 136, 141, 0.299);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding: 2vh 1vw;
+    outline: none;
+}
+
+.crowdform .formy option {
+    margin-bottom: 5vh;
+    width: 40vw;
+    border: none;
+    border-radius: 4%/60%;
+    background-color: rgba(73, 136, 141, 0.751);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding: 2vh 1vw;
+    outline: none;
+}
+
+.crowdform .formy .fform .scan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+.crowdform .formy .fform .scan span {
+    margin: 1vh;
+}
+.tiers {
+    width: 99.1vw;
+    text-align: center;
+    background-color: black;
+    /* padding: 2vh; */
+}
+.tiers .view{
+    margin: 10vh;
+    font-size: 5vh;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.tiers .all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2vh 2vw 2vh 2vw;
+}
+.tiers .all .tier {
+    width: 14vw;
+    height: 35vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vh;
+    margin: 10vh;
+}
+.tiers .all .tier span{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+    text-shadow: 0px 0px 16px rgb(205, 172, 95,1);
+    /* -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.1vh;
+    -webkit-text-stroke-color: aqua; */
+}
