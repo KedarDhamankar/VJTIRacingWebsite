@@ -71,7 +71,7 @@ const Crowdfunding = () => {
                                 </div>
                             </div>
                         </div>
-
+                        {/* section 3 form for sponsors */}
                         <div
                             className="crowdform"
                             style={{ backgroundImage: `url(${bg1})` }}
@@ -186,40 +186,139 @@ const Crowdfunding = () => {
                         </div>
                     </div>
 
+                    {/* section 4 tiers */}
                     <div
                         className="tiers"
                         style={{ backgroundImage: `url(${bg1})` }}
                     >
-                        <span className="view">TIERS</span>
+                        <span className="ok">TIERS</span>
                         <div className="all">
                             <div className="tier">
-                                <span>QUARTZ</span>
-                                <span>&#60; &#8377;500</span>
+                                <div className="before">
+                                    <span>QUARTZ</span>
+                                    <br />
+                                    <span>&#60; &#8377;500</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>DIGITAL CERTIFICATE</li>
+                                        <li>DIGITAL POSTER</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>PEARL</span>
-                                <span>&#8377;500&#43;</span>
+                                <div className="before">
+                                    <span>PEARL</span>
+                                    <br />
+                                    <span>&#8377;500&#43;</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>TOPAZ</span>
-                                <span>&#8377;1000&#43;</span>
+                                <div className="before">
+                                    <span>TOPAZ</span>
+                                    <br />
+                                    <span>&#8377;1000&#43;</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                        <li>POSTER</li>
+                                        <li>WRIST BAND</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>SAPPHIRE</span>
-                                <span>&#8377;2000&#43;</span>
+                                <div className="before">
+                                    <span>SAPPHIRE</span>
+                                    <br />
+                                    <span>&#8377;2000&#43;</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                        <li>POSTER</li>
+                                        <li>WRIST BAND</li>
+                                        <li>CAP</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>EMERALD</span>
-                                <span>&#8377;5000&#43;</span>
+                                <div className="before">
+                                    <span>EMERALD</span>
+                                    <br />
+                                    <span>&#8377;5000&#43;</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                        <li>POSTER</li>
+                                        <li>WRIST BAND</li>
+                                        <li>CAP</li>
+                                        <li>VJTI RACING T-SHIRT</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>RUBY</span>
-                                <span>&#8377;10000&#43;</span>
+                                <div className="before">
+                                    <span>RUBY</span>
+                                    <br />
+                                    <span>&#8377;10000&#43;</span>
+                                </div>
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                        <li>POSTER</li>
+                                        <li>WRIST BAND & CAP</li>
+                                        <li>VJTI RACING T-SHIRT</li>
+                                        <li>
+                                            EXCULSIVE ENTRY TO ALL CLUB EVENTS
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div className="tier">
-                                <span>DIAMOND</span>
-                                <span>&#8377;20000&#43;</span>
+                                <div className="before">
+                                    <span>DIAMOND</span>
+                                    <br />
+                                    <span>&#8377;20000&#43;</span>
+                                </div>
+
+                                <div className="after">
+                                    <ul>
+                                        <li>STICKER & CAP</li>
+                                        <li>CERTIFICATE OF GRATITUDE</li>
+                                        <li>POSTER</li>
+                                        <li>WRIST BAND</li>
+                                        <li>VJTI RACING T-SHIRT</li>
+                                        <li>
+                                            EXCULSIVE ENTRY TO ALL CLUB EVENTS
+                                        </li>
+                                        <li>SPECIAL MENTION ON WEBSITE</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+
+                    {/* section 5 budget breakup */}
+                    <div
+                        className="budget"
+                        style={{ backgroundImage: `url(${bg1})` }}
+                    >
+                        <div className="txt">
+                            <span>
+                                BUDGET BREAKUP
+                            </span>
                         </div>
                     </div>
                 </div>
