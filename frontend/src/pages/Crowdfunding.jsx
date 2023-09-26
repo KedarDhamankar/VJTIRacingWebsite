@@ -1,14 +1,42 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { PieChart, Pie, Cell, Tooltip, Legend, Label } from "recharts";
 import "../stylesheets/Crowdfunding.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import bg from "../assets/Crowdfunding/bg.jpg";
+import im1 from "../assets/Crowdfunding/mb.png";
 import im2 from "../assets/Crowdfunding/forza.png";
+import im3 from "../assets/Crowdfunding/car.jpg";
 import qr from "../assets/Crowdfunding/scan.png";
 import bg1 from "../assets/SponsorUs/3.png";
 
 const Crowdfunding = () => {
+    const data01 = [
+        { name: "Registration", value: 100000 },
+        { name: "Raw material", value: 300000 },
+        { name: "Research & Development", value: 150000 },
+        { name: "Electronics", value: 400000 },
+        { name: "Logistics", value: 200000 },
+        { name: "Manufacturing", value: 400000 }
+    ];
+    const data02 = [
+        { name: "Administrative fees", value: 60000 },
+        { name: "Raw material & OEM", value: 100000 },
+        { name: "Tyres & Driver Equipment", value: 35000 },
+        { name: "Battery,Motor & Controller", value: 50000 },
+        { name: "Manufacturing", value: 40000 },
+        { name: "Logistics", value: 115000 }
+    ];
+    const COLORS = [
+        "#8884d8",
+        "#82ca9d",
+        "#FFBB28",
+        "#FF8042",
+        "#AF19FF",
+        "#249ea0",
+    ];
+    
     return (
         <>
             <section>
@@ -30,7 +58,7 @@ const Crowdfunding = () => {
                         style={{ backgroundImage: `url(${bg1})` }}
                     >
                         <div className="floater">
-                            <img src={im2} alt="" />
+                            <img src={im1} alt="" />
                             <div className="cont">
                                 <span className="header">TEAM MOTORBREATH</span>
 
@@ -316,9 +344,105 @@ const Crowdfunding = () => {
                         style={{ backgroundImage: `url(${bg1})` }}
                     >
                         <div className="txt">
-                            <span>
-                                BUDGET BREAKUP
-                            </span>
+                            <span>BUDGET BREAKUP</span>
+                        </div>
+
+                        <div className="breakup-1">
+                            <div className="photo-1">
+                                <img src={im1} alt="" className="image-1" />
+                                <img src={im3} alt="" className="image-2" />
+                            </div>
+
+                            <div className="chart-1">
+                                <div className="pie-1">
+                                    <PieChart width={500} height={500}>
+                                        <Legend width={500} align="center" />
+                                        <Pie
+                                            data={data01}
+                                            cx="50%"
+                                            cy="50%"
+                                            dataKey="value"
+                                            nameKey="name"
+                                            labelLine={false}
+                                            label
+                                            outerRadius={140}
+                                            fill="#8884d8"
+                                        >
+                                            {data01.map((entry, index) => (
+                                                <Cell
+                                                    key={`cell-${index}`}
+                                                    fill={
+                                                        COLORS[
+                                                            index %
+                                                                COLORS.length
+                                                        ]
+                                                    }
+                                                />
+                                            ))}
+                                            {/* {data.map((name, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                label={data[index % data.name]}
+                                            ></Cell>
+                                        ))} */}
+                                        </Pie>
+                                        <Tooltip />
+                                        
+                                    </PieChart>
+                                </div>
+
+                                <div className="total">
+                                    <span>TOTAL : 15,50,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="breakup-1">
+                            <div className="chart-1">
+                                <div className="pie-1">
+                                    <PieChart width={500} height={500}>
+                                        <Legend width={500} align="center" />
+                                        <Pie
+                                            data={data02}
+                                            cx="50%"
+                                            cy="50%"
+                                            dataKey="value"
+                                            nameKey="name"
+                                            labelLine={false}
+                                            label
+                                            outerRadius={140}
+                                            fill="#8884d8"
+                                        >
+                                            {data02.map((entry, index) => (
+                                                <Cell
+                                                    key={`cell-${index}`}
+                                                    fill={
+                                                        COLORS[
+                                                            index %
+                                                                COLORS.length
+                                                        ]
+                                                    }
+                                                />
+                                            ))}
+                                            {/* {data.map((name, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                label={data[index % data.name]}
+                                            ></Cell>
+                                        ))} */}
+                                        </Pie>
+                                        <Tooltip />
+                                    </PieChart>
+                                </div>
+                                <div className="total">
+                                    <span>TOTAL : 4,00,000</span>
+                                </div>
+                            </div>
+
+                            <div className="photo-1">
+                                <img src={im2} alt="" className="image-1" />
+                                <img src={im3} alt="" className="image-2" />
+                            </div>
                         </div>
                     </div>
                 </div>
