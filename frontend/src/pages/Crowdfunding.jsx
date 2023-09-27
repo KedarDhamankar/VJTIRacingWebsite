@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { PieChart, Pie, Cell, Tooltip, Legend, Label } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend, Label,LabelList } from "recharts";
 import "../stylesheets/Crowdfunding.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
@@ -355,8 +355,8 @@ const Crowdfunding = () => {
 
                             <div className="chart-1">
                                 <div className="pie-1">
-                                    <PieChart width={500} height={500}>
-                                        <Legend width={500} align="center" />
+                                    <PieChart width={700} height={500}>
+                                        <Legend width={700} align="center" />
                                         <Pie
                                             data={data01}
                                             cx="50%"
@@ -368,6 +368,13 @@ const Crowdfunding = () => {
                                             outerRadius={140}
                                             fill="#8884d8"
                                         >
+                                            <LabelList
+                                                dataKey="name"
+                                                position={"outside"}
+                                                angle="-45"
+                                                offset={40}
+                                                fill="#8884d8"
+                                            />
                                             {data01.map((entry, index) => (
                                                 <Cell
                                                     key={`cell-${index}`}
@@ -379,15 +386,8 @@ const Crowdfunding = () => {
                                                     }
                                                 />
                                             ))}
-                                            {/* {data.map((name, index) => (
-                                            <Cell
-                                                key={`cell-${index}`}
-                                                label={data[index % data.name]}
-                                            ></Cell>
-                                        ))} */}
                                         </Pie>
                                         <Tooltip />
-                                        
                                     </PieChart>
                                 </div>
 
