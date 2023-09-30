@@ -37,7 +37,16 @@ const Crowdfunding = () => {
         "#AF19FF",
         "#249ea0",
     ];
-    
+    function Submit(e) {
+        const formEle = document.querySelector("fform");
+        e.preventDefault();
+        console.log("Submitted");
+        const formData = new FormData(formEle);
+        fetch(
+            "https://script.google.com/macros/s/AKfycbww0m94Cl9Wt9U-9fkoMgkc2Y8baS3ywGMbuvd2qUMLPcITnPs8gCBKHeKOJZCunIag/exec",
+            { method: "POST", body: formData }
+        );
+    }
     return (
         <>
             <section>
@@ -109,10 +118,14 @@ const Crowdfunding = () => {
                                 <div className="title">
                                     <span>
                                         THANK YOU FOR BEING A PART OF VJTI
-                                        RACING'S CROWDFUNDING CAMPAIGN!{" "}
+                                        RACING'S CROWDFUNDING CAMPAIGN!
                                     </span>
                                 </div>
-                                <form action="" className="fform">
+                                <form
+                                
+                                    className="fform"
+                                    onSubmit={(e) => Submit(e)}
+                                >
                                     <div>
                                         <label>Email</label>
                                         <br />
@@ -121,7 +134,7 @@ const Crowdfunding = () => {
                                     <div>
                                         <label>Full Name</label>
                                         <br />
-                                        <input name="Full name" type="text" />
+                                        <input name="Name" type="text" />
                                     </div>
                                     <div>
                                         <label>Address</label>
@@ -132,7 +145,7 @@ const Crowdfunding = () => {
                                         <label>Contact Number</label>
                                         <br />
                                         <input
-                                            name="Contact Number"
+                                            name="ContactNumber"
                                             type="text"
                                         />
                                     </div>
@@ -141,7 +154,7 @@ const Crowdfunding = () => {
                                             Team you would like to support
                                         </label>
                                         <br />
-                                        <select>
+                                        <select name="Team">
                                             <option value="Motorbreath">
                                                 Team Motorbreath 2024
                                             </option>
@@ -158,7 +171,7 @@ const Crowdfunding = () => {
                                     <div>
                                         <label>Mode of Payment</label>
                                         <br />
-                                        <select>
+                                        <select name="Mode">
                                             <option value="paytm">Paytm</option>
                                             <option value="googlepay">
                                                 Google Pay
@@ -175,13 +188,13 @@ const Crowdfunding = () => {
                                             Racing
                                         </label>
                                         <br />
-                                        <input name="POC name" type="text" />
+                                        <input name="POCname" type="text" />
                                     </div>
                                     <div>
                                         <label>T-Shirt size</label>
                                         <br />
-                                        <select>
-                                            <option value="XS">XS</option>
+                                        <select name="ShirtSize">
+                                            <option value="XS" name="XS">XS</option>
                                             <option value="S">S</option>
                                             <option value="M">M</option>
                                             <option value="L">L</option>
@@ -209,6 +222,18 @@ const Crowdfunding = () => {
                                             </span>
                                             <span>IFSC Code : SBIN0011075</span>
                                         </div>
+                                    </div>
+                                    <div>
+                                        <label >Upload a file:</label>
+                                        <input type="file" id="screenshot" name="Screenshot"></input>
+                                    </div>
+                                    <div>
+                                        <center>
+                                            <input
+                                                type="submit"
+                                                className="submit"
+                                            />
+                                        </center>
                                     </div>
                                 </form>
                             </div>

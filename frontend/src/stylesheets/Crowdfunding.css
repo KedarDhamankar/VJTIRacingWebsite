@@ -217,6 +217,16 @@
 .crowdform .formy .fform .scan span {
     margin: 1vh;
 }
+
+.crowdform .formy .submit {
+	cursor: pointer;
+	width: 20vw;
+	height: 7vh;
+	border: none;
+	border-radius: 6%/50%;
+	background-color: rgba(73, 136, 141);
+	color: #fff;
+}
 .tiers {
     width: 99.1vw;
     text-align: center;
