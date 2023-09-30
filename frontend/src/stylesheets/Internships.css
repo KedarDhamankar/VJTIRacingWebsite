@@ -329,6 +329,9 @@
     letter-spacing: 0.1vw;
     text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
 }
+.mitacs3{
+    background-size: cover;
+}
 .mitacs3 img{
     object-fit: cover;
 }

@@ -25,6 +25,7 @@ import bg2 from "../assets/Internships/10.png";
 import logo2 from "../assets/Internships/mitacs.png";
 import logo3 from "../assets/Internships/ohio.png";
 import bg3 from "../assets/Internships/11.png";
+import bg4 from "../assets/Internships/12.png";
 import logo4 from "../assets/Internships/crompton.png";
 import logo5 from "../assets/Internships/ir.png";
 import logo6 from "../assets/Internships/tata.png";
@@ -193,7 +194,8 @@ const Internships = () => {
             </section>
             <section
                 className="mitacs3"
-                style={{ backgroundImage: `url(${bg3})` }}
+                style={{ backgroundImage: `url(${bg4})`,backgroundRepeat: "no-repeat",
+                        objectFit: "cover", }}
             >
                 <div className="whitediv">
                     <div className="pics">
