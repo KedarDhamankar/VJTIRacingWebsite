@@ -20,15 +20,61 @@
     -webkit-text-stroke-color: aqua;
 }
 .blocks img{
-    object-fit: contain;
-    max-width: 50vw;
-    max-height: 50vh;
+    object-fit: cover;
+    width: 27vw;
+    height: 45vh;
 }
 
 .blocks .content{
-    background-color: cadetblue;
+    background-color: #ffb15f ;
     padding: 1vh 1.5vh 3vh 1.5vh;
 }
+.blocks.blocks:nth-child(2n) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(2n+1) .content{
+    background-color: #ffb15f;
+}
+/* .blocks:nth-child(4) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(5) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(6) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(7) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(8) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(9) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(10) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(11) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(12) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(13) .content{
+    background-color: #249ea0;
+}
+.blocks:nth-child(14) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(15) .content{
+    background-color: #ffb15f;
+}
+.blocks:nth-child(16) .content{
+    background-color: #249ea0;
+} */
+
 .blocks .content h2{
     margin-top: 1vh;
     margin-bottom: 0.5vh;
