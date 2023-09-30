@@ -28,13 +28,37 @@
 }
 
 .CSIR {
-    padding: 11vh 15vw;
+  width: 99.1vw;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  object-fit: cover;
 }
 
-.CSIR img {
+
+.CSIR .head img{
+    width: 60vw;
+    height: 25vh;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
 }
-
+.CSIR  span{
+    color: white;
+    font-size: 3vh;
+    font-weight: 500;
+    font-family: "Lilita One", cursive;
+    letter-spacing: 0.1vw;
+    margin-top: -8vh;
+}
 .CSIR .pics {
     display: flex;
     flex-direction: row;
@@ -43,6 +67,8 @@
     column-gap: 5vw;
     row-gap: 3vh;
     text-align: center;
+    padding: 11vh 15vw;
+    margin-top: -7vh;
 }
 
 .CSIR .pics .box1 {
@@ -62,21 +88,55 @@
 }
 
 .BARC {
-    padding: 11vh 15vw;
+  width: 99.1vw;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  object-fit: cover;
 }
-
-.BARC img {
+.BARC .barc-head{
+    color: #353430;
+    font-size: 9vh;
+    font-weight: 600;
+    font-family: "Lilita One", cursive;
+    margin-top: 5vh;
+}
+.BARC .barc-head2{
+    font-size: 4vh;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+     color: #353430;
+     letter-spacing: 0.1vw;
+     margin-top: -3vh;
+}
+.BARC .barc-logo{
+    height: 15vh;
+    width: 10vw;
     object-fit: cover;
+    position: absolute;
+    right: 2vw;
+    top: 258vh;
+}
+.BARC .barc-logo img{
+    height: 15vh;
+    width: 10vw;
 }
 
 .BARC .pics {
     display: flex;
+    width: 99.1vw;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 5vw;
     row-gap: 3vh;
     text-align: center;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
 }
 
 .BARC .pics .box1 {
@@ -88,6 +148,7 @@
 .BARC .pics .box1 img {
     height: 38vh;
     width: 12vw;
+    object-fit: cover;
 }
 
 .BARC .pics .box1 span {
@@ -97,66 +158,81 @@
     font-size: 2vw;
 }
 
-.mitacs {
-    padding: 5vh 10vw;
+.research {
+    width: 99.1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
 }
 
-.mitacs img {
-    object-fit: cover;
-}
-
-.mitacs .whitediv {
+.research .whitediv{
     background-color: rgba(255, 255, 255, 0.542);
     text-align: center;
     width: 60vw;
-    margin: 0 auto;
+    margin: 8vh auto;
     padding: 4vh 0 0 0;
+    
 }
-
-.mitacs span {
+.research .whitediv span{
     font-family: "Lilita One", cursive;
     color: black;
     font-size: 3vw;
 }
-
-.mitacs .pics {
+.research .whitediv .grid{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.research .whitediv .grid img{
+    height: 10vh;
+    width: 10vw;
+    object-fit: contain;
+}
+
+.research .whitediv .grid .pics{
+     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 5vw;
-    row-gap: 3vh;
     text-align: center;
-    padding: 5vh 0;
+    margin: 5vh;
 }
 
-.mitacs .pics .box1 {
+.research .whitediv .grid .pics .box1 {
     width: 15vw;
 }
 
-.mitacs .pics .box1 img {
+.research .whitediv .grid .pics .box1 img {
     height: 38vh;
     width: 12vw;
+    object-fit: cover;
+    margin-bottom: 3vh;
 }
 
-.mitacs .pics .box1 span {
+.research .whitediv .grid .pics span {
     font-family: "Lilita One", cursive;
     color: #253439;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 3.2vh;
+    margin-top: 3vh;
 }
-.mitacs .pics .box1 h4 {
+.research .whitediv .grid .pics .box1 h4 {
     font-family: "Lilita One", cursive;
     color: #390a47;
-    margin-top: 1vh;
+    margin-top: 3vh;
     font-weight: 700;
-    font-size: 1vw;
-    padding: 0 4vw;
+    font-size: 2.5vh;
+    padding: 0 2vw;
 }
 
-.mitacs2 {
-    /* padding: 5vh 10vw; */
-}
+
 
 .mitacs2 img {
     object-fit: cover;
@@ -182,32 +258,39 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 5vw;
-    row-gap: 3vh;
     text-align: center;
+    row-gap: 3vh;
     padding: 5vh 0;
+}
+.mitacs2 .pics img{
+    height: 12vh;
+    width: 12vw;
+    object-fit: contain;
 }
 
 .mitacs2 .pics .box1 {
     width: 15vw;
 }
 .mitacs2 .pics .box1:nth-child(1) {
-    text-align: right;
+    text-align: left;
 }
 
 .mitacs2 .pics .box1:nth-child(2) {
-    text-align: left;
+    text-align: right;
 }
 
 .mitacs2 .pics .box1 img {
     height: 42vh;
-    width: 14vw;
+    width: 16vw;
+    object-fit: cover;
+    margin-bottom: 2vh;
 }
 
 .mitacs2 .pics .box1 span {
     font-family: "Lilita One", cursive;
     color: #fff;
-    font-weight: 700;
-    font-size: 1.9vw;
+    font-weight: 500;
+    font-size: 4vh;
     text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
 }
 
@@ -220,16 +303,86 @@
 
 .mitacs2 .pics .box1 h4 {
     font-family: "Lilita One", cursive;
-    color: #81c13f;
+    color: #0159a9;
     margin-top: 1vh;
-    font-weight: 700;
-    font-size: 1.3vw;
+    font-weight: 500;
+    font-size:3vh;
     text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    letter-spacing: 0.1vw;
+    text-align: right;
+}
+.mitacs2 .pics .box1 h4:nth-child(2) {
+    color: #2e318f;
+    letter-spacing: 0.1vw;
+    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    text-align: left;
 }
 
 .mitacs2 .pics .box1:nth-child(2) h4 {
-    color: #2e318f;
+    color: #0159a9  ;
+    letter-spacing: 0.1vw;
+    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    text-align: right;
 }
-.mitacs2 .pics .box1:nth-child(1) h4:nth-child(3) {
-    color: #0159a9;
+.mitacs2 .pics .box1:nth-child(2) h4:nth-child(2) {
+    color:   #81c13f;
+    letter-spacing: 0.1vw;
+    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+}
+.mitacs3 img{
+    object-fit: cover;
+}
+.mitacs3 .whitediv {
+    background-color: rgba(255, 255, 255, 0.542);
+    margin: 0 auto;
+    padding: 8vh 0;
+}
+.mitacs3 .whitediv .pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 9vw;
+    text-align: center;
+    row-gap: 3vh;
+    padding: 5vh 0;
+}
+
+.mitacs3 .whitediv .pics .box1 {
+    width: 15vw;
+}
+.mitacs3 .whitediv .pics .box1 img {
+    height: 45vh;
+    width: 16vw;
+    object-fit: cover;
+    margin-bottom: 2vh;
+}
+.mitacs3 .whitediv .pics .box1 span{
+    font-family: "Lilita One", cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 3.5vh;
+    text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
+    letter-spacing: 0.1vw;
+
+}
+.mitacs3 .whitediv .pics .box1 h4{
+    font-family: "Lilita One", cursive;
+    color: #fbdb59 ;
+    font-weight: 400;
+    font-size:2.2vh;
+    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    letter-spacing: 0.1vw;
+    margin-top: 0.5vh;
+
+}
+.mitacs3 .whitediv .pics .box1 .pic{
+    height: 10vh;
+    width: 15vw;
+    margin-bottom: 2vh;
+}
+.mitacs3 .whitediv .pics .box1 .pic img{
+    height: 10vh;
+    width: 15vw;
+    object-fit: contain;
 }

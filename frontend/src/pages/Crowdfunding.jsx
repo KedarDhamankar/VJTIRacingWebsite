@@ -7,7 +7,8 @@ import Footer from "../components/footer";
 import bg from "../assets/Crowdfunding/bg.jpg";
 import im1 from "../assets/Crowdfunding/mb.png";
 import im2 from "../assets/Crowdfunding/forza.png";
-import im3 from "../assets/Crowdfunding/car.jpg";
+import im3 from "../assets/Crowdfunding/car2.png";
+import im4 from "../assets/Crowdfunding/car.png";
 import qr from "../assets/Crowdfunding/scan.png";
 import bg1 from "../assets/SponsorUs/3.png";
 
@@ -368,13 +369,13 @@ const Crowdfunding = () => {
                                             outerRadius={140}
                                             fill="#8884d8"
                                         >
-                                            <LabelList
+                                            {/* <LabelList
                                                 dataKey="name"
                                                 position={"outside"}
                                                 angle="-45"
                                                 offset={40}
                                                 fill="#8884d8"
-                                            />
+                                            /> */}
                                             {data01.map((entry, index) => (
                                                 <Cell
                                                     key={`cell-${index}`}
@@ -441,7 +442,7 @@ const Crowdfunding = () => {
 
                             <div className="photo-1">
                                 <img src={im2} alt="" className="image-1" />
-                                <img src={im3} alt="" className="image-2" />
+                                <img src={im4} alt="" className="image-2" />
                             </div>
                         </div>
                     </div>
