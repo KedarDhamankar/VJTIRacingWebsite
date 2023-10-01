@@ -43,7 +43,7 @@ const Crowdfunding = () => {
         console.log("Submitted");
         const formData = new FormData(formEle);
         fetch(
-            "https://script.google.com/macros/s/AKfycbww0m94Cl9Wt9U-9fkoMgkc2Y8baS3ywGMbuvd2qUMLPcITnPs8gCBKHeKOJZCunIag/exec",
+            "https://script.google.com/macros/s/AKfycbw0JLrg5F2C7zfzH34D10cNR1SdqdadVTdWOzrAVs9eoMWvNZZwO_84ZQ_qE9Hez-PW/exec",
             { method: "POST", body: formData }
         );
     }
@@ -225,6 +225,7 @@ const Crowdfunding = () => {
                                     </div>
                                     <div>
                                         <label >Upload a file:</label>
+                                        <br />
                                         <input type="file" id="screenshot" name="Screenshot"></input>
                                     </div>
                                     <div>
