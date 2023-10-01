@@ -23,7 +23,7 @@ import barc from "../assets/Internships/9.png";
 import logo from "../assets/Internships/barc.png";
 import bg2 from "../assets/Internships/10.png";
 import logo2 from "../assets/Internships/mitacs.png";
-import logo3 from "../assets/Internships/ohio.png";
+import logo3 from "../assets/Internships/Ohio.png";
 import bg3 from "../assets/Internships/11.png";
 import bg4 from "../assets/Internships/12.png";
 import logo4 from "../assets/Internships/crompton.png";
