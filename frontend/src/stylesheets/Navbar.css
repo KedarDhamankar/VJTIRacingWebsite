@@ -19,6 +19,12 @@
 
 .logo {
     width: 11vw;
+    display: block;
+    position: relative;
+}
+
+.logo:hover {
+    bottom: 0.2rem;
 }
 
 .navlinks {
