@@ -17,7 +17,7 @@ import shivam from "../assets/Internships/Shivam.png";
 import shivraj from "../assets/Internships/Shivraj.png";
 import shraddha from "../assets/Internships/Shraddha.png";
 // backgnd imgs
-import bg1 from "../assets/Internships/8.png";
+import bg1 from "../assets/Internships/plane.png";
 import csir from "../assets/Internships/7.png";
 import barc from "../assets/Internships/9.png";
 import logo from "../assets/Internships/barc.png";
@@ -49,8 +49,6 @@ const Internships = () => {
                     className="CSIR"
                     style={{
                         backgroundImage: `url(${bg1})`,
-                        backgroundRepeat: "no-repeat",
-                        objectFit: "cover",
                     }}
                 >
                     <div className="head">
@@ -87,13 +85,9 @@ const Internships = () => {
                     className="BARC"
                     style={{
                         backgroundImage: `url(${barc})`,
-                        backgroundRepeat: "no-repeat",
-                        objectFit: "cover",
                     }}
                 >
-                    <span className="barc-head">
-                        <i>BARC</i>
-                    </span>
+                    <span className="barc-head">BARC</span>
                     <br />
                     <span className="barc-head2">Research Interns</span>
 
@@ -164,7 +158,12 @@ const Internships = () => {
 
             <section
                 className="mitacs2"
-                style={{ backgroundImage: `url(${bg3})` }}
+                style={{
+                    backgroundImage: `url(${bg3})`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPositionY: "center",
+                }}
             >
                 <div className="whitediv">
                     {/* <span>
@@ -175,7 +174,9 @@ const Internships = () => {
                         <div className="box1">
                             <img src={shraddha} alt="" />
                             <i>
-                                <span>SHRADDHA BEDRE</span>
+                                <span>SHRADDHA</span>
+                                <br />
+                                <span>BEDRE</span>
                                 <h4>CROMPTON GREAVES</h4>
                                 <h4>IOT INTERN</h4>
                             </i>
@@ -194,8 +195,11 @@ const Internships = () => {
             </section>
             <section
                 className="mitacs3"
-                style={{ backgroundImage: `url(${bg4})`,backgroundRepeat: "no-repeat",
-                        objectFit: "cover", }}
+                style={{
+                    backgroundImage: `url(${bg4})`,
+                    backgroundRepeat: "no-repeat",
+                    objectFit: "cover",
+                }}
             >
                 <div className="whitediv">
                     <div className="pics">
