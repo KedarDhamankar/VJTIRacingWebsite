@@ -28,19 +28,20 @@
 }
 
 .CSIR {
-  width: 99.1vw;
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  object-fit: cover;
+    width: 99.1vw;
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    object-fit: cover;
+    padding: 8vh 0;
 }
 
-
-.CSIR .head img{
+.CSIR .head img {
     width: 60vw;
     height: 25vh;
     object-fit: cover;
@@ -51,7 +52,7 @@
     flex-wrap: wrap;
     margin-top: 5vh;
 }
-.CSIR  span{
+.CSIR span {
     color: white;
     font-size: 3vh;
     font-weight: 500;
@@ -88,41 +89,41 @@
 }
 
 .BARC {
-  width: 99.1vw;
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  object-fit: cover;
+    width: 99.1vw;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    object-fit: cover;
 }
-.BARC .barc-head{
+.BARC .barc-head {
     color: #353430;
     font-size: 9vh;
     font-weight: 600;
     font-family: "Lilita One", cursive;
     margin-top: 5vh;
 }
-.BARC .barc-head2{
+.BARC .barc-head2 {
     font-size: 4vh;
     font-weight: 700;
     font-family: "Oswald", sans-serif;
-     color: #353430;
-     letter-spacing: 0.1vw;
-     margin-top: -3vh;
+    color: #353430;
+    letter-spacing: 0.1vw;
+    margin-top: -3vh;
 }
-.BARC .barc-logo{
+.BARC .barc-logo {
     height: 15vh;
     width: 10vw;
     object-fit: cover;
     position: absolute;
     right: 2vw;
-    top: 258vh;
+    top: 274vh;
 }
-.BARC .barc-logo img{
-    height: 15vh;
+.BARC .barc-logo img {
+    /* height: 15vh; */
     width: 10vw;
 }
 
@@ -168,20 +169,19 @@
     background-size: cover;
 }
 
-.research .whitediv{
+.research .whitediv {
     background-color: rgba(255, 255, 255, 0.542);
     text-align: center;
     width: 60vw;
     margin: 8vh auto;
     padding: 4vh 0 0 0;
-    
 }
-.research .whitediv span{
+.research .whitediv span {
     font-family: "Lilita One", cursive;
     color: black;
     font-size: 3vw;
 }
-.research .whitediv .grid{
+.research .whitediv .grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -190,14 +190,14 @@
     text-align: center;
 }
 
-.research .whitediv .grid img{
+.research .whitediv .grid img {
     height: 10vh;
     width: 10vw;
     object-fit: contain;
 }
 
-.research .whitediv .grid .pics{
-     display: flex;
+.research .whitediv .grid .pics {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -232,18 +232,14 @@
     padding: 0 2vw;
 }
 
-
-
 .mitacs2 img {
     object-fit: cover;
+    text-align: center;
 }
 
 .mitacs2 .whitediv {
-    background-color: rgba(255, 255, 255, 0.542);
-    text-align: center;
-    /* width: 100vw; */
     margin: 0 auto;
-    padding: 8vh 0;
+    padding: 10vh 0;
 }
 
 .mitacs2 span {
@@ -258,18 +254,18 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 5vw;
-    text-align: center;
+    /* text-align: center; */
     row-gap: 3vh;
     padding: 5vh 0;
 }
-.mitacs2 .pics img{
+.mitacs2 .pics img {
     height: 12vh;
     width: 12vw;
     object-fit: contain;
 }
 
 .mitacs2 .pics .box1 {
-    width: 15vw;
+    width: 16vw;
 }
 .mitacs2 .pics .box1:nth-child(1) {
     text-align: left;
@@ -293,54 +289,40 @@
     font-size: 4vh;
     text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
 }
-
-.mitacs2 .pics .box1:nth-child(1) span {
-    padding-left: 4vw;
-}
-.mitacs2 .pics .box1:nth-child(2) span {
-    padding-right: 4vw;
-}
-
 .mitacs2 .pics .box1 h4 {
     font-family: "Lilita One", cursive;
     color: #0159a9;
     margin-top: 1vh;
     font-weight: 500;
-    font-size:3vh;
-    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    font-size: 3vh;
+    /* text-shadow: 1px 1px 4px rgba(66, 68, 90, 1); */
     letter-spacing: 0.1vw;
     text-align: right;
 }
 .mitacs2 .pics .box1 h4:nth-child(2) {
     color: #2e318f;
     letter-spacing: 0.1vw;
-    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
     text-align: left;
 }
 
 .mitacs2 .pics .box1:nth-child(2) h4 {
-    color: #0159a9  ;
+    color: #81c13f;
     letter-spacing: 0.1vw;
-    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
     text-align: right;
 }
-.mitacs2 .pics .box1:nth-child(2) h4:nth-child(2) {
-    color:   #81c13f;
+.mitacs2 .pics .box1:nth-child(2) h4:nth-child(1) {
+    color: #81c13f;
     letter-spacing: 0.1vw;
-    text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
 }
-.mitacs3{
+.mitacs3 {
     background-size: cover;
+    padding: 10vh 0;
 }
-.mitacs3 img{
+.mitacs3 img {
     object-fit: cover;
 }
-.mitacs3 .whitediv {
-    background-color: rgba(255, 255, 255, 0.542);
-    margin: 0 auto;
-    padding: 8vh 0;
-}
-.mitacs3 .whitediv .pics{
+.mitacs3 .whitediv .pics {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -360,31 +342,29 @@
     object-fit: cover;
     margin-bottom: 2vh;
 }
-.mitacs3 .whitediv .pics .box1 span{
+.mitacs3 .whitediv .pics .box1 span {
     font-family: "Lilita One", cursive;
     color: #fff;
     font-weight: 500;
     font-size: 3.5vh;
     text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
     letter-spacing: 0.1vw;
-
 }
-.mitacs3 .whitediv .pics .box1 h4{
+.mitacs3 .whitediv .pics .box1 h4 {
     font-family: "Lilita One", cursive;
-    color: #fbdb59 ;
+    color: #fbdb59;
     font-weight: 400;
-    font-size:2.2vh;
+    font-size: 2.2vh;
     text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
     letter-spacing: 0.1vw;
     margin-top: 0.5vh;
-
 }
-.mitacs3 .whitediv .pics .box1 .pic{
+.mitacs3 .whitediv .pics .box1 .pic {
     height: 10vh;
     width: 15vw;
     margin-bottom: 2vh;
 }
-.mitacs3 .whitediv .pics .box1 .pic img{
+.mitacs3 .whitediv .pics .box1 .pic img {
     height: 10vh;
     width: 15vw;
     object-fit: contain;
