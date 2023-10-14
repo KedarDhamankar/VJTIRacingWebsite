@@ -246,9 +246,10 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* margin: 5vh; */
 }
 .tiers .all .tier {
-    width: 15.1vw;
+    width: 16vw;
     height: 42vh;
     background-image: linear-gradient(
         45deg,
@@ -270,8 +271,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 4vh;
-    margin: 10vh;
+    margin: 7vh;
     cursor: pointer;
+    padding: 3vh 1vh;
 }
 .tiers .all .tier .before {
     display: block;
@@ -296,6 +298,7 @@
     font-size: 2.7vh;
     font-weight: 600;
     text-shadow: 0px 0px 10px rgb(152, 115, 28);
+    padding: 1vh;
 }
 .tiers .all .tier:hover .after {
     display: block;
