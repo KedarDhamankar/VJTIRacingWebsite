@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useRef, useState, React } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";

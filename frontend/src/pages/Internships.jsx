@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 import Navbar from "../components/Navbar";
@@ -7,9 +8,13 @@ import "../stylesheets/Internships.css";
 // importing images
 import motorbreath from "../assets/Teams/motorbreath.jpg";
 import rohan from "../assets/Internships/Rohan.png";
+import jatin from "../assets/Internships/jatin.png";
+import krish from "../assets/Internships/krish.png";
 import atharva from "../assets/Internships/Atharva.png";
 import chaitanya from "../assets/Internships/Chaitanya.png";
 import harsh from "../assets/Internships/Harsh.png";
+import siddharth from "../assets/Internships/siddharth.png";
+import madhusugandh from "../assets/Internships/madhusugandh.png";
 import ritesh from "../assets/Internships/Ritesh.png";
 import chandrashekhar from "../assets/Internships/Chandrashekhar.png";
 import kartika from "../assets/Internships/Kartika.png";
@@ -63,7 +68,7 @@ const Internships = () => {
                             <span>ROHAN ADKHALE</span>
                         </div>
                         <div className="box1">
-                            <img src={rohan} alt="" />
+                            <img src={jatin} alt="" />
                             <span>JATIN BARANWAL</span>
                         </div>
                         <div className="box1">
@@ -101,7 +106,7 @@ const Internships = () => {
                         </div>
 
                         <div className="box1">
-                            <img src={rohan} alt="" />
+                            <img src={krish} alt="" />
                             <span>KRISH SHAH</span>
                         </div>
                         <div className="box1">
@@ -129,7 +134,7 @@ const Internships = () => {
                             <div className="pics">
                                 <img src={logo3} alt="" />
                                 <div className="box1">
-                                    <img src={rohan} alt="" />
+                                    <img src={siddharth} alt="" />
                                     <span>SIDDHARTH SANKHE</span>
                                     <h4>
                                         <i>
@@ -216,7 +221,7 @@ const Internships = () => {
                         </div>
 
                         <div className="box1">
-                            <img src={chandrashekhar} alt="" />
+                            <img src={madhusugandh} alt="" />
                             <div className="pic">
                                 <img src={logo7} alt="" />
                             </div>
