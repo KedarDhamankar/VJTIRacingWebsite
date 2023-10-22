@@ -30,7 +30,7 @@ import mbashwin from "../assets/Teams/Motorbreath/ashwin dias.jpg";
 import mbrahul from "../assets/Teams/Motorbreath/rahul barbude.jpg";
 import mbrajvar from "../assets/Teams/Motorbreath/rajvardhan sawant.jpeg";
 import mbatharva from "../assets/Teams/Motorbreath/atharva bagwe.jpg";
-// import mbkunalborole from "../assets/Teams/Motorbreath/kunal borole.jpg";
+import mbkunalborole from "../assets/Teams/Motorbreath/kunal.png";
 // Power Trans
 import mbsahil from "../assets/Teams/Motorbreath/sahil_dhoble.jpg";
 import mbdev from "../assets/Teams/Motorbreath/dev ganatra.jpg";
@@ -68,6 +68,7 @@ import fzpranjal from "../assets/Teams/Forza/pranjal patil.jpg";
 import fztanmay from "../assets/Teams/Forza/tanmay dikey.jpg";
 import fzmedha from "../assets/Teams/Forza/medha sati.jpg";
 import fzkartik from "../assets/Teams/Forza/kartik mahalle.jpg";
+import fzneil from "../assets/Teams/Forza/niel.png";
 
 // Electronics
 import fzharsh from "../assets/Teams/Forza/harsh deosthali.jpeg";
@@ -270,7 +271,7 @@ const Teams = () => {
                                     <span>Atharva Bagwe</span>
                                 </div>
                                 <div className="box">
-                                    <img src={mbtaran} alt="" />
+                                    <img src={mbkunalborole} alt="" />
                                     <span>Kunal Borole</span>
                                 </div>
                             </div>
@@ -453,7 +454,7 @@ const Teams = () => {
                             <span className="heading">BRAKES</span>
                             <div className="picsflex chassis vd ">
                                 <div className="box">
-                                    <img src={mbashwin} alt="" />
+                                    <img src={fzneil} alt="" />
                                     <span>Niel James</span>
                                     <span>
                                         <i>Sector Head</i>
