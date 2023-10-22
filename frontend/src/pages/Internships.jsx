@@ -45,6 +45,7 @@ const Internships = () => {
 
             <section className="internshipsbg">
                 <img src={motorbreath} alt="" />
+                <div className="darkenimage"></div>
                 <span>INTERNSHIPS</span>
             </section>
 

@@ -22,6 +22,7 @@ const Activities = () => {
             <div className="activities">
                 <div className="activitiesbg">
                     <img src={motorbreath} alt="" />
+                    <div className="darkenimage"></div>
                     <span>ACTIVITIES</span>
                 </div>
                 <div className="whiteline"></div>

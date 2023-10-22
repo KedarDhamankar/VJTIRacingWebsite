@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 
 import "../stylesheets/Navbar.css";
 import vrlogo from "../assets/VR_logo_1.png";

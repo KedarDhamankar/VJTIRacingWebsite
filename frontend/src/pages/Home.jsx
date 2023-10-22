@@ -14,9 +14,6 @@ import hp3 from "../assets/Home/hp3.jpg";
 import hp4 from "../assets/Home/hp4.jpg";
 import { useNavigate } from "react-router-dom";
 
-// import { FaMapMarked, FaPhoneAlt, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-// import { GrMail } from "react-icons/gr";
-
 const Home = () => {
 	const ref = useRef(null);
 
@@ -34,7 +31,6 @@ const Home = () => {
         navigate('/Activities');
     };
 	
-
 
 	return (
         <>
