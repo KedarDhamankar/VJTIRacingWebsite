@@ -33,9 +33,7 @@ const Home = () => {
 	const navigateToAct = () => {
         navigate('/Activities');
     };
-	const navigateToVJTI =()=>{
-		navigate('https://vjti.ac.in/');
-	};
+	
 
 
 	return (
@@ -155,7 +153,15 @@ const Home = () => {
                             collaborative research, industry connections and
                             strong alumni network.
                         </span>
-                        <button onClick={navigateToVJTI}>Know More</button>
+                        <button>
+                            {" "}
+                            <a
+                                href="https://vjti.ac.in/"
+                                style={{ textDecoration: "none" , color:"white"}}
+                            >
+                                Know More
+                            </a>
+                        </button>
                     </div>
                     <div
                         className="bgimg"
