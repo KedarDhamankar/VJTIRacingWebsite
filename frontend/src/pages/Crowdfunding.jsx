@@ -11,8 +11,15 @@ import im3 from "../assets/Crowdfunding/car2.png";
 import im4 from "../assets/Crowdfunding/car.png";
 import qr from "../assets/Crowdfunding/scan.png";
 import bg1 from "../assets/SponsorUs/3.png";
+import { useNavigate } from "react-router-dom";
 
 const Crowdfunding = () => {
+    
+    const navigate = useNavigate();
+    const navigateToSpons = () => {
+        navigate("/SponsorUs");
+    };
+    
     const data01 = [
         { name: "Registration", value: 100000 },
         { name: "Raw material", value: 300000 },
@@ -30,12 +37,12 @@ const Crowdfunding = () => {
         { name: "Logistics", value: 115000 }
     ];
     const COLORS = [
-        "#8884d8",
-        "#82ca9d",
-        "#FFBB28",
-        "#FF8042",
-        "#AF19FF",
+        "#d85c18",
+        "#f78104",
+        "#f6a631",
         "#249ea0",
+        "#008083",
+        "#005f60",
     ];
     function Submit(e) {
         const formEle = document.querySelector("fform");
@@ -83,7 +90,9 @@ const Crowdfunding = () => {
                                     </p>
                                 </div>
                                 <div className="button">
-                                    <button>Click here to sponsor us</button>
+                                    <button onClick={navigateToSpons}>
+                                        Click here to sponsor us
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +114,9 @@ const Crowdfunding = () => {
                                     </p>
                                 </div>
                                 <div className="button">
-                                    <button>Click here to sponsor us</button>
+                                    <button onClick={navigateToSpons}>
+                                        Click here to sponsor us
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -122,24 +133,23 @@ const Crowdfunding = () => {
                                     </span>
                                 </div>
                                 <form
-                                
                                     className="fform"
                                     onSubmit={(e) => Submit(e)}
                                 >
                                     <div>
                                         <label>Email</label>
                                         <br />
-                                        <input name="Email" type="email" />
+                                        <input name="Email" type="email" required/>
                                     </div>
                                     <div>
                                         <label>Full Name</label>
                                         <br />
-                                        <input name="Name" type="text" />
+                                        <input name="Name" type="text" required/>
                                     </div>
                                     <div>
                                         <label>Address</label>
                                         <br />
-                                        <input name="Address" type="text" />
+                                        <input name="Address" type="text" required/>
                                     </div>
                                     <div>
                                         <label>Contact Number</label>
@@ -147,6 +157,7 @@ const Crowdfunding = () => {
                                         <input
                                             name="ContactNumber"
                                             type="text"
+                                            required
                                         />
                                     </div>
                                     <div>
@@ -194,7 +205,9 @@ const Crowdfunding = () => {
                                         <label>T-Shirt size</label>
                                         <br />
                                         <select name="ShirtSize">
-                                            <option value="XS" name="XS">XS</option>
+                                            <option value="XS" name="XS">
+                                                XS
+                                            </option>
                                             <option value="S">S</option>
                                             <option value="M">M</option>
                                             <option value="L">L</option>
@@ -224,9 +237,14 @@ const Crowdfunding = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <label >Upload a file:</label>
+                                        <label>Upload a file:</label>
                                         <br />
-                                        <input type="file" id="screenshot" name="Screenshot"></input>
+                                        <input
+                                            type="file"
+                                            id="screenshot"
+                                            name="Screenshot"
+                                            required
+                                        ></input>
                                     </div>
                                     <div>
                                         <center>
@@ -451,12 +469,7 @@ const Crowdfunding = () => {
                                                     }
                                                 />
                                             ))}
-                                            {/* {data.map((name, index) => (
-                                            <Cell
-                                                key={`cell-${index}`}
-                                                label={data[index % data.name]}
-                                            ></Cell>
-                                        ))} */}
+                                            
                                         </Pie>
                                         <Tooltip />
                                     </PieChart>

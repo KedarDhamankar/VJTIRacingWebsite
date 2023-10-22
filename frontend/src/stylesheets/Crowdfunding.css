@@ -231,10 +231,12 @@
     width: 99.1vw;
     text-align: center;
     background-color: black;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 .tiers .ok {
     margin-top: 10vh;
-    font-size: 5vh;
+    font-size: 7vh;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -422,9 +424,12 @@
     width: 99.1vw;
     text-align: center;
     background-color: black;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 .budget .txt{
     color: white;
+    padding-top: 2vh;
     /* margin-top: 5vh; */
 }
 .budget .txt span{
@@ -439,6 +444,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 3vh;
     /* margin-bottom: 5vh; */
 }
 .budget .breakup-1 .photo-1{
@@ -455,8 +461,8 @@
     margin-bottom: 5vh;
 }
 .budget .breakup-1 .photo-1 .image-2{
-    height: 50vh;
-    width: 30vw;
+    height: 60vh;
+    width: 40vw;
 }
 
 .budget .breakup-1 .chart-1{
