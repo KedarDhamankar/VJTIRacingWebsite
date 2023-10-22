@@ -97,10 +97,10 @@ const Teams = () => {
 
             {/* Senate Section */}
             <div className="teams">
-                <section className="senate">
+                {/* <section className="senate">
                     <span className="heading">CLUB SENATE</span>
 
-                    {/* Hide this div in mobile layouts */}
+                    
                     <div className="nonresponsive">
                         <div className="picsflex">
                             <div className="box">
@@ -126,7 +126,6 @@ const Teams = () => {
                         </div>
                     </div>
 
-                    {/* Show this div in mobile layouts */}
                     <div className="responsive">
                         <div className="picsflex">
                             <div className="box">
@@ -153,7 +152,7 @@ const Teams = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <div className="whiteline"></div>
 
