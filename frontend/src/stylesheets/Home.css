@@ -131,13 +131,13 @@
 }
 
 .box:nth-child(1) {
-	background-color: #e87130;
+	background-color: #e4621c;
 }
 .box:nth-child(2) {
-	background-color: #f78104;
+	background-color: #ff8c10;
 }
 .box:nth-child(3) {
-	background-color: #f49100;
+	background-color: #f3a633;
 }
 
 .boxes .box .flextitle {
