@@ -12,12 +12,12 @@
 
 .backgnd .head {
     position: fixed;
-    top: 15%;
-    left: 22%;
+    top: 18%;
+    left: 24%;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 50vh;
-    /* text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1); */
+    font-size: 22vw;
+    text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1);
     letter-spacing: 0.5vw;
     z-index: 1;
 }

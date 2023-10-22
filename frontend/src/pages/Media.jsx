@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import "../stylesheets/Media.css";
 import bg from "../assets/Crowdfunding/bg.jpg";
 import bg1 from "../assets/SponsorUs/3.png";
@@ -48,32 +49,32 @@ const Media = () => {
                 >
                     <img src={i1} alt="" />
                     <img src={i2} alt="" />
-                    <img src={i3} alt="" />
+                    <img src={i13} alt="" />
                     <img src={i4} alt="" />
+                    <img src={i14} alt="" />
+                    <img src={i15} alt="" />
+                    <img src={i3} alt="" />
                     <img src={i5} alt="" />
                     <img src={i6} alt="" />
-                    <img src={i7} alt="" />
                     <img src={i8} alt="" />
                     <img src={i9} alt="" />
                     <img src={i10} alt="" />
                     <img src={i11} alt="" />
                     <img src={i12} alt="" />
-                    <img src={i13} alt="" />
-                    <img src={i14} alt="" />
-                    <img src={i15} alt="" />
                     <img src={i16} alt="" />
                     <img src={i17} alt="" />
+                    <img src={i7} alt="" />
                     <img src={i18} alt="" />
-                    <img src={i19} alt="" />
                     <img src={i20} alt="" />
+                    <img src={i19} alt="" />
                     <img src={i21} alt="" />
                 </div>
             </section>
-            <section>
+            {/* <section>
                 <div className="foot">
                     <Footer style={{zIndex:20}} />
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };

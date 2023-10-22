@@ -7,6 +7,11 @@ import Footer from "../components/footer";
 import "../stylesheets/Activities.css";
 
 import motorbreath from "../assets/Teams/motorbreath.jpg";
+import solidworks from "../assets/Activities/solidworks.png";
+import fea from "../assets/Activities/fea.png";
+import simulink from "../assets/Activities/simulink.png";
+import print from "../assets/Activities/3d.png";
+import autoshow from "../assets/Activities/autoshow.png";
 
 const Activities = () => {
     return (
@@ -32,7 +37,7 @@ const Activities = () => {
                                 SolidWorks, an industry leading software
                             </span>
                         </div>
-                        <img src={motorbreath} alt="" />
+                        <img src={solidworks} alt="" />
                     </div>
                     <div className="box">
                         <div className="box1">
@@ -45,7 +50,7 @@ const Activities = () => {
                                 helping validate designs
                             </span>
                         </div>
-                        <img src={motorbreath} alt="" />
+                        <img src={fea} alt="" />
                     </div>
                     <div className="box">
                         <div className="box1">
@@ -58,7 +63,7 @@ const Activities = () => {
                                 simulation results for analysis.
                             </span>
                         </div>
-                        <img src={motorbreath} alt="" />
+                        <img src={simulink} alt="" />
                     </div>
                     <div className="box">
                         <div className="box1">
@@ -70,7 +75,7 @@ const Activities = () => {
                                 programming of 3D printers.
                             </span>
                         </div>
-                        <img src={motorbreath} alt="" />
+                        <img src={print} alt="" />
                     </div>
                     <div className="box">
                         <div className="box1">
@@ -83,7 +88,7 @@ const Activities = () => {
                                 ATV.
                             </span>
                         </div>
-                        <img src={motorbreath} alt="" />
+                        <img src={autoshow} alt="" />
                     </div>
                 </div>
             </div>

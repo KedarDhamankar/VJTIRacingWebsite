@@ -17,8 +17,9 @@
 	left: 30%;
 	color: white;
 	font-family: "Oswald", sans-serif;
-	font-size: 9vw;
+	font-size: 10vw;
 	text-shadow: 0.4375rem 0.375rem 0.625rem rgba(0, 0, 0, 1);
+	letter-spacing: 0.1vw;
 }
 
 .activities .blackdiv {
@@ -104,10 +105,10 @@
 	color: #d85c18;
 }
 .activities .blackdiv .box:nth-child(4) .title {
-	color: #d85c18;
+	color: #0c335c;
 }
 .activities .blackdiv .box:nth-child(5) .title {
-	color: #0c335d;
+	color: #ff914d;
 }
 
 .whiteline {
