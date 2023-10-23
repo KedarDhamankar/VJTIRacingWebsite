@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 import "../stylesheets/Media.css";
 import bg from "../assets/Crowdfunding/bg.jpg";
 import bg1 from "../assets/SponsorUs/3.png";
@@ -75,6 +75,9 @@ const Media = () => {
                     <Footer style={{zIndex:20}} />
                 </div>
             </section> */}
+            {/* <div style={{ zIndex: 99, position: "absolute" }}> */}
+            <Footer />
+            {/* </div> */}
         </>
     );
 };
