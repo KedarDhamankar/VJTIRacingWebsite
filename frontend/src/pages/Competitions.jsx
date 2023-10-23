@@ -24,6 +24,7 @@ import c13 from "../assets/Competitions/DSC_15.png";
 import c14 from "../assets/Competitions/mb14.png";
 import c15 from "../assets/Competitions/supra14.png";
 import c16 from "../assets/Competitions/baja12.png";
+import bg1 from "../assets/SponsorUs/3.png";
 
 //variables
 const comp1 = {
@@ -147,14 +148,19 @@ const Competitions = () => {
 
               {/* Section 2 cards */}
               <section>
-                  <div ref={ref} className="sec2">
+                  <div
+                      ref={ref}
+                      className="sec2"
+                      style={{ backgroundImage: `url(${bg1})` }}
+                  >
                       <Block
                           year={comp1.year}
                           img={comp1.img}
                           title={comp1.title}
                           subheading={comp1.subheading}
                       >
-                          <p>• A rugged electric all-terrain vehicle with an
+                          <p>
+                              • A rugged electric all-terrain vehicle with an
                               RWD powertrain, to participate in ATVC 2024 and
                               eBAJA SAEINDIA 2024
                           </p>
@@ -179,7 +185,7 @@ const Competitions = () => {
                           subheading={comp3.subheading}
                       >
                           <p>
-                            • A sleek and speedy electric go-kart, to
+                              • A sleek and speedy electric go-kart, to
                               participate in ISIE IKR 2023
                           </p>
                       </Block>
@@ -208,7 +214,7 @@ const Competitions = () => {
                           subheading={comp6.subheading}
                       >
                           <p>
-                            • Ranked 26th among all the participating teams in
+                              • Ranked 26th among all the participating teams in
                               India
                           </p>
                           <p>• 6th in virtual round</p>
@@ -252,11 +258,11 @@ const Competitions = () => {
                           subheading={comp10.subheading}
                       >
                           <p>
-                            • Scored 3rd highest points in the most ruthless
+                              • Scored 3rd highest points in the most ruthless
                               Suspension Traction Event
                           </p>
                           <p>
-                            • Ranked 9th in acceleration among all 149 teams
+                              • Ranked 9th in acceleration among all 149 teams
                               from across the country
                           </p>
                       </Block>
@@ -270,7 +276,7 @@ const Competitions = () => {
                           <p>• Ranked 5th in Business Presentation Round</p>
                           <p>• Ranked 7th in Maneuverability Event</p>
                           <p>
-                            • Overall Secured 7th amongst all teams all over
+                              • Overall Secured 7th amongst all teams all over
                               India
                           </p>
                       </Block>
@@ -298,7 +304,7 @@ const Competitions = () => {
                           <p>• Winners of Best Marketing Scope Award</p>
                           <p>• Winners of Most Synchronized Team Award</p>
                           <p>
-                            • Ranked 2nd among all participating teams in
+                              • Ranked 2nd among all participating teams in
                               India
                           </p>
                       </Block>
@@ -309,15 +315,15 @@ const Competitions = () => {
                           subheading={comp14.subheading}
                       >
                           <p>
-                            • Ranked among the top 15 teams in the endurance
+                              • Ranked among the top 15 teams in the endurance
                               race
                           </p>
                           <p>
-                            • Nominated among the top teams for Computer-Aided
+                              • Nominated among the top teams for Computer-Aided
                               Engineering Award
                           </p>
                           <p>
-                            • Ranked 36th among all the participating teams in
+                              • Ranked 36th among all the participating teams in
                               India
                           </p>
                       </Block>
@@ -330,7 +336,7 @@ const Competitions = () => {
                           <p>• Winners of Business Presentation Award</p>
                           <p>• Ranked 1st in Mumbai</p>
                           <p>
-                            • Ranked 12th among all participating teams in
+                              • Ranked 12th among all participating teams in
                               India
                           </p>
                       </Block>
@@ -341,13 +347,14 @@ const Competitions = () => {
                           subheading={comp16.subheading}
                       >
                           <p>
-                            • Won the Raftaar Award for the most dynamic car.
+                              • Won the Raftaar Award for the most dynamic car.
                           </p>
                           <p>
-                            • Nominated among the top 10 teams in the computer-Aided Engineering category
+                              • Nominated among the top 10 teams in the
+                              computer-Aided Engineering category
                           </p>
                           <p>
-                            • Ranked 35th among all the participating teams in
+                              • Ranked 35th among all the participating teams in
                               India
                           </p>
                       </Block>

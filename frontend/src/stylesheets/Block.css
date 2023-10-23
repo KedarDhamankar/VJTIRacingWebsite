@@ -3,7 +3,7 @@
 
 .blocks {
     width:27vw;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
@@ -13,11 +13,14 @@
     max-height: 80vh;
 }
 .blocks .year p{
-    font-size: 4.5vw;
+    font-family: "Racing Sans One", cursive;
+    font-size: 3.8vw;
     text-align: left;
     -webkit-text-fill-color: black;
     -webkit-text-stroke-width: 0.2vh;
+    letter-spacing: 0.1vw;
     -webkit-text-stroke-color: aqua;
+    text-shadow: 0px 0px 6px rgb(0, 255, 255,0.8);
 }
 .blocks img{
     object-fit: fill;
@@ -29,8 +32,9 @@
     background-color: #ffb15f ;
     padding: 1vh 1.5vh 3vh 1.5vh;
     /* min-height: 5vh; */
-    max-height: 12.2vh;
+    max-height: 13.2vh;
     overflow-y: scroll;
+    /* margin: 0 0 1vh 0; */
 }
 .blocks .content::-webkit-scrollbar {
     width: 0.5vw;
@@ -38,13 +42,13 @@
 }
 
 .blocks:nth-child(2n) .content{
-    background-color: #249ea0;
+    background-color: #2dafb1;
 }
 .blocks:nth-child(2n) .content::-webkit-scrollbar-thumb{
-     background-color: #155657;
+     background-color: #068184;
 }
 .blocks:nth-child(2n+1) .content{
-    background-color: #ffb15f;
+    background-color: #f6a631;
 }
 .blocks:nth-child(2n+1) .content::-webkit-scrollbar-thumb{
      background-color: #f4830b;
@@ -54,8 +58,19 @@
 .blocks .content h2{
     margin-top: 1vh;
     margin-bottom: 0.5vh;
-    font-size: 1.4vw;
-    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6vw;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: "Racing Sans One", cursive;
+	color: #dc0303;
+    /* color: white; */
+    font-weight: 400;
+    letter-spacing: 0.05vw;
+
+}
+.blocks:nth-child(2n) .content h2{
+    font-family: "Racing Sans One", cursive;
+	color: #02375d;
+    font-weight: 400;
 }
 .blocks .content h4 {
     font-size: 1.2vw;
