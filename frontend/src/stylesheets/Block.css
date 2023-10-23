@@ -45,7 +45,7 @@
     background-color: #2dafb1;
 }
 .blocks:nth-child(2n) .content::-webkit-scrollbar-thumb{
-     background-color: #068184;
+     background-color: #286667;
 }
 .blocks:nth-child(2n+1) .content{
     background-color: #f6a631;
