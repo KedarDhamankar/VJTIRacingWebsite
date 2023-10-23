@@ -30,7 +30,7 @@ import mbashwin from "../assets/Teams/Motorbreath/ashwin dias.jpg";
 import mbrahul from "../assets/Teams/Motorbreath/rahul barbude.jpg";
 import mbrajvar from "../assets/Teams/Motorbreath/rajvardhan sawant.jpeg";
 import mbatharva from "../assets/Teams/Motorbreath/atharva bagwe.jpg";
-import mbkunalborole from "../assets/Teams/Motorbreath/kunal.png";
+import mbkunalborole from "../assets/Teams/Motorbreath/Kunal.png";
 // Power Trans
 import mbsahil from "../assets/Teams/Motorbreath/sahil_dhoble.jpg";
 import mbdev from "../assets/Teams/Motorbreath/dev ganatra.jpg";
