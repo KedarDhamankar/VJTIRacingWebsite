@@ -233,7 +233,12 @@ const Home = () => {
                                 designing, fabrication, and learning management
                                 beyond just classroom education.
                             </span>
-                            <button className="button1">Know More</button>
+                            <button
+                                className="button1"
+                                onClick={navigateToTeam}
+                            >
+                                Know More
+                            </button>
                         </div>
                     </div>
                     <div className="whiteline"></div>
@@ -259,7 +264,17 @@ const Home = () => {
                                 strong alumni network.
                             </span>
 
-                            <button className="button1">Know More</button>
+                            <button className="button1">
+                                <a
+                                    href="https://vjti.ac.in/"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white",
+                                    }}
+                                >
+                                    Know More
+                                </a>
+                            </button>
                         </div>
                     </div>
                     <div className="whiteline"></div>
@@ -275,7 +290,10 @@ const Home = () => {
                                 participation in national and international
                                 competitions for more than a decade.
                             </span>
-                            <button className=" button1 button2">
+                            <button
+                                className=" button1 button2"
+                                onClick={navigateToComp}
+                            >
                                 Know More
                             </button>
                         </div>
@@ -306,7 +324,10 @@ const Home = () => {
                                 vehicles.
                             </span>
 
-                            <button className="button1 button2">
+                            <button
+                                className="button1 button2"
+                                onClick={navigateToAct}
+                            >
                                 Know More
                             </button>
                         </div>
