@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 // import React from "react";
 import { useRef, React } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
@@ -11,9 +12,9 @@ import motorbreath from "../assets/Teams/motorbreath.jpg";
 import forza from "../assets/Teams/forza.jpg";
 import motorbg from "../assets/Teams/bgmotorbreath.jpg";
 import forzabg from "../assets/Teams/bgforza.jpg";
-import sen1 from "../assets/Teams/Senate/sen1.jpg";
-import sen2 from "../assets/Teams/Senate/sen2.jpg";
-import sen3 from "../assets/Teams/Senate/sen3.jpg";
+// import sen1 from "../assets/Teams/Senate/sen1.jpg";
+// import sen2 from "../assets/Teams/Senate/sen2.jpg";
+// import sen3 from "../assets/Teams/Senate/sen3.jpg";
 
 // Motorbreath team images (mb is prefix for all motorbreath members)
 // Heads
@@ -38,12 +39,14 @@ import mbsakshi from "../assets/Teams/Motorbreath/sakshi chorghe.jpg";
 // import mbvishwesh from "../assets/Teams/Motorbreath/vishwesh chauhan.jpg";
 // Brakes
 import mbshravani from "../assets/Teams/Motorbreath/shravani deshpande.jpg";
+import mbniel from "../assets/Teams/Motorbreath/niel james.jpeg";
 import mbomkar from "../assets/Teams/Motorbreath/omkar ahir.jpg";
 // Electronics
 import mbflavia from "../assets/Teams/Motorbreath/flavia saldanha.jpg";
 import mbashutosh from "../assets/Teams/Motorbreath/ashutosh mohapatra.jpg";
 import mbanish from "../assets/Teams/Motorbreath/anish dhar.jpg";
 import mbdhruv from "../assets/Teams/Motorbreath/dhruv chugh.jpg";
+import mbjateen from "../assets/Teams/Motorbreath/jateen telange.jpg";
 
 //Forza Team images (fz prefix for forza)
 // Heads
@@ -77,18 +80,12 @@ import fzanish from "../assets/Teams/Forza/anish dhar.jpg";
 import fzaditi from "../assets/Teams/Forza/aditi shinde.jpg";
 
 const Teams = () => {
-    // Click to scroll for Motorbreath
-    const ref1 = useRef(null);
-
-    const handleClick1 = () => {
-        ref1.current?.scrollIntoView({ behavior: "smooth" });
+    const navigate = useNavigate();
+    const navigateToForza = () => {
+        navigate("/Forza");
     };
-
-    // Click to scroll for Forza
-    const ref2 = useRef(null);
-
-    const handleClick2 = () => {
-        ref2.current?.scrollIntoView({ behavior: "smooth" });
+    const navigateToMotor = () => {
+        navigate("/Motorbreath");
     };
 
     return (
@@ -168,191 +165,7 @@ const Teams = () => {
                         <div className="box2">
                             <span className="teamname">MOTORBREATH</span>
                             <span className="baja">BAJA SAEINDIA</span>
-                            <button onClick={handleClick1}>Know More</button>
-                        </div>
-                    </div>
-                </section>
-
-                <div className="whiteline"></div>
-
-                {/* Motorbreath Team */}
-                <section className="motorbreath">
-                    <div
-                        className="motorbg"
-                        style={{ backgroundImage: `url(${motorbg})` }}
-                    >
-                        <div className="content" ref={ref1}>
-                            <span className="heading">HEADS</span>
-                            <div className="picsflex">
-                                <div className="box">
-                                    <img src={mbvivek} alt="" />
-                                    <span>Vivek Wagadiya</span>
-                                    <span>
-                                        <i>Captain</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbgrishma} alt="" />
-                                    <span>Grishma Balgi</span>
-                                    <span>
-                                        <i>Vice - Captain</i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="picsflex">
-                                <div className="box">
-                                    <img src={mbmanav} alt="" />
-                                    <span>Manav Yadav</span>
-                                    <span>
-                                        <i>Treasurer</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbtaran} alt="" />
-                                    <span>Taran Poojari</span>
-                                    <span>
-                                        <i>Sponsorship Head</i>
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Chassis members */}
-                            <span className="heading">CHASSIS</span>
-                            <div className="picsflex chassis margin_neg">
-                                <div className="box">
-                                    <img src={mbtaran} alt="" />
-                                    <span>Taran Poojari</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbveer} alt="" />
-                                    <span>Veer Gupta</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbkunal} alt="" />
-                                    <span>Kunal Dodani</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis">
-                                <div className="box">
-                                    <img src={mbkartik} alt="" />
-                                    <span>Kartik Kedare</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbvivek} alt="" />
-                                    <span>Vivek Wagadiya</span>
-                                </div>
-                            </div>
-
-                            {/* Vehicle dynamics members */}
-                            <span className="heading">VEHICLE DYNAMICS</span>
-                            <div className="picsflex chassis vd margin_neg">
-                                <div className="box">
-                                    <img src={mbashwin} alt="" />
-                                    <span>Ashwin Dias</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbrahul} alt="" />
-                                    <span>Rahul Barbade</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbrajvar} alt="" />
-                                    <span>Rajvardhan</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis vd">
-                                <div className="box">
-                                    <img src={mbatharva} alt="" />
-                                    <span>Atharva Bagwe</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbkunalborole} alt="" />
-                                    <span>Kunal Borole</span>
-                                </div>
-                            </div>
-
-                            {/* Power Transmission members */}
-                            <span className="heading">POWER TRANSMISSON</span>
-                            <div className="picsflex chassis powertrans margin_neg ">
-                                <div className="box">
-                                    <img src={mbmanav} alt="" />
-                                    <span>Manav Yadav</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbsahil} alt="" />
-                                    <span>Sahil Dhoble</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbdev} alt="" />
-                                    <span>Dev Ganatra</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis powertrans">
-                                <div className="box">
-                                    <img src={mbsakshi} alt="" />
-                                    <span>Sakshi Chorghe</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbtaran} alt="" />
-                                    <span>Vishwesh Chauhan</span>
-                                </div>
-                            </div>
-
-                            {/* Brakes members */}
-                            <span className="heading">BRAKES</span>
-                            <div className="picsflex chassis brakes">
-                                {/* brake1 class used to give negative margin to box so that top and bottom flex mixes */}
-                                <div className="box brake1">
-                                    <img src={mbshravani} alt="" />
-                                    <span>Shravani Deshpande</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis brakes">
-                                <div className="box">
-                                    <img src={mbomkar} alt="" />
-                                    <span>Omkar Ahir</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbgrishma} alt="" />
-                                    <span>Grishma Balgi</span>
-                                </div>
-                            </div>
-                            {/* Electronics members */}
-                            <span className="heading">ELECTRONICS</span>
-                            <div className="picsflex chassis elecleft margin_neg">
-                                <div className="box">
-                                    <img src={mbflavia} alt="" />
-                                    <span>Flavia Saldanha</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbashutosh} alt="" />
-                                    <span>Ashutosh Mohapatra</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis elecright">
-                                <div className="box">
-                                    <img src={mbanish} alt="" />
-                                    <span>Anish Dhar</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbdhruv} alt="" />
-                                    <span>Dhruv Chugh</span>
-                                </div>
-                            </div>
+                            <button onClick={navigateToMotor}>Know More</button>
                         </div>
                     </div>
                 </section>
@@ -370,166 +183,7 @@ const Teams = () => {
                             </div>
                             <span className="teamname">FORZAVJTI</span>
                             <span className="baja">INDIAN KARTING RACE</span>
-                            <button onClick={handleClick2}>Know More</button>
-                        </div>
-                    </div>
-                </section>
-
-                <div className="whiteline"></div>
-
-                {/* Forza Team */}
-                {/* reusing css of motorbreath team section */}
-                <section className="motorbreath forzateam">
-                    <div
-                        className="motorbg"
-                        style={{ backgroundImage: `url(${forzabg})` }}
-                    >
-                        <div className="content" ref={ref2}>
-                            <span className="heading">HEADS</span>
-                            <div className="picsflex heads">
-                                <div className="box">
-                                    <img src={mbashwin} alt="" />
-                                    <span>Ashwin Dias</span>
-                                    <span>
-                                        <i>Vice Captain</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzvishal} alt="" />
-                                    <span>Vishal Sejpal</span>
-                                    <span>
-                                        <i>Captain</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzjash} alt="" />
-                                    <span>Jash Shah</span>
-                                    <span>
-                                        <i>Treasurer</i>
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* S&D members */}
-                            <span className="heading">
-                                STRUCTURES & DYNAMICS
-                            </span>
-                            <div className="picsflex chassis margin_neg ">
-                                <div className="box">
-                                    <img src={fzsonal} alt="" />
-                                    <span>Sonal Baranwal</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzyash} alt="" />
-                                    <span>Yash Rajput</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzvivek} alt="" />
-                                    <span>Vivek Wagadiya</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzaryan} alt="" />
-                                    <span>Aryan Patil</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis">
-                                <div className="box">
-                                    <img src={fzvishal} alt="" />
-                                    <span>Vishal Sejpal</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbashwin} alt="" />
-                                    <span>Ashwin Dias</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzjash} alt="" />
-                                    <span>Jash Shah</span>
-                                </div>
-                            </div>
-
-                            {/* Brakes members */}
-                            <span className="heading">BRAKES</span>
-                            <div className="picsflex chassis vd ">
-                                <div className="box">
-                                    <img src={fzneil} alt="" />
-                                    <span>Niel James</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzaditya} alt="" />
-                                    <span>Aditya Ambalwar</span>
-                                </div>
-                            </div>
-
-                            {/* Power Transmission members */}
-                            <span className="heading">POWER TRANSMISSION</span>
-                            <div className="picsflex chassis elecright">
-                                <div className="box">
-                                    <img src={fzgaurav} alt="" />
-                                    <span>Gaurav Manuja</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzkartik} alt="" />
-                                    <span>Kartik Mahalle</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzom} alt="" />
-                                    <span>Om Khairnar</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis elecleft">
-                                <div className="box">
-                                    <img src={fzpranjal} alt="" />
-                                    <span>Pranjal Patil</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fztanmay} alt="" />
-                                    <span>Tanmay Dikey</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzmedha} alt="" />
-                                    <span>Medha Sati</span>
-                                </div>
-                            </div>
-
-                            {/* Electronics members */}
-                            <span className="heading">ELECTRONICS</span>
-                            <div className="picsflex chassis brakes margin_neg">
-                                {/* brake1 class used to give negative margin to box so that top and bottom flex mixes */}
-                                <div className="box">
-                                    <img src={fzharsh} alt="" />
-                                    <span>Harsh Deosthali</span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzgauravp} alt="" />
-                                    <span>Gaurav Patil</span>
-                                    <span>
-                                        <i>Sector Head</i>
-                                    </span>
-                                </div>
-                                <div className="box">
-                                    <img src={fzanish} alt="" />
-                                    <span>Anish Dhar</span>
-                                </div>
-                            </div>
-                            <div className="picsflex chassis brakes">
-                                <div className="box">
-                                    <img src={fzaditi} alt="" />
-                                    <span>Aditi Shinde</span>
-                                </div>
-                                <div className="box">
-                                    <img src={mbdhruv} alt="" />
-                                    <span>Dhruv Chugh</span>
-                                </div>
-                            </div>
+                            <button onClick={navigateToForza}>Know More</button>
                         </div>
                     </div>
                 </section>

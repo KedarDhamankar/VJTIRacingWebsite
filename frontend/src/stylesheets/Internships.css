@@ -17,12 +17,12 @@
     object-fit: cover;
 }
 .internshipsbg .darkenimage {
-	height: 115%;
-	width: 100%;
-	position: absolute;
-	background-color: black;
-	opacity: 40%;
-	margin-top: -115vh;
+    height: 114.3%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 40%;
+    margin-top: -115vh;
 }
 
 .internshipsbg span {
@@ -37,7 +37,6 @@
 }
 
 .CSIR {
-    width: 99.1vw;
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
@@ -61,6 +60,11 @@
     flex-wrap: wrap;
     margin-top: 5vh;
 }
+
+.CSIR .head img:nth-child(2) {
+    display: none;
+}
+
 .CSIR span {
     color: white;
     font-size: 3vh;
@@ -82,15 +86,16 @@
 }
 
 .CSIR .pics .box1 {
-    width: 15vw;
+    width: 31vh;
 }
 
-.CSIR .pics .box1 img{
+.CSIR .pics .box1 img {
     height: 45vh;
-    width: 14vw;
+    width: 100%;
+    object-fit: cover;
 }
 
-.CSIR .pics .box1 span{
+.CSIR .pics .box1 span {
     font-family: "Lilita One", cursive;
     color: white;
     font-weight: 700;
@@ -99,7 +104,6 @@
 }
 
 .BARC {
-    width: 99.1vw;
     background-size: cover;
     overflow: hidden;
     display: flex;
@@ -139,7 +143,6 @@
 
 .BARC .pics {
     display: flex;
-    width: 99.1vw;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,14 +154,14 @@
 }
 
 .BARC .pics .box1 {
-    width: 15vw;
+    width: 34vh;
     background-color: #435b6a;
     padding: 3vh 2vh;
 }
 
 .BARC .pics .box1 img {
     height: 38vh;
-    width: 12vw;
+    width: 31vh;
     object-fit: cover;
 }
 
@@ -170,7 +173,6 @@
 }
 
 .research {
-    width: 99.1vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -201,7 +203,7 @@
 }
 
 .research .whitediv .grid img {
-    height: 10vh;
+    height: 5vw;
     width: 10vw;
     object-fit: contain;
 }
@@ -220,8 +222,8 @@
 }
 
 .research .whitediv .grid .pics .box1 img {
-    height: 38vh;
-    width: 12vw;
+    height: 19vw;
+    width: 14vw;
     object-fit: cover;
     margin-bottom: 3vh;
 }
@@ -230,7 +232,8 @@
     font-family: "Lilita One", cursive;
     color: #253439;
     font-weight: 700;
-    font-size: 3.2vh;
+    /* font-size: 3vh; */
+    font-size: 1.5vw;
     margin-top: 3vh;
 }
 .research .whitediv .grid .pics .box1 h4 {
@@ -238,7 +241,8 @@
     color: #390a47;
     margin-top: 3vh;
     font-weight: 700;
-    font-size: 2.5vh;
+    /* font-size: 2.5vh; */
+    font-size: 1.2vw;
     padding: 0 2vw;
 }
 
@@ -286,8 +290,8 @@
 }
 
 .mitacs2 .pics .box1 img {
-    height: 42vh;
-    width: 16vw;
+    height: 19vw;
+    width: 15vw;
     object-fit: cover;
     margin-bottom: 2vh;
 }
@@ -296,7 +300,7 @@
     font-family: "Lilita One", cursive;
     color: #fff;
     font-weight: 500;
-    font-size: 4vh;
+    font-size: 1.7vw;
     text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
 }
 .mitacs2 .pics .box1 h4 {
@@ -304,7 +308,7 @@
     color: #0159a9;
     margin-top: 1vh;
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 1.35vw;
     /* text-shadow: 1px 1px 4px rgba(66, 68, 90, 1); */
     letter-spacing: 0.1vw;
     text-align: right;
@@ -344,38 +348,212 @@
 }
 
 .mitacs3 .whitediv .pics .box1 {
-    width: 15vw;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.mitacs3 .whitediv .pics .box1 img {
-    height: 45vh;
+.mitacs3 .whitediv .pics .box1 .pic {
+    height: 20vw;
     width: 16vw;
     object-fit: cover;
     margin-bottom: 2vh;
 }
+
 .mitacs3 .whitediv .pics .box1 span {
     font-family: "Lilita One", cursive;
     color: #fff;
     font-weight: 500;
-    font-size: 3.5vh;
+    font-size: 2vw;
     text-shadow: 4px 2px 4px rgba(66, 68, 90, 1);
     letter-spacing: 0.1vw;
 }
+
 .mitacs3 .whitediv .pics .box1 h4 {
     font-family: "Lilita One", cursive;
     color: #fbdb59;
     font-weight: 400;
-    font-size: 2.2vh;
+    font-size: 1.2vw;
     text-shadow: 1px 1px 4px rgba(66, 68, 90, 1);
     letter-spacing: 0.1vw;
     margin-top: 0.5vh;
 }
-.mitacs3 .whitediv .pics .box1 .pic {
-    height: 10vh;
-    width: 15vw;
+
+.mitacs3 .whitediv .pics .box1:nth-child(1) .company {
+    /* height: 1vh; */
+    height: 2.5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.mitacs3 .whitediv .pics .box1:nth-child(2) .company {
+    /* height: 1vh; */
+    height: 4vw;
     margin-bottom: 2vh;
 }
-.mitacs3 .whitediv .pics .box1 .pic img {
-    height: 10vh;
-    width: 15vw;
-    object-fit: contain;
+
+.mitacs3 .whitediv .pics .box1:nth-child(3) .company {
+    /* height: 1vh; */
+    height: 4vw;
+    margin-bottom: 2vh;
+}
+
+@media (orientation: portrait) {
+    .internshipsbg .darkenimage {
+        height: 114.6%;
+    }
+    .internshipsbg span {
+        top: 45%;
+        left: 12%;
+        font-size: 15vw;
+    }
+
+    .CSIR {
+        width: 100%;
+        padding: 2vh 0;
+    }
+
+    .CSIR .head img:nth-child(1) {
+        display: none;
+    }
+
+    .CSIR .head img:nth-child(2) {
+        display: block;
+    }
+
+    .CSIR .head img {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .CSIR span {
+        margin-top: 2vh;
+    }
+
+    .CSIR .pics .box1 {
+        width: 25vh;
+        margin-bottom: 2vh;
+    }
+    .CSIR .pics .box1 img {
+        height: 40vh;
+        margin-bottom: 1vh;
+    }
+
+    .CSIR .pics .box1 span {
+        font-size: 6vw;
+    }
+
+    .BARC .barc-logo {
+        display: none;
+    }
+
+    .BARC .pics .box1 {
+        width: 25vh;
+    }
+
+    .BARC .pics .box1 img {
+        width: 23vh;
+    }
+
+    .BARC .pics .box1 span {
+        font-size: 5vw;
+    }
+
+    .research .whitediv {
+        width: 80vw;
+    }
+
+    .research .whitediv span {
+        font-size: 8vw;
+    }
+
+    .research .whitediv .grid img {
+        height: 20vw;
+        width: 20vw;
+        /* max-width: 15vw; */
+        margin: 0 3vw;
+    }
+
+    .research .whitediv .grid .pics {
+        margin: 5vw 2vw;
+    }
+
+    .research .whitediv .grid .pics .box1 {
+        width: 40vw;
+    }
+
+    .research .whitediv .grid .pics span {
+        font-size: 4.4vw;
+    }
+
+    .research .whitediv .grid .pics .box1 h4 {
+        font-size: 2.8vw;
+        margin: 0 0 5vw 0;
+    }
+
+    .research .whitediv .grid .pics .box1 img {
+        height: 50vw;
+        width: 100%;
+        max-width: 35vw;
+        margin: 0;
+    }
+
+    .mitacs2 .pics img {
+        width: 18vw;
+    }
+    .mitacs2 .pics .box1 {
+        width: 50vw;
+    }
+
+    .mitacs2 .pics .box1 img {
+        min-width: 50vw;
+        height: 65vw;
+    }
+
+    .mitacs2 .pics .box1 span {
+        font-size: 6vw;
+    }
+
+    .mitacs2 .pics .box1 h4 {
+        font-size: 4vw;
+    }
+
+    .mitacs2 .pics .box1 h4:nth-child(2) {
+        color: #575cf7;
+    }
+
+    .mitacs3 .whitediv .pics .box1 {
+        width: auto;
+    }
+
+    .mitacs3 .whitediv .pics .box1 .pic {
+        height: 70vw;
+        width: 60vw;
+    }
+
+    .mitacs3 .whitediv .pics .box1 span {
+        font-size: 6vw;
+    }
+
+    .mitacs3 .whitediv .pics .box1 h4 {
+        font-size: 2.5vw;
+    }
+
+    .mitacs3 .whitediv .pics .box1:nth-child(1) .company {
+        height: 7vw;
+        margin: 0 0 2vh 0;
+    }
+    .mitacs3 .whitediv .pics .box1:nth-child(2) .company {
+        height: 10vw;
+        margin: 0;
+        margin-bottom: 1vh;
+    }
+    .mitacs3 .whitediv .pics .box1:nth-child(3) .company {
+        height: 10vw;
+        margin: 0 0 1vh 0;
+    }
+
+    .mitacs3 .whitediv .pics .box1 h4 {
+        font-size: 4vw;
+    }
 }

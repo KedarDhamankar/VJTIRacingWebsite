@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@500&display=swap");
 
 .blocks {
-    width:27vw;
+    width: 27vw;
     color: rgb(0, 0, 0);
     text-align: center;
     overflow: hidden;
@@ -12,7 +11,7 @@
     flex-direction: column;
     max-height: 80vh;
 }
-.blocks .year p{
+.blocks .year p {
     font-family: "Racing Sans One", cursive;
     font-size: 3.8vw;
     text-align: left;
@@ -20,16 +19,16 @@
     -webkit-text-stroke-width: 0.2vh;
     letter-spacing: 0.1vw;
     -webkit-text-stroke-color: aqua;
-    text-shadow: 0px 0px 6px rgb(0, 255, 255,0.8);
+    text-shadow: 0px 0px 6px rgb(0, 255, 255, 0.8);
 }
-.blocks img{
+.blocks img {
     object-fit: fill;
     width: 27vw;
     height: 45vh;
 }
 
-.blocks .content{
-    background-color: #ffb15f ;
+.blocks .content {
+    background-color: #ffb15f;
     padding: 1vh 1.5vh 3vh 1.5vh;
     /* min-height: 5vh; */
     max-height: 13.2vh;
@@ -41,47 +40,45 @@
     border-radius: 0.2vw;
 }
 
-.blocks:nth-child(2n) .content{
+.blocks:nth-child(2n) .content {
     background-color: #2dafb1;
 }
-.blocks:nth-child(2n) .content::-webkit-scrollbar-thumb{
-     background-color: #286667;
+.blocks:nth-child(2n) .content::-webkit-scrollbar-thumb {
+    background-color: #286667;
 }
-.blocks:nth-child(2n+1) .content{
+.blocks:nth-child(2n + 1) .content {
     background-color: #f6a631;
 }
-.blocks:nth-child(2n+1) .content::-webkit-scrollbar-thumb{
-     background-color: #f4830b;
+.blocks:nth-child(2n + 1) .content::-webkit-scrollbar-thumb {
+    background-color: #f4830b;
 }
 
-
-.blocks .content h2{
+.blocks .content h2 {
     margin-top: 1vh;
     margin-bottom: 0.5vh;
     font-size: 1.6vw;
     /* font-family: 'Work Sans', sans-serif; */
     font-family: "Racing Sans One", cursive;
-	color: #dc0303;
+    color: #ff6000;
     /* color: white; */
     font-weight: 400;
     letter-spacing: 0.05vw;
-
 }
-.blocks:nth-child(2n) .content h2{
+.blocks:nth-child(2n) .content h2 {
     font-family: "Racing Sans One", cursive;
-	color: #02375d;
+    color: #02375d;
     font-weight: 400;
 }
 .blocks .content h4 {
     font-size: 1.2vw;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     margin-bottom: 1vh;
 }
-.blocks .content p{
+.blocks .content p {
     word-wrap: break-all;
     min-height: 2vh;
     margin: 0.3vh 0 0 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: justify;
     text-justify: inter-word;
@@ -89,56 +86,54 @@
     padding-right: 1vw;
 }
 
-
-@media (orientation:portrait){
+@media (orientation: portrait) {
     .blocks {
-            width: 80vw;
-            color: black;
-            text-align: center;
-            overflow: hidden;
-            box-sizing: border-box;
-            margin: 2vw;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            max-height: 100vh;
-        }
-        .blocks .year p {
-            font-size: 6.5vh;
-            text-align: left;
-            -webkit-text-fill-color: black;
-            -webkit-text-stroke-width: 0.2vh;
-            -webkit-text-stroke-color: aqua;
-        }
+        width: 80vw;
+        color: black;
+        text-align: center;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 2vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 100vh;
+    }
+    .blocks .year p {
+        font-size: 6.5vh;
+        text-align: left;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 0.2vh;
+        -webkit-text-stroke-color: aqua;
+    }
 
-        .blocks img {
-            object-fit: contain;
-            max-width: 80vw;
-            max-height: 80vh;
-        }
+    .blocks img {
+        object-fit: contain;
+        width: 80vw;
+        height: auto;
+    }
+    max- .blocks .content {
+        background-color: cadetblue;
+    }
 
-        .blocks .content {
-            background-color: cadetblue;
-        }
+    .blocks .content h2 {
+        margin-top: 2vh;
+        font-size: 2.8vh;
+        font-family: "Work Sans", sans-serif;
+    }
+    .blocks .content h4 {
+        font-size: 2.5vh;
+        font-family: "Work Sans", sans-serif;
+    }
 
-        .blocks .content h2 {
-            margin-top: 2vh;
-            font-size: 2.8vh;
-            font-family: 'Work Sans', sans-serif;
-        }
-        .blocks .content h4 {
-            font-size: 2.5vh;
-            font-family: 'Work Sans', sans-serif;
-        }
+    .blocks .content p {
+        word-wrap: break-all;
+        min-height: 2vh;
+        margin: 1vh 1.2vh 3vh 1.2vh;
+        font-family: "Montserrat", sans-serif;
+    }
 
-        .blocks .content p {
-            word-wrap: break-all;
-            min-height: 2vh;
-            margin: 1vh 1.2vh 3vh 1.2vh;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* .blocks .content .info {
+    /* .blocks .content .info {
             border-radius: 1vh;
             width: 20vh;
             height: 5vh;

@@ -43,6 +43,7 @@
 
 .navlinks .linktext {
     text-decoration: none;
+    text-shadow: 0px 0px 0.4rem rgba(0, 0, 0, 0.95);
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 1.2vw;
@@ -52,7 +53,7 @@
 
 .navlinks .linktext:hover {
     text-shadow: 0px 0px 1rem rgb(255 255 255 / 95%);
-    -webkit-text-stroke-width: 0.01px;
+    /* -webkit-text-stroke-width: 0.01px; */
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.2);
     /* color: rgb(255, 255, 255); */
 }

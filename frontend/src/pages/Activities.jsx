@@ -6,7 +6,7 @@ import Footer from "../components/footer";
 
 import "../stylesheets/Activities.css";
 
-import motorbreath from "../assets/Teams/motorbreath.jpg";
+import bg from "../assets/Activities/bckgd.png";
 import solidworks from "../assets/Activities/solidworks.png";
 import fea from "../assets/Activities/fea.png";
 import simulink from "../assets/Activities/simulink.png";
@@ -21,8 +21,8 @@ const Activities = () => {
 
             <div className="activities">
                 <div className="activitiesbg">
-                    <img src={motorbreath} alt="" />
-                    <div className="darkenimage"></div>
+                    <img src={bg} alt="" />
+                    {/* <div className="darkenimage"></div> */}
                     <span>ACTIVITIES</span>
                 </div>
                 <div className="whiteline"></div>
@@ -90,6 +90,18 @@ const Activities = () => {
                             </span>
                         </div>
                         <img src={autoshow} alt="" />
+                    </div>
+                    <div className="box">
+                        <div className="box1">
+                            <span className="title">Guest Lecture Series</span>
+                            <span className="content">
+                                A cutting edge technology at the forefront of
+                                the manufacturing and prototyping industries,
+                                students are introduced to the working and
+                                programming of 3D printers.
+                            </span>
+                        </div>
+                        <img src={print} alt="" />
                     </div>
                 </div>
             </div>
