@@ -8,6 +8,7 @@ import {
     Legend,
     Label,
     LabelList,
+    ResponsiveContainer,
 } from "recharts";
 import "../stylesheets/Crowdfunding.css";
 import Navbar from "../components/Navbar";
@@ -118,231 +119,323 @@ const Crowdfunding = () => {
                     <div className="back">
                         <img src={bg} alt="" />
                         <div className="darkenimage"></div>
-                        <span className="head">CROWDFUNDING</span>
+                        <span>CROWDFUNDING</span>
+                    </div>
+                </div>
+                {/* section 4 tiers */}
+                <div
+                    className="tiers"
+                    style={{
+                        backgroundImage: `url(${bg1})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                    }}
+                >
+                    <span className="ok">TIERS</span>
+                    <div className="all">
+                        <div className="tier">
+                            <div className="before">
+                                <span>QUARTZ</span>
+                                <br />
+                                <span>&#60; &#8377;500</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>DIGITAL CERTIFICATE</li>
+                                    <li>DIGITAL POSTER</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>PEARL</span>
+                                <br />
+                                <span>&#8377;500&#43;</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>TOPAZ</span>
+                                <br />
+                                <span>&#8377;1000&#43;</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                    <li>POSTER</li>
+                                    <li>WRIST BAND</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>SAPPHIRE</span>
+                                <br />
+                                <span>&#8377;2000&#43;</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                    <li>POSTER</li>
+                                    <li>WRIST BAND</li>
+                                    <li>BADGE</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>EMERALD</span>
+                                <br />
+                                <span>&#8377;5000&#43;</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                    <li>POSTER</li>
+                                    <li>WRIST BAND</li>
+                                    <li>BADGE</li>
+                                    <li>VJTI RACING T-SHIRT</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>RUBY</span>
+                                <br />
+                                <span>&#8377;10000&#43;</span>
+                            </div>
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                    <li>POSTER</li>
+                                    <li>WRIST BAND & CAP</li>
+                                    <li>VJTI RACING T-SHIRT</li>
+                                    <li>EXCULSIVE ENTRY TO ALL CLUB EVENTS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="tier">
+                            <div className="before">
+                                <span>DIAMOND</span>
+                                <br />
+                                <span>&#8377;20000&#43;</span>
+                            </div>
+
+                            <div className="after">
+                                <ul>
+                                    <li>STICKER & BADGE</li>
+                                    <li>CERTIFICATE OF GRATITUDE</li>
+                                    <li>POSTER</li>
+                                    <li>WRIST BAND</li>
+                                    <li>VJTI RACING T-SHIRT</li>
+                                    <li>EXCULSIVE ENTRY TO ALL CLUB EVENTS</li>
+                                    <li>SPECIAL MENTION ON WEBSITE</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="desktop">
+                {/* section 5 budget breakup  */}
+                <div
+                    className="budget"
+                    style={{
+                        backgroundImage: `url(${bg1})`,
+                        backgroundSize: "cover",
+                    }}
+                >
+                    <div className="txt">
+                        <span>BUDGET BREAKUP</span>
                     </div>
 
-                    {/* section 4 tiers */}
-                    <div
-                        className="tiers"
-                        style={{ backgroundImage: `url(${bg1})` }}
-                    >
-                        <span className="ok">TIERS</span>
-                        <div className="all">
-                            <div className="tier">
-                                <div className="before">
-                                    <span>QUARTZ</span>
-                                    <br />
-                                    <span>&#60; &#8377;500</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>DIGITAL CERTIFICATE</li>
-                                        <li>DIGITAL POSTER</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>PEARL</span>
-                                    <br />
-                                    <span>&#8377;500&#43;</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>TOPAZ</span>
-                                    <br />
-                                    <span>&#8377;1000&#43;</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                        <li>POSTER</li>
-                                        <li>WRIST BAND</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>SAPPHIRE</span>
-                                    <br />
-                                    <span>&#8377;2000&#43;</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                        <li>POSTER</li>
-                                        <li>WRIST BAND</li>
-                                        <li>BADGE</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>EMERALD</span>
-                                    <br />
-                                    <span>&#8377;5000&#43;</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                        <li>POSTER</li>
-                                        <li>WRIST BAND</li>
-                                        <li>BADGE</li>
-                                        <li>VJTI RACING T-SHIRT</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>RUBY</span>
-                                    <br />
-                                    <span>&#8377;10000&#43;</span>
-                                </div>
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                        <li>POSTER</li>
-                                        <li>WRIST BAND & CAP</li>
-                                        <li>VJTI RACING T-SHIRT</li>
-                                        <li>
-                                            EXCULSIVE ENTRY TO ALL CLUB EVENTS
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="tier">
-                                <div className="before">
-                                    <span>DIAMOND</span>
-                                    <br />
-                                    <span>&#8377;20000&#43;</span>
-                                </div>
+                    <div className="breakup-1">
+                        <div className="photo-1">
+                            <img src={im1} alt="" className="image-1" />
+                            <img src={im3} alt="" className="image-2" />
+                        </div>
 
-                                <div className="after">
-                                    <ul>
-                                        <li>STICKER & BADGE</li>
-                                        <li>CERTIFICATE OF GRATITUDE</li>
-                                        <li>POSTER</li>
-                                        <li>WRIST BAND</li>
-                                        <li>VJTI RACING T-SHIRT</li>
-                                        <li>
-                                            EXCULSIVE ENTRY TO ALL CLUB EVENTS
-                                        </li>
-                                        <li>SPECIAL MENTION ON WEBSITE</li>
-                                    </ul>
-                                </div>
+                        <div className="chart-1">
+                            <div className="pie-1">
+                                <PieChart width={500} height={500}>
+                                    <Legend width={500} align="center" />
+                                    <Pie
+                                        data={data01}
+                                        cx="50%"
+                                        cy="50%"
+                                        dataKey="value"
+                                        nameKey="name"
+                                        labelLine={false}
+                                        label
+                                        outerRadius={140}
+                                        fill="#8884d8"
+                                    >
+                                        {data01.map((entry, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                fill={
+                                                    COLORS[
+                                                        index % COLORS.length
+                                                    ]
+                                                }
+                                            />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip />
+                                </PieChart>
+                            </div>
+
+                            <div className="total">
+                                <span>TOTAL : 15,50,00</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* section 5 budget breakup */}
-                    <div
-                        className="budget"
-                        style={{ backgroundImage: `url(${bg1})` }}
-                    >
-                        <div className="txt">
-                            <span>BUDGET BREAKUP</span>
-                        </div>
-
-                        <div className="breakup-1">
-                            <div className="photo-1">
-                                <img src={im1} alt="" className="image-1" />
-                                <img src={im3} alt="" className="image-2" />
+                    <div className="breakup-1">
+                        <div className="chart-1">
+                            <div className="pie-1">
+                                <PieChart width={500} height={500}>
+                                    <Legend width={500} align="center" />
+                                    <Pie
+                                        data={data02}
+                                        cx="50%"
+                                        cy="50%"
+                                        dataKey="value"
+                                        nameKey="name"
+                                        labelLine={false}
+                                        label
+                                        outerRadius={140}
+                                        fill="#8884d8"
+                                    >
+                                        {data02.map((entry, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                fill={
+                                                    COLORS[
+                                                        index % COLORS.length
+                                                    ]
+                                                }
+                                            />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip />
+                                </PieChart>
                             </div>
-
-                            <div className="chart-1">
-                                <div className="pie-1">
-                                    <PieChart width={700} height={500}>
-                                        <Legend width={700} align="center" />
-                                        <Pie
-                                            data={data01}
-                                            cx="50%"
-                                            cy="50%"
-                                            dataKey="value"
-                                            nameKey="name"
-                                            labelLine={false}
-                                            label
-                                            outerRadius={140}
-                                            fill="#8884d8"
-                                        >
-                                            {/* <LabelList
-                                                dataKey="name"
-                                                position={"outside"}
-                                                angle="-45"
-                                                offset={40}
-                                                fill="#8884d8"
-                                            /> */}
-                                            {data01.map((entry, index) => (
-                                                <Cell
-                                                    key={`cell-${index}`}
-                                                    fill={
-                                                        COLORS[
-                                                            index %
-                                                                COLORS.length
-                                                        ]
-                                                    }
-                                                />
-                                            ))}
-                                        </Pie>
-                                        <Tooltip />
-                                    </PieChart>
-                                </div>
-
-                                <div className="total">
-                                    <span>TOTAL : 15,50,00</span>
-                                </div>
+                            <div className="total">
+                                <span>TOTAL : 4,00,000</span>
                             </div>
                         </div>
 
-                        <div className="breakup-1">
-                            <div className="chart-1">
-                                <div className="pie-1">
-                                    <PieChart width={500} height={500}>
-                                        <Legend width={500} align="center" />
-                                        <Pie
-                                            data={data02}
-                                            cx="50%"
-                                            cy="50%"
-                                            dataKey="value"
-                                            nameKey="name"
-                                            labelLine={false}
-                                            label
-                                            outerRadius={140}
-                                            fill="#8884d8"
-                                        >
-                                            {data02.map((entry, index) => (
-                                                <Cell
-                                                    key={`cell-${index}`}
-                                                    fill={
-                                                        COLORS[
-                                                            index %
-                                                                COLORS.length
-                                                        ]
-                                                    }
-                                                />
-                                            ))}
-                                        </Pie>
-                                        <Tooltip />
-                                    </PieChart>
-                                </div>
-                                <div className="total">
-                                    <span>TOTAL : 4,00,000</span>
-                                </div>
+                        <div className="photo-1">
+                            <img src={im2} alt="" className="image-1" />
+                            <img src={im4} alt="" className="image-2" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="mobile">
+                <div
+                    className="budget"
+                    style={{
+                        backgroundImage: `url(${bg1})`,
+                        backgroundSize: "cover",
+                    }}
+                >
+                    <div className="txt-2">
+                        <span>BUDGET BREAKUP</span>
+                    </div>
+                    <div className="breakup-2">
+                        <div className="photo-2">
+                            <img src={im1} alt="" className="image-1" />
+                            <img src={im3} alt="" className="image-2" />
+                        </div>
+
+                        <div className="chart-2">
+                            <div className="pie-2">
+                                <PieChart width={400} height={400}>
+                                    <Legend
+                                        width={400}
+                                        align="center"
+                                        iconSize={10}
+                                    />
+                                    <Pie
+                                        data={data01}
+                                        cx="50%"
+                                        cy="50%"
+                                        dataKey="value"
+                                        nameKey="name"
+                                        labelLine={false}
+                                        label
+                                        outerRadius={90}
+                                        fill="#8884d8"
+                                    >
+                                        {data01.map((entry, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                fill={
+                                                    COLORS[
+                                                        index % COLORS.length
+                                                    ]
+                                                }
+                                            />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip />
+                                </PieChart>
                             </div>
 
-                            <div className="photo-1">
-                                <img src={im2} alt="" className="image-1" />
+                            <div className="total">
+                                <span>TOTAL : 15,50,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="breakup-2">
+                        <div className="chart-2">
+                            <div className="photo-2">
                                 <img src={im4} alt="" className="image-2" />
+                                <img src={im2} alt="" className="image-1" />
+                            </div>
+                            <div className="pie-2">
+                                <PieChart width={400} height={400}>
+                                    <Legend width={400} align="center" />
+                                    <Pie
+                                        data={data02}
+                                        cx="50%"
+                                        cy="50%"
+                                        dataKey="value"
+                                        nameKey="name"
+                                        labelLine={false}
+                                        label
+                                        outerRadius={90}
+                                        fill="#8884d8"
+                                    >
+                                        {data02.map((entry, index) => (
+                                            <Cell
+                                                key={`cell-${index}`}
+                                                fill={
+                                                    COLORS[
+                                                        index % COLORS.length
+                                                    ]
+                                                }
+                                            />
+                                        ))}
+                                    </Pie>
+                                    <Tooltip />
+                                </PieChart>
+                            </div>
+                            <div className="total">
+                                <span>TOTAL : 4,00,000</span>
                             </div>
                         </div>
                     </div>
@@ -350,7 +443,7 @@ const Crowdfunding = () => {
             </section>
 
             {/* section2 sponsor */}
-            <div className="bg" style={{ backgroundImage: `url(${bg1})` }}>
+            {/* <div className="bg" style={{ backgroundImage: `url(${bg1})`,backgroundSize:'cover',backgroundRepeat:'no-repeat' }}>
                 <div className="floater">
                     <img src={im1} alt="" />
                     <div className="cont">
@@ -368,12 +461,12 @@ const Crowdfunding = () => {
                         <div className="button">
                             {/* <button onClick={navigateToSpons}>
                                 Click here to sponsor us
-                            </button> */}
+                            </button> 
                         </div>
                     </div>
                 </div>
-
-                {/* <div className="floater">
+            </div> */}
+            {/* <div className="floater">
                     <img src={im2} alt="" />
                     <div className="cont">
                         <span className="header">TEAM FORZAVJTI</span>
@@ -395,47 +488,40 @@ const Crowdfunding = () => {
                         </div>
                     </div>
                 </div> */}
-                {/* section 3 form for sponsors */}
-                <div
-                    className="crowdform"
-                    style={{ backgroundImage: `url(${bg1})` }}
-                >
-                    <div className="formy">
-                        <div className="title">
-                            <span>
-                                THANK YOU FOR BEING A PART OF VJTI RACING'S
-                                CROWDFUNDING CAMPAIGN!
-                            </span>
+            {/* section 3 form for sponsors */}
+            <div
+                className="crowdform"
+                style={{ backgroundImage: `url(${bg1})` }}
+            >
+                <div className="formy">
+                    <div className="title">
+                        <span>
+                            THANK YOU FOR BEING A PART OF VJTI RACING'S
+                            CROWDFUNDING CAMPAIGN!
+                        </span>
+                    </div>
+                    <form className="fform" onSubmit={(e) => handleSubmit(e)}>
+                        <div>
+                            <label>Email</label>
+                            <br />
+                            <input name="Email" type="email" required />
                         </div>
-                        <form
-                            className="fform"
-                            onSubmit={(e) => handleSubmit(e)}
-                        >
-                            <div>
-                                <label>Email</label>
-                                <br />
-                                <input name="Email" type="email" required />
-                            </div>
-                            <div>
-                                <label>Full Name</label>
-                                <br />
-                                <input name="Name" type="text" required />
-                            </div>
-                            <div>
-                                <label>Address</label>
-                                <br />
-                                <input name="Address" type="text" required />
-                            </div>
-                            <div>
-                                <label>Contact Number</label>
-                                <br />
-                                <input
-                                    name="ContactNumber"
-                                    type="text"
-                                    required
-                                />
-                            </div>
-                            {/* <div>
+                        <div>
+                            <label>Full Name</label>
+                            <br />
+                            <input name="Name" type="text" required />
+                        </div>
+                        <div>
+                            <label>Address</label>
+                            <br />
+                            <input name="Address" type="text" required />
+                        </div>
+                        <div>
+                            <label>Contact Number</label>
+                            <br />
+                            <input name="ContactNumber" type="text" required />
+                        </div>
+                        {/* <div>
                                 <label>Team you would like to support</label>
                                 <br />
                                 <select name="Team">
@@ -447,83 +533,81 @@ const Crowdfunding = () => {
                                     </option>
                                 </select>
                             </div> */}
-                            <div>
-                                <label>Amount</label>
-                                <br />
-                                <input name="Amount" type="text" />
+                        <div>
+                            <label>Amount</label>
+                            <br />
+                            <input name="Amount" type="text" />
+                        </div>
+                        <div>
+                            <label>Mode of Payment</label>
+                            <br />
+                            <select name="Mode">
+                                <option value="paytm">Paytm</option>
+                                <option value="googlepay">Google Pay</option>
+                                <option value="banktransfer">
+                                    Bank Transfer
+                                </option>
+                                <option value="cash">Cash</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                Name of Point of Contact In VJTI Racing
+                            </label>
+                            <br />
+                            <input name="POCname" type="text" />
+                        </div>
+                        <div>
+                            <label>T-Shirt size</label>
+                            <br />
+                            <select name="ShirtSize">
+                                <option value="XS" name="XS">
+                                    XS
+                                </option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>SCREENSHOT OF PAYMENT</label>
+                            <br />
+                            <div className="scan">
+                                <span>SCAN AND PAY </span>
+                                <img src={qr} alt="" />
+                                <span>UPI ID : SAEINDIAVJTI@SBI</span>
+                                <span>OR</span>
+                                <span>Bank Transfer:</span>
+                                <span>
+                                    Name : SAEINDIA VEERMATA JIJABAI
+                                    TECHNOLOGICAL INSTITUTE
+                                </span>
+                                <span>Account Number : 30678373626</span>
+                                <span>IFSC Code : SBIN0011075</span>
                             </div>
-                            <div>
-                                <label>Mode of Payment</label>
-                                <br />
-                                <select name="Mode">
-                                    <option value="paytm">Paytm</option>
-                                    <option value="googlepay">
-                                        Google Pay
-                                    </option>
-                                    <option value="banktransfer">
-                                        Bank Transfer
-                                    </option>
-                                    <option value="cash">Cash</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label>
-                                    Name of Point of Contact In VJTI Racing
-                                </label>
-                                <br />
-                                <input name="POCname" type="text" />
-                            </div>
-                            <div>
-                                <label>T-Shirt size</label>
-                                <br />
-                                <select name="ShirtSize">
-                                    <option value="XS" name="XS">
-                                        XS
-                                    </option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                    <option value="XXL">XXL</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label>Screenshot of payment</label>
-                                <br />
-                                <div className="scan">
-                                    <span>SCAN AND PAY </span>
-                                    <img src={qr} alt="" />
-                                    <span>UPI ID : SAEINDIAVJTI@SBI</span>
-                                    <span>OR</span>
-                                    <span>Bank Transfer:</span>
-                                    <span>
-                                        Name : SAEINDIA VEERMATA JIJABAI
-                                        TECHNOLOGICAL INSTITUTE
-                                    </span>
-                                    <span>Account Number : 30678373626</span>
-                                    <span>IFSC Code : SBIN0011075</span>
-                                </div>
-                            </div>
-                            <div>
-                                <label>Upload a file:</label>
-                                <br />
-                                <input
-                                    type="file"
-                                    id="screenshot"
-                                    name="Screenshot"
-                                    required
-                                ></input>
-                                <img src="" alt="" id="screenshotimg" />
-                            </div>
-                            <div>
-                                <center>
-                                    <input type="submit" className="submit" />
-                                </center>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div>
+                            <label>Upload a file:</label>
+                            <br />
+                            <input
+                                type="file"
+                                id="screenshot"
+                                name="Screenshot"
+                                required
+                            ></input>
+                            <img src="" alt="" id="screenshotimg" />
+                        </div>
+                        <div>
+                            <center>
+                                <input type="submit" className="submit" />
+                            </center>
+                        </div>
+                    </form>
                 </div>
             </div>
+
             <section>
                 <Footer />
             </section>
