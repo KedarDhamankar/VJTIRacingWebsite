@@ -1,14 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { useRef, useState, React } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 
 import "../stylesheets/SponsorUs.css";
 import bckgd from "../assets/SponsorUs/bckgd.jpg";
-// eslint-disable-next-line no-unused-vars
-import shape1 from "../assets/SponsorUs/1.png";
-// eslint-disable-next-line no-unused-vars
-import shape2 from "../assets/SponsorUs/2.png";
 import bg from "../assets/SponsorUs/3.png";
 import cs1 from "../assets/SponsorUs/new sponsors/sponsors_landscape.png";
 import cs2 from "../assets/SponsorUs/new sponsors/sponsors_portrait.png";
@@ -22,7 +19,7 @@ const SponsorUs = () => {
         console.log("Submitted");
         const formData = new FormData(formEle);
         fetch(
-            "https://script.google.com/macros/s/AKfycby0aS8rF-UrWMDQZDYMF6_zBSLJNBKxgrHIZlTGW1uyDrT4b3mrtIw-eGMzpLscztbHXg/exec",
+            "https://script.google.com/macros/s/AKfycbzXJpiz-Je4vMvOTcxxrsitLvXniiW5gCiKrqIy18K270hd0W8Kt-rIzCecUB3S4f7wUw/exec",
             { method: "POST", body: formData }
         );
     }
@@ -47,8 +44,22 @@ const SponsorUs = () => {
                 <div className="booklet">
                     <span>DOWNLOAD OUR SPONSORSHIP BOOKLETS FROM HERE</span>
                     <div className="download">
-                        <button>TEAM MOTORBREATH</button>
-                        <button>TEAM FORZA</button>
+                        {/* <Link to="https://drive.google.com/file/d/1radmUe_dbwQKrq18v38nzhU_MVLF5PeO/view?usp=sharing"> */}
+                        <a
+                            href="https://drive.google.com/file/d/1radmUe_dbwQKrq18v38nzhU_MVLF5PeO/view?usp=sharing"
+                            target="_blank"
+                        >
+                            <button>TEAM MOTORBREATH</button>
+                        </a>
+                        {/* </Link> */}
+                        {/* <Link to="https://drive.google.com/file/d/1kdlOJFhK61C8nETWTBUoLiinn0jAgaKM/view?usp=sharing"> */}
+                        <a
+                            href="https://drive.google.com/file/d/1kdlOJFhK61C8nETWTBUoLiinn0jAgaKM/view?usp=sharing"
+                            target="_blank"
+                        >
+                            <button>TEAM FORZA</button>
+                        </a>
+                        {/* </Link> */}
                     </div>
                 </div>
 

@@ -15,24 +15,23 @@ import hp4 from "../assets/Home/hp4.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-	const ref = useRef(null);
+    const ref = useRef(null);
 
-	const handleClick = () => {
-		ref.current?.scrollIntoView({ behavior: "smooth" });
-	};
-	const navigate = useNavigate();
-	const navigateToComp = () =>{
-		navigate('/Competitions');
-	};
-	const navigateToTeam = () => {
-        navigate('/Teams');
+    const handleClick = () => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
     };
-	const navigateToAct = () => {
-        navigate('/Activities');
+    const navigate = useNavigate();
+    const navigateToComp = () => {
+        navigate("/Competitions");
     };
-	
+    const navigateToTeam = () => {
+        navigate("/Teams");
+    };
+    const navigateToAct = () => {
+        navigate("/Activities");
+    };
 
-	return (
+    return (
         <>
             <title>Home</title>
             <Navbar />
@@ -153,7 +152,10 @@ const Home = () => {
                             {" "}
                             <a
                                 href="https://vjti.ac.in/"
-                                style={{ textDecoration: "none" , color:"white"}}
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white",
+                                }}
                             >
                                 Know More
                             </a>
@@ -183,7 +185,7 @@ const Home = () => {
                     ></div>
                 </div>
 
-                {/* 6th section - Our Achievements */}
+                {/* 6th section - Our Activities */}
                 <div className="aboutus aboutvjti activities">
                     <div className="container2">
                         <span className="text1">OUR ACTIVITIES</span>
@@ -196,13 +198,10 @@ const Home = () => {
                             consists of students from the second-year,
                             established to introduce deserving youngsters to the
                             automotive world as early as possible. They will
-                            work on manufacturing a go-kart, mainly to
-                            participate in ISIE IKR. The club also hosts
-                            workshops and events for the students of the college
-                            to evoke an interest in the technical aspects of our
-                            craft, and familiarise students with the topics and
-                            processes involved in the manufacture of our
-                            vehicles.
+                            manufacture a go-kart for ISIE IKR participation.
+                            The club also hosts workshops and events to spark
+                            students' interest in technical aspects and
+                            introduce them to vehicle manufacturing.
                         </span>
                         <button onClick={navigateToAct}>Know More</button>
                     </div>
@@ -234,7 +233,12 @@ const Home = () => {
                                 designing, fabrication, and learning management
                                 beyond just classroom education.
                             </span>
-                            <button className="button1">Know More</button>
+                            <button
+                                className="button1"
+                                onClick={navigateToTeam}
+                            >
+                                Know More
+                            </button>
                         </div>
                     </div>
                     <div className="whiteline"></div>
@@ -260,7 +264,17 @@ const Home = () => {
                                 strong alumni network.
                             </span>
 
-                            <button className="button1">Know More</button>
+                            <button className="button1">
+                                <a
+                                    href="https://vjti.ac.in/"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white",
+                                    }}
+                                >
+                                    Know More
+                                </a>
+                            </button>
                         </div>
                     </div>
                     <div className="whiteline"></div>
@@ -276,7 +290,10 @@ const Home = () => {
                                 participation in national and international
                                 competitions for more than a decade.
                             </span>
-                            <button className=" button1 button2">
+                            <button
+                                className=" button1 button2"
+                                onClick={navigateToComp}
+                            >
                                 Know More
                             </button>
                         </div>
@@ -307,7 +324,10 @@ const Home = () => {
                                 vehicles.
                             </span>
 
-                            <button className="button1 button2">
+                            <button
+                                className="button1 button2"
+                                onClick={navigateToAct}
+                            >
                                 Know More
                             </button>
                         </div>

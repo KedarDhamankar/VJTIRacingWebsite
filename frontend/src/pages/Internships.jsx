@@ -21,9 +21,11 @@ import kartika from "../assets/Internships/Kartika.png";
 import shivam from "../assets/Internships/Shivam.png";
 import shivraj from "../assets/Internships/Shivraj.png";
 import shraddha from "../assets/Internships/Shraddha.png";
+import samir from "../assets/Internships/samir.jpeg";
 // backgnd imgs
 import bg1 from "../assets/Internships/plane.png";
 import csir from "../assets/Internships/7.png";
+import csir_mobile from "../assets/Internships/7_copy.png";
 import barc from "../assets/Internships/9.png";
 import logo from "../assets/Internships/barc.png";
 import bg2 from "../assets/Internships/10.png";
@@ -59,6 +61,7 @@ const Internships = () => {
                 >
                     <div className="head">
                         <img src={csir} alt="" />
+                        <img src={csir_mobile} alt="" />
                     </div>
                     <span>
                         <i>RESEARCH INTERNS</i>
@@ -210,10 +213,10 @@ const Internships = () => {
                 <div className="whitediv">
                     <div className="pics">
                         <div className="box1">
-                            <img src={shraddha} alt="" />
-                            <div className="pic">
-                                <img src={logo6} alt="" />
-                            </div>
+                            <img src={samir} className="pic" alt="" />
+                            {/* <div className="pic"> */}
+                            <img src={logo6} className="company" alt="" />
+                            {/* </div> */}
                             <i>
                                 <span>SAMIR KADRI</span>
                                 <h4>VEHICLE DYNAMICS INTERN</h4>
@@ -222,22 +225,22 @@ const Internships = () => {
                         </div>
 
                         <div className="box1">
-                            <img src={madhusugandh} alt="" />
-                            <div className="pic">
-                                <img src={logo7} alt="" />
-                            </div>
+                            <img src={madhusugandh} className="pic" alt="" />
+                            {/* <div className="pic"> */}
+                            <img src={logo7} className="company" alt="" />
+                            {/* </div> */}
                             <i>
-                                <span>MADHUSUGANDH KULKARNI</span>
+                                <span>MADHUSUDHAN KULKARNI</span>
                                 <h4>TIME STUDY INTERN</h4>
                                 <h4>GLATT SYSTEMS PUNE</h4>
                             </i>
                         </div>
 
                         <div className="box1">
-                            <img src={shivraj} alt="" />
-                            <div className="pic">
-                                <img src={logo8} alt="" />
-                            </div>
+                            <img src={shivraj} className="pic" alt="" />
+                            {/* <div className="pic"> */}
+                            <img src={logo8} className="company" alt="" />
+                            {/* </div> */}
                             <i>
                                 <span>SHIVRAJ PARLE</span>
                                 <h4>LARSEN & TOUBRO</h4>

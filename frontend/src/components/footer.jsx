@@ -3,11 +3,17 @@ import React from "react";
 
 import "../stylesheets/Footer.css";
 
-import { FaMapMarked, FaPhoneAlt, FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import {
+    FaMapMarked,
+    FaPhoneAlt,
+    FaFacebookSquare,
+    FaInstagramSquare,
+    FaLinkedin,
+} from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
-	return (
+    return (
         <>
             <div className="footer">
                 <span className=" text1">CONTACT US</span>
@@ -107,6 +113,13 @@ const Footer = () => {
                         <h5>
                             © VJTI Racing 2023 <br /> All Rights Reserved.
                         </h5>
+                        <br />
+                        <h3>MAINTAINED BY:</h3>
+
+                        <div className="credits">
+                            <h5>Kedar Dhamankar</h5>
+                            <h5>Rucha Patil</h5>
+                        </div>
                     </div>
                 </div>
             </div>

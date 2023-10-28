@@ -6,294 +6,298 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 .whiteline {
-	width: 100%;
-	height: 0.5vh;
-	background-color: #c2bebe;
+    width: 100%;
+    height: 0.5vh;
+    background-color: #c2bebe;
 }
 
 .sponsorbg {
-	height: 100vh;
+    height: 100vh;
 }
 
 .sponsorbg img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sponsorbg span {
-	position: absolute;
-	top: 40%;
-	left: 34%;
-	color: white;
-	font-family: "Oswald", sans-serif;
-	text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1);
-	font-size: 7vw;
-	letter-spacing: -0.2vw;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-shadow: 0.5rem 0.45rem 0.825rem rgba(0, 0, 0, 1);
+    font-size: 7vw;
+    letter-spacing: -0.2vw;
 }
 
 .formsection {
-	background-color: black;
-	background-size: cover;
-	padding: 10vh 0;
+    background-color: black;
+    background-size: cover;
+    padding: 10vh 0;
 }
 
 .formsection .booklet {
-	text-align: center;
-	width: 50vw;
-	margin: 0 auto;
-	padding: 5vh 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 4%/15%;
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4%/15%;
 }
 
 .formsection .booklet span {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 1.4vw;
-	color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.4vw;
+    color: #fff;
 }
 
 .formsection .booklet .download {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	column-gap: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10vw;
 }
 
 .formsection .booklet .download button {
-	margin-top: 4vh;
-	padding: 2vh 0;
-	width: 33%;
-	/* min-width: 10vh; */
-	border: none;
-	border-radius: 0.7vw;
-	color: #fff;
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	font-size: 1.1vw;
-	cursor: pointer;
+    margin-top: 4vh;
+    padding: 2vh 0;
+    width: 15vw;
+    /* min-width: 10vh; */
+    border: none;
+    border-radius: 0.7vw;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.1vw;
+    /* cursor: pointer; */
 }
 
-.formsection .booklet .download button:nth-child(1) {
-	background-image: linear-gradient(to right, rgb(255, 222, 89), rgb(255, 145, 77));
-	text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
+.formsection .booklet .download a:nth-child(1) button {
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 222, 89),
+        rgb(255, 145, 77)
+    );
+    text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
 }
 
-.formsection .booklet .download button:nth-child(2) {
-	background-image: linear-gradient(to right, #ff3131, #ff914d);
+.formsection .booklet .download a:nth-child(2) button {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
 
-	text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
+    text-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.7);
 }
 
 .formsection .formdiv {
-	width: 60vw;
-	background-color: rgba(0, 94, 96, 0.6);
-	padding: 5vh 0;
-	border-radius: 3%/4%;
-	margin: 7vh auto;
-	color: #fff;
+    width: 60vw;
+    background-color: rgba(0, 94, 96, 0.6);
+    padding: 5vh 0;
+    border-radius: 3%/4%;
+    margin: 7vh auto;
+    color: #fff;
 }
 
 .formsection .formdiv span {
-	text-align: center;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 1.3vw;
-	display: block;
-	margin-bottom: 8vh;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.3vw;
+    display: block;
+    margin-bottom: 8vh;
 }
 
 .formsection .formdiv form {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .formsection .formdiv label {
-	font-family: "Lato", sans-serif;
-	font-size: 110%;
-	margin-left: 1vw;
+    font-family: "Lato", sans-serif;
+    font-size: 110%;
+    margin-left: 1vw;
 }
 
 .formsection .formdiv input {
-	margin-bottom: 5vh;
-	width: 40vw;
-	border: none;
-	border-radius: 4%/60%;
-	background-color: rgba(73, 136, 141, 0.3);
-	color: #fff;
-	font-family: "", sans-serif;
-	font-weight: 700;
-	font-size: 1.1vw;
-	padding: 2vh 1vw;
-	outline: none;
+    margin-bottom: 5vh;
+    width: 40vw;
+    border: none;
+    border-radius: 4%/60%;
+    background-color: rgba(73, 136, 141, 0.3);
+    color: #fff;
+    font-family: "", sans-serif;
+    font-weight: 700;
+    font-size: 1.1vw;
+    padding: 2vh 1vw;
+    outline: none;
 }
 
 .formsection .formdiv .submit {
-	cursor: pointer;
-	width: 20vw;
-	height: 7vh;
-	border: none;
-	border-radius: 6%/50%;
-	background-color: rgba(73, 136, 141);
-	color: #fff;
+    cursor: pointer;
+    width: 20vw;
+    height: 7vh;
+    border: none;
+    border-radius: 6%/50%;
+    background-color: rgba(73, 136, 141);
+    color: #fff;
 }
 
 /* Current Sponsors */
-.sponsorsection{
-	background-color: black;
-	background-size: cover;
-	padding: 10vh 0;
+.sponsorsection {
+    background-color: black;
+    background-size: cover;
+    padding: 10vh 0;
 }
 
-.sponsorsection .currentspons{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.sponsorsection .currentspons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponsorsection .currentspons h1 {
-	color: white;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 6vh;
-	position: center;
-	margin-bottom: 6vh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 6vh;
+    position: center;
+    margin-bottom: 6vh;
 }
 
-.sponsorsection .currentspons .currsponslandscape{
-	display: block;
-	width: 90vw;
-	height: 90vh;
+.sponsorsection .currentspons .currsponslandscape {
+    display: block;
+    width: 90vw;
+    height: 90vh;
 }
 .sponsorsection .currentspons .currsponsportrait {
-	display: none;
+    display: none;
 }
 .sponsorsection .pastspons {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponsorsection .pastspons h1 {
-	color: white;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 700;
-	font-size: 6vh;
-	/* position: center; */
-	margin-bottom: 3vh;
-	margin-top: 4vh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 6vh;
+    /* position: center; */
+    margin-bottom: 3vh;
+    margin-top: 4vh;
 }
 
 .sponsorsection .pastspons .pastsponslandscape {
-	display: block;
-	width: 80vw;
-	height: 80vh;
+    display: block;
+    width: 80vw;
+    height: 80vh;
 }
 
 .sponsorsection .pastspons .pastsponsportrait {
-	display: none;
+    display: none;
 }
 
 @media (orientation: portrait) {
-	.sponsorbg span {
-		font-size: 15vw;
-		font-weight: 800;
-		top: 45%;
-		left: 15%;
-	}
+    .sponsorbg span {
+        font-size: 15vw;
+        font-weight: 800;
+        top: 45%;
+        left: 15%;
+    }
 
-	.formsection .booklet {
-		width: 85vw;
-		padding: 3vh 3vw;
-	}
+    .formsection .booklet {
+        width: 85vw;
+        padding: 3vh 3vw;
+    }
 
-	.formsection .booklet span {
-		font-size: 4vw;
-	}
+    .formsection .booklet span {
+        font-size: 4vw;
+    }
 
-	.formsection .booklet .download {
-		column-gap: 7vw;
-	}
+    .formsection .booklet .download {
+        column-gap: 7vw;
+    }
 
-	.formsection .booklet .download button {
-		font-size: 3.5vw;
-		font-weight: 800;
-		padding: 2vh 1vw;
-		width: 60%;
-	}
-	.formsection .formdiv {
-		width: 70vw;
-		padding: 5vh 5vw;
-		border-radius: 6%/2%;
-	}
+    .formsection .booklet .download button {
+        font-size: 3.5vw;
+        font-weight: 800;
+        padding: 2vh 1vw;
+        width: 50vw;
+    }
+    .formsection .formdiv {
+        width: 70vw;
+        padding: 5vh 5vw;
+        border-radius: 6%/2%;
+    }
 
-	.formsection .formdiv span {
-		font-size: 4vw;
-		margin-bottom: 4vh;
-	}
+    .formsection .formdiv span {
+        font-size: 4vw;
+        margin-bottom: 4vh;
+    }
 
-	.formsection .formdiv label {
-		font-size: 100%;
-		display: block;
-		margin-bottom: -1.5vh;
-	}
+    .formsection .formdiv label {
+        font-size: 100%;
+        display: block;
+        margin-bottom: -1.5vh;
+    }
 
-	.formsection .formdiv input {
-		width: 58vw;
-		border-radius: 6%/50%;
-		margin-bottom: 3vh;
-		font-size: 3.1vw;
-		padding: 3.1vw 2vw;
-	}
+    .formsection .formdiv input {
+        width: 58vw;
+        border-radius: 6%/50%;
+        margin-bottom: 3vh;
+        font-size: 3.1vw;
+        padding: 3.1vw 2vw;
+    }
 
-	.formsection .formdiv .submit {
-		width: 40vw;
-		height: initial;
-		font-size: 4vw;
-		padding: 1.5vh 0;
-		border-radius: 13%/50%;
-		margin-top: 3vh;
-	}
-	.sponsorsection .currentspons h1 {
-		color: white;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 700;
-		font-size: 4vh;
-		position: center;
-		margin-bottom: 0.5vh;
-	}
-	.sponsorsection .currentspons .currsponslandscape {
-		display: none;
-	}
+    .formsection .formdiv .submit {
+        width: 40vw;
+        height: initial;
+        font-size: 4vw;
+        padding: 1.5vh 0;
+        border-radius: 13%/50%;
+        margin-top: 3vh;
+    }
+    .sponsorsection .currentspons h1 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 4vh;
+        position: center;
+        margin-bottom: 0.5vh;
+    }
+    .sponsorsection .currentspons .currsponslandscape {
+        display: none;
+    }
 
-	.sponsorsection .currentspons .currsponsportrait {
-		display: block;
-		width: 80vw;
-		height: 80vh;
-	}
-	.sponsorsection .pastspons h1 {
-		color: white;
-		font-family: "Montserrat", sans-serif;
-		font-weight: 700;
-		font-size: 4vh;
-		/* position: center; */
-		margin-bottom:3vh;
-		margin-top: 6vh;
-	}
-	.sponsorsection .pastspons .pastsponslandscape {
-		display: none;
-	}
+    .sponsorsection .currentspons .currsponsportrait {
+        display: block;
+        width: 80vw;
+        height: 80vh;
+    }
+    .sponsorsection .pastspons h1 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 4vh;
+        /* position: center; */
+        margin-bottom: 3vh;
+        margin-top: 6vh;
+    }
+    .sponsorsection .pastspons .pastsponslandscape {
+        display: none;
+    }
 
-	.sponsorsection .pastspons .pastsponsportrait {
-		display: block;
-		width: 82vw;
-		height: 80vh;
-		/* left:10vw; */
-	}
+    .sponsorsection .pastspons .pastsponsportrait {
+        display: block;
+        width: 82vw;
+        height: 80vh;
+        /* left:10vw; */
+    }
 }

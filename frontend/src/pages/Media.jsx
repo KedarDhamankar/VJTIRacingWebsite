@@ -37,7 +37,10 @@ const Media = () => {
             <section>
                 <div
                     className="backgnd"
-                    style={{ backgroundImage: `url(${bg1})` }}
+                    style={{
+                        backgroundImage: `url(${bg1})`,
+                        backgroundRepeat: "repeat-x",
+                    }}
                 >
                     {/* <img src={bg} alt="" />  */}
                     <div className="darkenimage"></div>

@@ -70,3 +70,12 @@
     column-gap: 1.5rem;
     justify-content: center;
 }
+
+.footer .credits {
+    /* text-align: left; */
+}
+
+.footer .credits h5 {
+    font-size: 120%;
+    font-weight: 400;
+}

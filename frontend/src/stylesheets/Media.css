@@ -44,14 +44,27 @@
     /* z-index: 10; */
 }
 .mediaimg img {
-    height: 35vh;
-    width: 20vw;
+    height: 45vh;
+    width: 70vh;
     margin: 2vw;
-    object-fit: fill;
-    border: 10px white solid;
+    object-fit: cover;
+    border: 3px rgb(54, 49, 49) solid;
     box-shadow: 0px 0px 26px 2px rgb(0, 0, 0);
     z-index: 10;
 }
 .foot {
     z-index: 10;
+}
+
+@media (orientation: portrait) {
+    .backgnd .head {
+        top: 37%;
+        left: 15%;
+        font-size: 30vw;
+    }
+    .mediaimg img {
+        max-height: 50vw;
+        max-width: 70vw;
+        margin: 8vw 2vw;
+    }
 }
