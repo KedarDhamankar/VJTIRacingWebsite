@@ -51,11 +51,11 @@ const Navbar = () => {
                             MEDIA
                         </Link>
                     </li>
-                    {/* <li>
-						<Link to="/Crowdfunding" className="linktext">
-							CROWDFUNDING
-						</Link>
-					</li> */}
+                    <li>
+                        <Link to="/Crowdfunding" className="linktext">
+                            CROWDFUNDING
+                        </Link>
+                    </li>
                     <li>
                         <Link to="/SponsorUs" className="linktext">
                             SPONSOR US
@@ -108,11 +108,14 @@ const Navbar = () => {
                                     MEDIA
                                 </Link>
                             </li>
-                            {/* <li>
-								<Link to="/Crowdfunding" className="mob-linktext">
-									CROWDFUNDING
-								</Link>
-							</li> */}
+                            <li>
+                                <Link
+                                    to="/Crowdfunding"
+                                    className="mob-linktext"
+                                >
+                                    CROWDFUNDING
+                                </Link>
+                            </li>
                             <li>
                                 <Link to="/SponsorUs" className="mob-linktext">
                                     SPONSOR US

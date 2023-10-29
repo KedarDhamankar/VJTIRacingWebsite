@@ -303,7 +303,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 3vw;
-    margin-bottom: 5vw;
+    margin-bottom: 10vh;
 }
 .budget .breakup-2 .photo-2 {
     display: flex;
@@ -442,7 +442,8 @@
     margin: 2vw;
     border-radius: 3vw;
     padding: 5vw 0;
-    margin: 3vw auto;
+    margin: 0 auto;
+    margin-bottom: 7vh;
 }
 .crowdform .formy .title {
     word-break: break-word;
@@ -565,14 +566,14 @@
     }
     .budget .txt-2 {
         color: white;
-        padding-top: 4vw;
+        padding-top: 10vh;
     }
     .budget .txt-2 span {
         margin-top: 4vw;
         font-family: "montserrat", sans-serif;
         letter-spacing: 0.2vw;
         font-weight: 700;
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .crowdform .formy {
         width: 90vw;
@@ -606,13 +607,13 @@
         font-size: 3vw;
         padding: 2.5vw 3vw;
     }
-    .crowdform .formy .fform .scan{
+    .crowdform .formy .fform .scan {
         margin: 5vw;
     }
-    .crowdform .formy .fform .scan span{
+    .crowdform .formy .fform .scan span {
         margin: 1.5vw;
     }
-    .crowdform .formy .submit{
+    .crowdform .formy .submit {
         width: 30vw;
         height: 10vw;
         border-radius: 19%/50%;
