@@ -102,10 +102,10 @@
 .tiers .all .tier .after ul {
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.15vw;
     font-weight: 600;
     text-shadow: 0px 0px 10px rgb(152, 115, 28);
-    padding: 3vw;
+    padding: 1.5vw;
 }
 .tiers .all .tier:hover .after {
     display: block;
@@ -557,6 +557,7 @@
     }
     .tiers .all .tier .after ul {
         font-size: 3vw;
+        padding: 5vw;
     }
     .desktop {
         display: none;
