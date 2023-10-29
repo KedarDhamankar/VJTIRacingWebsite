@@ -13,7 +13,7 @@ import {
 import "../stylesheets/Crowdfunding.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
-import bg from "../assets/Crowdfunding/bg.jpg";
+import bg from "../assets/Crowdfunding/bg.png";
 import im1 from "../assets/Crowdfunding/mb.png";
 import im2 from "../assets/Crowdfunding/forza.png";
 import im3 from "../assets/Crowdfunding/car2.png";
@@ -118,7 +118,7 @@ const Crowdfunding = () => {
                     {/* Background image and title */}
                     <div className="back">
                         <img src={bg} alt="" />
-                        <div className="darkenimage"></div>
+                        {/* <div className="darkenimage"></div> */}
                         <span>CROWDFUNDING</span>
                     </div>
                 </div>
