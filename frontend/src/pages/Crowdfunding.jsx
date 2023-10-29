@@ -86,7 +86,6 @@ const Crowdfunding = () => {
         formData.forEach(function (value, key) {
             object[key] = value;
         });
-        // let dict = formData;
         let requestBody = {
             imgdata: imgdata.current,
             dict: object,
@@ -479,6 +478,7 @@ const Crowdfunding = () => {
                                 pattern="[0-9]{10}"
                             />
                         </div>
+
                         <div>
                             <label>Amount</label>
                             <br />
