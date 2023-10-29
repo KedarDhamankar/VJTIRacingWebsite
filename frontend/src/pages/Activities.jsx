@@ -12,6 +12,7 @@ import fea from "../assets/Activities/fea.png";
 import simulink from "../assets/Activities/simulink.png";
 import print from "../assets/Activities/3d.png";
 import autoshow from "../assets/Activities/autoshow.png";
+import gls from "../assets/Activities/GLS.jpeg";
 
 const Activities = () => {
     return (
@@ -101,7 +102,7 @@ const Activities = () => {
                                 programming of 3D printers.
                             </span>
                         </div>
-                        <img src={print} alt="" />
+                        <img src={gls} alt="" />
                     </div>
                 </div>
             </div>

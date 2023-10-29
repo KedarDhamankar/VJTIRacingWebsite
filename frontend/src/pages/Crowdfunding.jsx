@@ -53,57 +53,27 @@ const Crowdfunding = () => {
         "#008083",
         "#005f60",
     ];
-    // function Submit(e) {
-    //     const formEle = document.querySelector("fform");
-    //     e.preventDefault();
-    //     console.log("Submitted");
-    //     const formData = new FormData(formEle);
-    //     fetch(
-    //         "https://script.google.com/macros/s/AKfycbw0JLrg5F2C7zfzH34D10cNR1SdqdadVTdWOzrAVs9eoMWvNZZwO_84ZQ_qE9Hez-PW/exec",
-    //         { method: "POST", body: formData }
-    //     );
-    // }
+
     const imgdata = useRef();
     window.onload = function hello(e) {
         e.preventDefault();
-        // This line declares a variable called "url" and assigns it a value of "Api_Endpoint_Url"
         let url =
             "https://script.google.com/macros/s/AKfycbzSX9ljLiSEefS9EswAUDpIhDDmC6B_2qDzwF3-ua_AeRQN0m41xUoPCUdNxso3utwXEA/exec";
-        // This line declares a variable called "file" and assigns it the value of the first input element on the page
         let file = document.getElementById("screenshot");
-        // This line declares a variable called "img" and assigns it the value of the first image element on the page
         let img = document.getElementById("screenshotimg");
-        // This line adds an event listener to the "change" event of the "file" input element
         file.addEventListener("change", () => {
-            // This line creates a new FileReader object called "fr"
             let fr = new FileReader();
-            // This line adds an event listener to the "loadend" event of the FileReader object
             fr.addEventListener("loadend", () => {
-                // This line declares a variable called "res" and assigns it the result of the FileReader object
                 let res = fr.result;
-                // This line sets the "src" attribute of the "img" element to the value of "res"
                 img.src = res;
-                // This line splits the "res" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "spt"
                 let spt = res.split("base64,")[1];
-                // This line creates an object called "obj" with three properties: "base64", "type", and "name"
                 var obj = {
                     base64: spt,
                     type: file.files[0].type,
                     name: file.files[0].name,
                 };
                 imgdata.current = obj;
-
-                // fetch(url, {
-                //     method: "POST",
-                //     body: JSON.stringify(obj),
-                // })
-                //     // This line waits for the response from the server and converts it to text
-                //     .then((r) => r.text())
-                //     // This line logs the response data to the console
-                //     .then((data) => console.log(data));
-                // This line sends a POST request to the URL specified in the "url" variable, with the "obj" object as the request body
             });
-            // This line reads the selected file as a data URL
             fr.readAsDataURL(file.files[0]);
         });
     };
@@ -128,55 +98,9 @@ const Crowdfunding = () => {
             method: "POST",
             body: JSON.stringify(requestBody),
         })
-            // This line waits for the response from the server and converts it to text
             .then((r) => r.text())
-            // This line logs the response data to the console
             .then((data) => console.log(data));
     }
-
-    // function imgupload() {
-
-    // let imgdata = useRef();
-    // window.onload = function () {
-    //     let url = "Api_Endpoint_Url";
-    //     // This line declares a variable called "file" and assigns it the value of the first input element on the page
-    //     let file = document.getElementById("screenshot");
-    //     // This line declares a variable called "img" and assigns it the value of the first image element on the page
-    //     let img = document.getElementById("screenshotimg");
-    //     // This line adds an event listener to the "change" event of the "file" input element
-    //     file.addEventListener("change", () => {
-    //         // This line creates a new FileReader object called "fr"
-    //         let fr = new FileReader();
-    //         // This line adds an event listener to the "loadend" event of the FileReader object
-    //         fr.addEventListener("loadend", () => {
-    //             // This line declares a variable called "res" and assigns it the result of the FileReader object
-    //             let res = fr.result;
-    //             // This line sets the "src" attribute of the "img" element to the value of "res"
-    //             img.src = res;
-    //             // This line splits the "res" variable into an array, using the string "base64," as the separator, and assigns the second element to a variable called "spt"
-    //             let spt = res.split("base64,")[1];
-    //             // This line creates an object called "obj" with three properties: "base64", "type", and "name"
-    //             let obj = {
-    //                 base64: spt,
-    //                 type: file.files[0].type,
-    //                 name: file.files[0].name,
-    //             };
-    //             imgdata.current = obj;
-    //             // This line sends a POST request to the URL specified in the "url" variable, with the "obj" object as the request body
-    //             // fetch(url, {
-    //             //     method: "POST",
-    //             //     body: JSON.stringify(obj),
-    //             // })
-    //             // This line waits for the response from the server and converts it to text
-    //             //         .then((r) => r.text())
-    //             //         // This line logs the response data to the console
-    //             //         .then((data) => console.log(data));
-    //         });
-    //         // This line reads the selected file as a data URL
-    //         fr.readAsDataURL(file.files[0]);
-    //         // imgdata.current.files[0];
-    //     });
-    // };
 
     return (
         <>
@@ -513,52 +437,6 @@ const Crowdfunding = () => {
                 </div>
             </section>
 
-            {/* section2 sponsor */}
-            {/* <div className="bg" style={{ backgroundImage: `url(${bg1})`,backgroundSize:'cover',backgroundRepeat:'no-repeat' }}>
-                <div className="floater">
-                    <img src={im1} alt="" />
-                    <div className="cont">
-                        <span className="header">TEAM MOTORBREATH</span>
-
-                        <div className="des">
-                            <p>
-                                With a legacy of successfully competing in BAJA
-                                SAEINDIA competitions. Team Motorbreath is here
-                                for e-BAJA 2024. With a shared vision to design
-                                and fabricate our own electric ATV, we hope you
-                                tag along for our journey
-                            </p>
-                        </div>
-                        <div className="button">
-                            {/* <button onClick={navigateToSpons}>
-                                Click here to sponsor us
-                            </button> 
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-            {/* <div className="floater">
-                    <img src={im2} alt="" />
-                    <div className="cont">
-                        <span className="header">TEAM FORZAVJTI</span>
-
-                        <div className="des">
-                            <p>
-                                With a vision for expansion, we present to you
-                                Team ForzaVJTI, a new initiative by a group of
-                                highly motivated second year undergraduates.
-                                With a shared vision to manufacture our own EV
-                                Go-Kart and participate in IKR 2024, join us on
-                                our way to achieve our goal.
-                            </p>
-                        </div>
-                        <div className="button">
-                            <button onClick={navigateToSpons}>
-                                Click here to sponsor us
-                            </button>
-                        </div>
-                    </div>
-                </div> */}
             {/* section 3 form for sponsors */}
             <div
                 className="crowdform"
@@ -601,18 +479,6 @@ const Crowdfunding = () => {
                                 pattern="[0-9]{10}"
                             />
                         </div>
-                        {/* <div>
-                                <label>Team you would like to support</label>
-                                <br />
-                                <select name="Team">
-                                    <option value="Motorbreath">
-                                        Team Motorbreath 2024
-                                    </option>
-                                    <option value="ForzaVJTI">
-                                        Team ForzaVJTI 2024
-                                    </option>
-                                </select>
-                            </div> */}
                         <div>
                             <label>Amount</label>
                             <br />
