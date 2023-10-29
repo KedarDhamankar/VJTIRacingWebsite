@@ -107,6 +107,17 @@ const Crowdfunding = () => {
         });
     };
 
+    function handleSubmit(e) {
+        const formEle = document.querySelector("form");
+        e.preventDefault();
+        console.log("Submitted");
+        const formData = new FormData(formEle);
+        fetch(
+            "https://script.google.com/macros/s/AKfycbwxqCBrCMk65xL4XauavyDYWT1p9IKFV59TNv8kl3Z6b2RSYxyk-LT6QT_ETj8t1JrV/exec",
+            { method: "POST", body: formData }
+        );
+    }
+
     return (
         <>
             <section>
@@ -519,7 +530,7 @@ const Crowdfunding = () => {
                         <div>
                             <label>Contact Number</label>
                             <br />
-                            <input name="ContactNumber" type="text" required />
+                            <input name="Number" type="text" required />
                         </div>
                         {/* <div>
                                 <label>Team you would like to support</label>
@@ -542,12 +553,12 @@ const Crowdfunding = () => {
                             <label>Mode of Payment</label>
                             <br />
                             <select name="Mode">
-                                <option value="paytm">Paytm</option>
-                                <option value="googlepay">Google Pay</option>
-                                <option value="banktransfer">
+                                <option value="Paytm">Paytm</option>
+                                <option value="GooglePay">Google Pay</option>
+                                <option value="BankTransfer">
                                     Bank Transfer
                                 </option>
-                                <option value="cash">Cash</option>
+                                <option value="Cash">Cash</option>
                             </select>
                         </div>
                         <div>
@@ -555,12 +566,12 @@ const Crowdfunding = () => {
                                 Name of Point of Contact In VJTI Racing
                             </label>
                             <br />
-                            <input name="POCname" type="text" />
+                            <input name="POC" type="text" />
                         </div>
                         <div>
                             <label>T-Shirt size</label>
                             <br />
-                            <select name="ShirtSize">
+                            <select name="Tshirt">
                                 <option value="XS" name="XS">
                                     XS
                                 </option>

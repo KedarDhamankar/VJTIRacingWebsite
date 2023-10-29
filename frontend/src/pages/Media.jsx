@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import "../stylesheets/Media.css";
-import bg from "../assets/Crowdfunding/bg.jpg";
 import bg1 from "../assets/SponsorUs/3.png";
 import i1 from "../assets/Media/i1.png";
 import i2 from "../assets/Media/i2.png";
