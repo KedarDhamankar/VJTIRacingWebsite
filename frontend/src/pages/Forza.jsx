@@ -38,7 +38,6 @@ import mbflavia from "../assets/Teams/Motorbreath/flavia saldanha.jpg";
 import mbashutosh from "../assets/Teams/Motorbreath/ashutosh mohapatra.jpg";
 import mbanish from "../assets/Teams/Motorbreath/anish dhar.jpg";
 import mbdhruv from "../assets/Teams/Motorbreath/dhruv chugh.jpg";
-import mbjateen from "../assets/Teams/Motorbreath/jateen telange.jpg";
 
 //Forza Team images (fz prefix for forza)
 // Heads
