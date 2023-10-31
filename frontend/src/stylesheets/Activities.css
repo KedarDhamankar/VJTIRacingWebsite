@@ -107,9 +107,9 @@
     background-color: #f49100;
 }
 
-.activities .blackdiv .box:nth-child(6) {
-    /* background-color: #f6a631; */
-}
+/* .activities .blackdiv .box:nth-child(6) {
+    background-color: #f6a631;
+} */
 
 .activities .blackdiv .box:nth-child(2) .title {
     color: #0c335d;

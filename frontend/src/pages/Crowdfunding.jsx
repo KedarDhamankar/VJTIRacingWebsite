@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useRef, React } from "react";
+import { useRef, React,useEffect } from "react";
+
 import {
     PieChart,
     Pie,
@@ -24,6 +25,7 @@ import { useNavigate } from "react-router-dom";
 import { useReducer } from "react";
 
 const Crowdfunding = () => {
+
     const navigate = useNavigate();
     const navigateToSpons = () => {
         navigate("/SponsorUs");
@@ -100,6 +102,21 @@ const Crowdfunding = () => {
             .then((r) => r.text())
             .then((data) => console.log(data));
     }
+
+
+      useEffect(() => {
+          var script = document.createElement("script");
+          script.id = "ff-script";
+          script.src =
+              "https://formfacade.com/include/101806054270967856136/form/1FAIpQLSfwnp17hKgDvPMWoXwFq8KPxioiZP8IxlK0UYrab52e1SZeIQ/classic.js?div=ff-compose";
+          script.defer = true;
+          script.async = true;
+          document.body.appendChild(script);
+      }, []);
+
+
+
+
 
     return (
         <>
@@ -389,7 +406,7 @@ const Crowdfunding = () => {
                             </div>
 
                             <div className="total">
-                                <span>TOTAL : 15,50,00</span>
+                                <span>TOTAL : 15,50,000 </span>
                             </div>
                         </div>
                     </div>
@@ -442,7 +459,14 @@ const Crowdfunding = () => {
                 style={{ backgroundImage: `url(${bg1})` }}
             >
                 <div className="formy">
-                    <div className="title">
+                    {/* <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSd3xGqYKBTmo3JRII7-MxLxzbHu09evk6yqqLp3gh8k0llWyA/viewform?embedded=true"
+                        className="new"
+                    >
+                        Loading…
+                    </iframe> */}
+
+                    {/* <div className="title">
                         <span>
                             THANK YOU FOR BEING A PART OF VJTI RACING'S
                             CROWDFUNDING CAMPAIGN!
@@ -550,7 +574,9 @@ const Crowdfunding = () => {
                                 <input type="submit" className="submit" />
                             </center>
                         </div>
-                    </form>
+                    </form> */}
+
+                    <div id="ff-compose"></div>
                 </div>
             </div>
 

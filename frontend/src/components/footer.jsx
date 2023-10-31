@@ -56,7 +56,7 @@ const Footer = () => {
                                         </div>
                                     </td>
                                     <td>
-                                        <span>Captain: +91 90048 12503</span>
+                                        <span>Vivek Wagadiya: +91 90048 12503</span>
                                     </td>
                                 </tr>
                                 <tr>

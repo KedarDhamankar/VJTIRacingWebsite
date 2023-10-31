@@ -533,8 +533,16 @@
     height: 3vw;
     border: none;
     border-radius: 8%/50%;
-    background-color: rgba(73, 136, 141);
+    background-color: #49888d;
     color: whitesmoke;
+}
+.crowdform .formy .new{
+    border-radius: 2vw;
+    margin: none;
+    border: none;
+    outline: none;
+    /* height: 60vw; */
+    width: 52vw;
 }
 @media (orientation: portrait) {
     .crowd .back span {
