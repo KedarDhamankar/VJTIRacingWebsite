@@ -44,7 +44,7 @@ const Footer = () => {
                                     <td>
                                         <span>
                                             VJTI Racing-167, Nathalal Parekh
-                                            Marg, Wadla Village, Wadala, Mumbai,
+                                            Marg, Wadala Village, Wadala, Mumbai,
                                             Maharashtra 400031
                                         </span>
                                     </td>
