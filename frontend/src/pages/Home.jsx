@@ -55,6 +55,7 @@ const Home = () => {
                         <span className="boldtext">
                             The Official SAE Collegiate Club of VJTI, Matunga
                         </span>
+
                         <span>
                             Established in 2008, VJTI Racing is a student
                             organization for automobile enthusiasts. It is a
