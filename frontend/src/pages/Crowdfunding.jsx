@@ -307,7 +307,7 @@ const Crowdfunding = () => {
                             </div>
 
                             <div className="total">
-                                <span>TOTAL : 15,50,00</span>
+                                <span>TOTAL : 15,50,000</span>
                             </div>
                         </div>
                     </div>
