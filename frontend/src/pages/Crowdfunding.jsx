@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useRef, React,useEffect } from "react";
+import { useRef, React, useEffect } from "react";
 
 import {
     PieChart,
@@ -25,7 +25,6 @@ import { useNavigate } from "react-router-dom";
 import { useReducer } from "react";
 
 const Crowdfunding = () => {
-
     const navigate = useNavigate();
     const navigateToSpons = () => {
         navigate("/SponsorUs");
@@ -103,20 +102,15 @@ const Crowdfunding = () => {
             .then((data) => console.log(data));
     }
 
-
-      useEffect(() => {
-          var script = document.createElement("script");
-          script.id = "ff-script";
-          script.src =
-              "https://formfacade.com/include/101806054270967856136/form/1FAIpQLSfwnp17hKgDvPMWoXwFq8KPxioiZP8IxlK0UYrab52e1SZeIQ/classic.js?div=ff-compose";
-          script.defer = true;
-          script.async = true;
-          document.body.appendChild(script);
-      }, []);
-
-
-
-
+    useEffect(() => {
+        var script = document.createElement("script");
+        script.id = "ff-script";
+        script.src =
+            "https://formfacade.com/include/101806054270967856136/form/1FAIpQLSfwnp17hKgDvPMWoXwFq8KPxioiZP8IxlK0UYrab52e1SZeIQ/classic.js?div=ff-compose";
+        script.defer = true;
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
 
     return (
         <>
@@ -198,6 +192,7 @@ const Crowdfunding = () => {
                                     <li>POSTER</li>
                                     <li>WRIST BAND</li>
                                     <li>BADGE</li>
+                                    <li>VJTI RACING T-SHIRT</li>
                                 </ul>
                             </div>
                         </div>
@@ -244,6 +239,7 @@ const Crowdfunding = () => {
 
                             <div className="after">
                                 <ul>
+                                    <li>NAME ON ATV</li>
                                     <li>STICKER & BADGE</li>
                                     <li>CERTIFICATE OF GRATITUDE</li>
                                     <li>POSTER</li>

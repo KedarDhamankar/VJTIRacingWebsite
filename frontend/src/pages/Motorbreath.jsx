@@ -156,14 +156,14 @@ const MotorBreath = () => {
                             </div>
                             <div className="box">
                                 <img src={mbrahul} alt="" />
-                                <span>Rahul Barbade</span>
+                                <span>Rahul Barbude</span>
                                 <span>
                                     <i>Sector Head</i>
                                 </span>
                             </div>
                             <div className="box">
                                 <img src={mbrajvar} alt="" />
-                                <span>Rajvardhan</span>
+                                <span>Rajvardhan Sawant</span>
                             </div>
                         </div>
                         <div className="picsflex chassis vd">
