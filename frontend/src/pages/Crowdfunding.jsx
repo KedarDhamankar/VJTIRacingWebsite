@@ -30,6 +30,10 @@ const Crowdfunding = () => {
         navigate("/SponsorUs");
     };
 
+    const navigateToForm = () => {
+        window.location.replace("https://forms.gle/uisspL9Gb5nQa8BL6");
+    };
+
     const data01 = [
         { name: "Registration", value: 100000 },
         { name: "Raw material", value: 300000 },
@@ -348,6 +352,15 @@ const Crowdfunding = () => {
                             <img src={im4} alt="" className="image-2" />
                         </div>
                     </div>
+                    <div className="formy">
+                        <button
+                            className="donatebutton"
+                            onClick={navigateToForm}
+                        >
+                            {" "}
+                            Click here to Support Us!{" "}
+                        </button>
+                    </div>
                 </div>
             </section>
             <section className="mobile">
@@ -446,135 +459,18 @@ const Crowdfunding = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="formy">
+                        <button
+                            className="donatebutton"
+                            onClick={navigateToForm}
+                        >
+                            {" "}
+                            Click here to Support Us!{" "}
+                        </button>
+                    </div>
                 </div>
             </section>
-
-            {/* section 3 form for sponsors */}
-            <div
-                className="crowdform"
-                style={{ backgroundImage: `url(${bg1})` }}
-            >
-                <div className="formy">
-                    {/* <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSd3xGqYKBTmo3JRII7-MxLxzbHu09evk6yqqLp3gh8k0llWyA/viewform?embedded=true"
-                        className="new"
-                    >
-                        Loading…
-                    </iframe> */}
-
-                    {/* <div className="title">
-                        <span>
-                            THANK YOU FOR BEING A PART OF VJTI RACING'S
-                            CROWDFUNDING CAMPAIGN!
-                        </span>
-                    </div>
-                    <form
-                        className="fform"
-                        onSubmit={(e) => handleSubmit(e)}
-                        id="forms"
-                    >
-                        <div>
-                            <label>Email</label>
-                            <br />
-                            <input name="Email" type="email" required />
-                        </div>
-                        <div>
-                            <label>Full Name</label>
-                            <br />
-                            <input name="Name" type="text" required />
-                        </div>
-                        <div>
-                            <label>Address</label>
-                            <br />
-                            <input name="Address" type="text" required />
-                        </div>
-                        <div>
-                            <label>Contact Number</label>
-                            <br />
-                            <input
-                                name="Number"
-                                type="tel"
-                                required
-                                pattern="[0-9]{10}"
-                            />
-                        </div>
-
-                        <div>
-                            <label>Amount</label>
-                            <br />
-                            <input name="Amount" type="text" />
-                        </div>
-                        <div>
-                            <label>Mode of Payment</label>
-                            <br />
-                            <select name="Mode">
-                                <option value="Paytm">Paytm</option>
-                                <option value="GooglePay">Google Pay</option>
-                                <option value="BankTransfer">
-                                    Bank Transfer
-                                </option>
-                                <option value="Cash">Cash</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>
-                                Name of Point of Contact In VJTI Racing
-                            </label>
-                            <br />
-                            <input name="POC" type="text" />
-                        </div>
-                        <div>
-                            <label>T-Shirt size</label>
-                            <br />
-                            <select name="Tshirt">
-                                <option value="XS" name="XS">
-                                    XS
-                                </option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                                <option value="XXL">XXL</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>SCREENSHOT OF PAYMENT</label>
-                            <br />
-                            <div className="scan">
-                                <span>SCAN AND PAY </span>
-                                <img src={qr} alt="" />
-                                <span>UPI ID : SAEINDIAVJTI@SBI</span>
-                                <span>OR</span>
-                                <span>Bank Transfer:</span>
-                                <span>
-                                    Name : SAEINDIA VEERMATA JIJABAI
-                                    TECHNOLOGICAL INSTITUTE
-                                </span>
-                                <span>Account Number : 30678373626</span>
-                                <span>IFSC Code : SBIN0011075</span>
-                            </div>
-                        </div>
-                        <div>
-                            <label>Upload a file:</label>
-                            <br />
-                            <input
-                                type="file"
-                                id="screenshot"
-                                name="Screenshot"
-                                required
-                            ></input>
-                            <img src="" alt="" id="screenshotimg" />
-                        </div>
-                        <div>
-                            <center>
-                                <input type="submit" className="submit" />
-                            </center>
-                        </div>
-                    </form> */}
-
-                    <div id="ff-compose"></div>
-                </div>
-            </div>
 
             <section>
                 <Footer />
