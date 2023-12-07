@@ -171,7 +171,7 @@
 
 .sponsorsection .currentspons .currsponslandscape {
     display: block;
-    width: 90vw;
+    /* width: 90vw; */
     height: 90vh;
 }
 .sponsorsection .currentspons .currsponsportrait {
