@@ -194,7 +194,6 @@ const Crowdfunding = () => {
                                     <li>STICKER</li>
                                     <li>CERTIFICATE OF GRATITUDE</li>
                                     <li>POSTER</li>
-                                    <li>WRIST BAND</li>
                                     <li>BADGE</li>
                                     <li>VJTI RACING T-SHIRT</li>
                                 </ul>
