@@ -44,8 +44,8 @@ const Footer = () => {
                                     <td>
                                         <span>
                                             VJTI Racing-167, Nathalal Parekh
-                                            Marg, Wadala Village, Wadala, Mumbai,
-                                            Maharashtra 400031
+                                            Marg, Wadala Village, Wadala,
+                                            Mumbai, Maharashtra 400031
                                         </span>
                                     </td>
                                 </tr>
@@ -56,7 +56,9 @@ const Footer = () => {
                                         </div>
                                     </td>
                                     <td>
-                                        <span>Vivek Wagadiya: +91 90048 12503</span>
+                                        <span>
+                                            Vivek Wagadiya: +91 90048 12503
+                                        </span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -117,8 +119,30 @@ const Footer = () => {
                         <h3>MAINTAINED BY:</h3>
 
                         <div className="credits">
-                            <h5>Kedar Dhamankar</h5>
-                            <h5>Rucha Patil</h5>
+                            <h5>
+                                Kedar Dhamankar{" "}
+                                <a
+                                    href="https://www.linkedin.com/in/kedar-dhamankar"
+                                    style={{
+                                        color: "white",
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    <FaLinkedin size={25} />
+                                </a>
+                            </h5>
+                            <h5>
+                                Rucha Patil{" "}
+                                <a
+                                    href="https://www.linkedin.com/in/rucha-patil-593070258/"
+                                    style={{
+                                        color: "white",
+                                        textDecoration: "none",
+                                    }}
+                                >
+                                    <FaLinkedin size={25} />
+                                </a>
+                            </h5>
                         </div>
                     </div>
                 </div>

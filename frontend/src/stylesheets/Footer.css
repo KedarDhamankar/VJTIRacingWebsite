@@ -64,18 +64,23 @@
     height: 3rem;
 }
 
-.footer .socialicons {
+.footer .container .socialicons {
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
     justify-content: center;
 }
 
-.footer .credits {
-    /* text-align: left; */
+.footer .credits a {
+    position: absolute;
+    margin-left: 1vh;
+    margin-top: -0.1%;
+    /* margin-bottom: 1%; */
+    /* margin-bottom: -1vh; */
 }
 
 .footer .credits h5 {
     font-size: 120%;
     font-weight: 400;
+    margin-bottom: 5%;
 }
